@@ -1,0 +1,268 @@
+.footer {
+  margin-top       : 60px;
+  color            : #fff;
+  border-top       : 7px solid #f63;
+  background-color : #1c2127;
+
+  // .footer__phones
+  &__phones {
+    margin-left : 30px;
+  }
+
+  // .footer__menus
+  &__menus {
+    margin-left : auto;
+  }
+
+  // .footer__nav
+  &__nav {
+    display : flex;
+    margin-top : 19px;
+  }
+
+  // .footer__catalog
+  &__catalog {
+    margin-right : 85px;
+
+  }
+
+  // .footer__main-menu
+  &__main-menu {
+
+
+  }
+
+  // .footer__top
+  &__top {
+    display : flex;
+
+  }
+
+  // .footer__middle
+  &__middle {
+    font-size       : 14px;
+    display         : flex;
+    justify-content : space-between;
+    margin-top      : 40px;
+    color           : #808285;
+  }
+
+  // .footer__block
+  &__block {
+
+    // ..footer__block--1
+    &--1 {
+      display     : flex;
+      align-items : center;
+      flex-wrap   : wrap;
+    }
+  }
+
+  // .footer__promo
+  &__promo {
+    font-size            : 14px;
+    font-weight          : normal;
+    line-height          : 17px;
+    flex                 : 1 1 100%;
+    margin-top           : 23px;
+    color                : #fff;
+    text-decoration-line : underline;
+
+    &:active,
+    &:focus,
+    &:hover {
+      text-decoration : none;
+      color           : #fff;
+    }
+  }
+
+  // .footer__company
+  &__company {
+    font-size   : 16px;
+    font-weight : normal;
+    line-height : 19px;
+    color       : rgba(255, 255, 255, 0.8);
+
+  }
+
+  // .footer__socials
+  &__socials {
+  }
+
+  // .footer__bottom
+  &__bottom {
+    font-size       : 11px;
+    line-height     : 13px;
+    display         : flex;
+    justify-content : space-between;
+    margin-top      : 10px;
+    padding-top     : 14px;
+    padding-bottom  : 35px;
+    color           : rgba(255, 255, 255, 0.8);
+    border-top      : 2px solid #2b323b;
+
+
+    a {
+      text-decoration : underline;
+    }
+  }
+
+  // .footer__law
+  &__law {
+  }
+
+  // .footer__copyright
+  &__copyright {
+    a {
+      color : rgba(255, 255, 255, 0.8);
+    }
+  }
+
+  // .footer__year
+  &__year {
+  }
+
+  // .footer__logo
+  &__logo {
+    display         : flex;
+    align-items     : center;
+    justify-content : center;
+    width           : 197px;
+    height          : 83px;
+
+
+  }
+}
+
+
+.logo {
+
+
+  // .logo__image
+  &__image {
+
+
+  }
+}
+
+
+.phones-block-v1 {
+  // .phones-block-v1__item
+  &__item {
+    font-size   : 16px;
+    font-weight : bold;
+    line-height : 19px;
+    display     : block;
+    white-space : nowrap;
+    color       : #fff;
+
+    &:first-child {
+      margin-bottom : 8px;
+    }
+
+    &:active,
+    &:focus,
+    &:hover {
+      text-decoration : none;
+      color           : #fff;
+    }
+
+  }
+}
+
+
+.bottom-menu {
+  display    : flex;
+  flex       : 0 0 410px;
+  flex-wrap  : wrap;
+
+
+  // .bottom-menu__item
+  &__item {
+
+    padding : 0 15px 0 0;
+
+    &:not(:last-child) {
+      margin-bottom : 6px;
+    }
+
+    &:nth-child(odd) {
+      flex : 0 0 220px;
+    }
+
+    &:nth-child(even ) {
+      flex : 0 0 190px;
+    }
+  }
+
+  // .bottom-menu__link
+  &__link {
+    font-size   : 13px;
+    line-height : 16px;
+    display     : inline-block;
+    color       : #fff;
+
+
+  }
+}
+
+.bottom-catalog {
+  // .bottom-catalog__item
+  &__item {
+
+    &:not(:last-child) {
+      margin-bottom : 6px;
+    }
+  }
+
+  // .bottom-catalog__link
+  &__link {
+    font-size   : 13px;
+    font-weight : normal;
+    line-height : 16px;
+    white-space : nowrap;
+    color       : #fff;
+
+  }
+}
+
+.socials-block {
+  // .socials-block__item
+  &__item {
+    display       : inline-block;
+    overflow      : hidden;
+    width         : 30px;
+    height        : 30px;
+    margin-left   : 35px;
+    border-radius : 50%;
+
+
+    // .socials-block__item--fb
+    &--fb {
+
+    }
+
+    // .socials-block__item--vk
+    &--vk {
+
+    }
+
+    // .socials-block__item--in
+    &--in {
+
+    }
+  }
+}
+
+.law-block {
+  // .law-block__item
+  &__item {
+    display         : block;
+    text-decoration : underline;
+    color           : rgba(255, 255, 255, 0.8);
+
+    &:not(:last-child) {
+      margin-bottom : 10px;
+    }
+  }
+}

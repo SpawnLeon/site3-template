@@ -1,0 +1,24 @@
+.breadcrumbs {
+  font-size : 12px;
+  display   : flex;
+  margin    : 30px 0 30px 0;
+  padding   : 0;
+
+  // .breadcrumbs__item
+  &__item {
+    &:not(:last-child) a {
+      text-decoration : underline;
+    }
+  }
+
+  // .breadcrumbs__link
+  &__link {
+    font-size : 12px;
+  }
+
+  // .breadcrumbs__delimiter
+  &__delimiter {
+    display : inline-block;
+    margin  : 0 5px;
+  }
+}

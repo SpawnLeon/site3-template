@@ -10,6 +10,10 @@
     flex-direction : column;
     flex-grow      : 1;
     min-height     : 95px;
+
+    @media screen and (max-width : 1600px) {
+      height : 118px;
+    }
   }
 
   // .header__inner
@@ -18,28 +22,49 @@
     &--top {
       display         : flex;
       justify-content : space-between;
-      padding         : 10px 34px 10px 61px
+      padding         : 10px 34px 10px 61px;
+
+      @media screen and (max-width : 1600px) {
+        padding-left  : 20px;
+        padding-right : 30px;
+        padding-top   : 20px;
+      }
+
+      @media screen and (max-width : 1280px) {
+        flex-wrap : wrap;
+      }
     }
 
     // .header__inner--nav
     &--nav {
+      background-color : #526584;
       display          : flex;
       justify-content  : space-between;
       margin-top       : auto;
       padding          : 9px 25px 9px 60px;
-      background-color : #526584;
 
+
+      @media screen and (max-width : 1600px) {
+        padding-left : 15px;
+      }
     }
   }
 
   // .header__logo
   &__logo {
-    display         : flex;
     align-items     : center;
+    display         : flex;
+    flex            : 0 0 251px;
     flex-direction  : column;
+    height          : 95px;
     justify-content : center;
     width           : 251px;
-    height          : 95px;
+
+    @media screen and (max-width : 1600px) {
+      flex-basis : 192px;
+      height     : 118px;
+      width      : 198px;
+    }
   }
 
   // .header__block
@@ -48,19 +73,40 @@
 
     // .header__block--1
     &--1 {
-      color : #36393a;
+      color        : #36393a;
+      margin-right : 30px;
 
+      @media screen and (max-width : 1280px) {
+        flex         : 1 1 100%;
+        margin-right : 0;
+      }
     }
 
     // .header__block--2
     &--2 {
       flex   : 0 1 413px;
-      margin : 0 15px;
+      margin : 0 50px 0 auto;
+
+      @media screen and (max-width : 1600px) {
+        margin-right : 20px;
+      }
+
+      @media screen and (max-width : 1280px) {
+        margin-left : 0;
+        max-width   : 370px;
+      }
     }
 
     // .header__block--3
     &--3 {
+      flex       : 0 0 443px;
       margin-top : -4px;
+
+      @media screen and (max-width : 1600px) {
+        flex-basis  : auto;
+        margin-left : 15px;
+      }
+
 
     }
   }
@@ -77,6 +123,10 @@
     font-size   : 13px;
     line-height : 16px;
     margin-top  : 9px;
+
+    @media screen and (max-width : 1280px) {
+      display : none;
+    }
   }
 
   // .header__phone
@@ -103,6 +153,8 @@
 
   // .header__main-menu
   &__main-menu {
+
+
   }
 }
 
@@ -116,10 +168,10 @@
 
   // .logo__text
   &__text {
+    color       : #fff;
     font-size   : 11px;
     line-height : 13px;
     margin-top  : 8px;
-    color       : #fff;
   }
 }
 
@@ -136,24 +188,24 @@
 
   // .search-block__field
   &__field {
+    border-bottom  : 2px solid #54585d;
     font-size      : 11px;
     line-height    : 16px;
-    width          : 100%;
     padding-bottom : 2px;
     padding-left   : 25px;
-    border-bottom  : 2px solid #54585d;
+    width          : 100%;
   }
 
   // .search-block__btn
   &__btn {
-    position            : absolute;
-    left                : 0;
-    width               : 13px;
-    height              : 13px;
-    text-indent         : -9999px;
     background-color    : rgba(0, 0, 0, 0);
-    background-repeat   : no-repeat;
     background-position : center;
+    background-repeat   : no-repeat;
+    height              : 13px;
+    left                : 0;
+    position            : absolute;
+    text-indent         : -9999px;
+    width               : 13px;
   }
 }
 
@@ -163,13 +215,17 @@
 
   // .personal-block-header__link
   &__link {
+    align-items  : center;
+    color        : #1c2127;
+    display      : flex;
     font-size    : 12px;
     line-height  : 15px;
-    display      : flex;
-    align-items  : center;
     margin-right : 60px;
     white-space  : nowrap;
-    color        : #1c2127;
+
+    @media screen and (max-width : 1600px) {
+      margin-right : 35px;
+    }
 
     svg {
       flex         : auto 0 0;
@@ -192,8 +248,8 @@
     }
 
     &::before {
-      margin-right : 4px;
       content      : '';
+      margin-right : 4px;
     }
 
     &:active,
@@ -208,19 +264,19 @@
 .basket-link {
   // .basket-link__count
   &__count {
-    font-size       : 12px;
-    line-height     : 15px;
-    display         : inline-flex;
     align-items     : center;
+    background      : #1c2127;
+    border-radius   : 50%;
+    color           : #fff;
+    display         : inline-flex;
     flex            : auto 0 0;
-    justify-content : center;
-    width           : 26px;
+    font-size       : 12px;
     height          : 26px;
+    justify-content : center;
+    line-height     : 15px;
     margin-left     : 10px;
     text-align      : center;
-    color           : #fff;
-    border-radius   : 50%;
-    background      : #1c2127;
+    width           : 26px;
 
   }
 }
@@ -228,27 +284,41 @@
 .catalog-menu {
   display         : flex;
   justify-content : space-between;
-  width           : 100%;
   max-width       : 620px;
+  width           : 100%;
+
+
+  @media screen and (max-width : 1600px) {
+    margin-left  : 0;
+    margin-right : 30px;
+  }
+
+  @media screen and (max-width : 1440px) {
+    max-width    : none;
+    width        : auto
+  }
+
+
 
   // .catalog-menu__item
   &__item {
-    margin : 0 10px;
 
-    &:first-child {
-      margin-left : 0;
+
+    &:not(:first-child) {
+      margin-left : 20px;
     }
   }
 
   // .catalog-menu__link
   &__link {
-    display     : flex;
     align-items : center;
-    white-space : nowrap;
     color       : #fff;
+    display     : flex;
+    white-space : nowrap;
 
     svg {
       display      : inline-block;
+      flex-shrink  : 0;
       margin-right : 10px;
     }
 
@@ -263,20 +333,35 @@
 .main-menu {
   display         : flex;
   justify-content : space-between;
-  width           : 100%;
-  max-width       : 530px;
-  margin-right    : 80px;
   margin-left     : 10px;
+  margin-right    : 80px;
+  max-width       : 530px;
+  width           : 100%;
+
+
+  @media screen and (max-width : 1600px) {
+    margin-left  : 30px;
+    margin-right : 0;
+  }
+
+  @media screen and (max-width : 1440px) {
+    max-width    : none;
+    width        : auto
+  }
 
   // .main-menu__item
   &__item {
-    margin : 0 5px;
+
+
+    &:not(:first-child) {
+      margin-left : 20px;
+    }
   }
 
   // .main-menu__link
   &__link {
-    white-space : nowrap;
     color       : #fff;
+    white-space : nowrap;
 
     &:active,
     &:focus,

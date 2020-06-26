@@ -1,12 +1,13 @@
 .footer {
-  margin-top       : 60px;
-  color            : #fff;
-  border-top       : 7px solid #f63;
   background-color : #1c2127;
+  border-top       : 4px solid #f63;
+  color            : #fff;
+  margin-top       : 50px;
 
   // .footer__phones
   &__phones {
-    margin-left : 30px;
+    margin-left : 21px;
+    margin-top  : 7px;
   }
 
   // .footer__menus
@@ -16,7 +17,7 @@
 
   // .footer__nav
   &__nav {
-    display : flex;
+    display    : flex;
     margin-top : 19px;
   }
 
@@ -40,11 +41,11 @@
 
   // .footer__middle
   &__middle {
-    font-size       : 14px;
-    display         : flex;
-    justify-content : space-between;
-    margin-top      : 40px;
     color           : #808285;
+    display         : flex;
+    font-size       : 14px;
+    justify-content : space-between;
+    margin-top      : 70px;
   }
 
   // .footer__block
@@ -52,55 +53,67 @@
 
     // ..footer__block--1
     &--1 {
-      display     : flex;
       align-items : center;
+      display     : flex;
       flex-wrap   : wrap;
     }
   }
 
   // .footer__promo
   &__promo {
+    color                : #fff;
+    flex                 : 1 1 100%;
     font-size            : 14px;
     font-weight          : normal;
     line-height          : 17px;
-    flex                 : 1 1 100%;
     margin-top           : 23px;
-    color                : #fff;
     text-decoration-line : underline;
 
     &:active,
     &:focus,
     &:hover {
-      text-decoration : none;
       color           : #fff;
+      text-decoration : none;
     }
   }
 
   // .footer__company
   &__company {
+    color       : rgba(255, 255, 255, 0.8);
     font-size   : 16px;
     font-weight : normal;
     line-height : 19px;
-    color       : rgba(255, 255, 255, 0.8);
 
   }
 
   // .footer__socials
   &__socials {
+    position : relative;
+    top      : -15px;
   }
 
   // .footer__bottom
   &__bottom {
-    font-size       : 11px;
-    line-height     : 13px;
-    display         : flex;
-    justify-content : space-between;
-    margin-top      : 10px;
-    padding-top     : 14px;
-    padding-bottom  : 35px;
     color           : rgba(255, 255, 255, 0.8);
-    border-top      : 2px solid #2b323b;
+    display         : flex;
+    font-size       : 11px;
+    justify-content : space-between;
+    line-height     : 13px;
+    margin-top      : 2px;
+    padding-bottom  : 35px;
+    padding-top     : 14px;
+    position        : relative;
 
+    &::after {
+      background-color : rgba(255, 255, 255, 0.3);
+      content          : '';
+      display          : block;
+      height           : 1px;
+      left             : calc(-100vw / 2 + 50%);
+      position         : absolute;
+      top              : 0;
+      width            : 100vw;
+    }
 
     a {
       text-decoration : underline;
@@ -113,6 +126,7 @@
 
   // .footer__copyright
   &__copyright {
+    margin-top: 5px;
     a {
       color : rgba(255, 255, 255, 0.8);
     }
@@ -120,15 +134,16 @@
 
   // .footer__year
   &__year {
+    margin-top: 5px;
   }
 
   // .footer__logo
   &__logo {
-    display         : flex;
     align-items     : center;
+    display         : flex;
+    height          : 83px;
     justify-content : center;
     width           : 197px;
-    height          : 83px;
 
 
   }
@@ -149,12 +164,12 @@
 .phones-block-v1 {
   // .phones-block-v1__item
   &__item {
+    color       : #fff;
+    display     : block;
     font-size   : 16px;
     font-weight : bold;
     line-height : 19px;
-    display     : block;
     white-space : nowrap;
-    color       : #fff;
 
     &:first-child {
       margin-bottom : 8px;
@@ -163,8 +178,8 @@
     &:active,
     &:focus,
     &:hover {
-      text-decoration : none;
       color           : #fff;
+      text-decoration : none;
     }
 
   }
@@ -172,9 +187,9 @@
 
 
 .bottom-menu {
-  display    : flex;
-  flex       : 0 0 410px;
-  flex-wrap  : wrap;
+  display   : flex;
+  flex      : 0 0 410px;
+  flex-wrap : wrap;
 
 
   // .bottom-menu__item
@@ -197,10 +212,10 @@
 
   // .bottom-menu__link
   &__link {
+    color       : #fff;
+    display     : inline-block;
     font-size   : 13px;
     line-height : 16px;
-    display     : inline-block;
-    color       : #fff;
 
 
   }
@@ -217,11 +232,11 @@
 
   // .bottom-catalog__link
   &__link {
+    color       : #fff;
     font-size   : 13px;
     font-weight : normal;
     line-height : 16px;
     white-space : nowrap;
-    color       : #fff;
 
   }
 }
@@ -229,12 +244,12 @@
 .socials-block {
   // .socials-block__item
   &__item {
+    border-radius : 50%;
     display       : inline-block;
-    overflow      : hidden;
-    width         : 30px;
     height        : 30px;
     margin-left   : 35px;
-    border-radius : 50%;
+    overflow      : hidden;
+    width         : 30px;
 
 
     // .socials-block__item--fb
@@ -257,12 +272,12 @@
 .law-block {
   // .law-block__item
   &__item {
+    color           : rgba(255, 255, 255, 0.8);
     display         : block;
     text-decoration : underline;
-    color           : rgba(255, 255, 255, 0.8);
 
     &:not(:last-child) {
-      margin-bottom : 10px;
+      margin-bottom : 13px;
     }
   }
 }

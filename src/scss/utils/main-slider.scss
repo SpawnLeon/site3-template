@@ -4,51 +4,51 @@
 
   // .main-slider__container
   &__container {
+    list-style   : none;
     margin-left  : auto;
     margin-right : auto;
-    position     : relative;
-    list-style   : none;
     padding      : 0;
+    position     : relative;
     z-index      : 1;
   }
 
   // .main-slider__wrapper
   &__wrapper {
-    position            : relative;
-    width               : 100%;
-    height              : 100%;
-    z-index             : 1;
-    display             : flex;
-    transition-property : transform;
     box-sizing          : content-box;
+    display             : flex;
+    height              : 100%;
+    position            : relative;
+    transition-property : transform;
+    width               : 100%;
+    z-index             : 1;
   }
 
   // .main-slider__slide
   &__slide {
     flex-shrink         : 0;
-    width               : 100%;
     height              : 100%;
     position            : relative;
     transition-property : transform;
+    width               : 100%;
   }
 
   // .main-slider__pagination
   &__pagination {
-    position        : absolute;
     bottom          : -32px;
-    text-align      : center;
-    width           : 100%;
     display         : flex;
     justify-content : center;
+    position        : absolute;
+    text-align      : center;
+    width           : 100%;
 
     .swiper-pagination-bullet {
-      display          : inline-block;
-      width            : 12px;
-      height           : 12px;
       background-color : #ced0d1;
-      margin           : 0 12px;
       border-radius    : 50%;
+      display          : inline-block;
+      height           : 12px;
+      margin           : 0 12px;
       vertical-align   : bottom;
+      width            : 12px;
     }
 
     .swiper-pagination-bullet-active {
@@ -59,8 +59,8 @@
 
   // .main-slider__write-us
   &__write-us {
-    position : absolute;
     bottom   : 0;
+    position : absolute;
     right    : 0;
     z-index  : 1;
   }
@@ -68,17 +68,17 @@
 
 .write-us-btn {
   background-color : $accentColor;
-  padding          : 15px 30px 13px 20px;
+  color            : #fff;
+  display          : flex;
   font-size        : 13px;
   line-height      : 16px;
-  color            : #fff;
-  display : flex;
+  padding          : 15px 30px 13px 20px;
 
   // .write-us-btn__icon
   &__icon {
     margin-right : 12px;
-    position : relative;
-    top: 2px;
+    position     : relative;
+    top          : 2px;
   }
 
 
@@ -100,6 +100,10 @@
   // .main-slide__left
   &__left {
     position : absolute;
+
+    @media screen and (max-width : 1740px) {
+      left : 30px;
+    }
   }
 
   // .main-slide__car
@@ -122,29 +126,33 @@
 
   // .main-slide__bg
   &__bg {
-    width               : 100%;
-    height              : 874px;
-    background-size     : cover;
     background-position : center;
+    background-size     : cover;
+    height              : 874px;
+    width               : 100%;
 
   }
 
   // .swiper-slide__text
   &__text {
+    color       : #36393a;
+    font-size   : 35px;
     font-style  : normal;
     font-weight : bold;
-    font-size   : 35px;
     line-height : 43px;
-    color       : #36393a;
-    max-width   : 440px;
     margin-top  : 19px;
+    max-width   : 440px;
   }
 
   // .main-slide__right
   &__right {
+    padding-top : 85px;
     position    : absolute;
     right       : 0;
-    padding-top : 85px;
+
+    @media screen and (max-width : 1740px) {
+      right : 30px;
+    }
   }
 
   // .main-slide__icon
@@ -154,23 +162,23 @@
 }
 
 .icon-slider {
-  width            : 176px;
-  height           : 176px;
-  background-color : $accentColor;
-  display          : flex;
-  justify-content  : center;
   align-items      : center;
+  background-color : $accentColor;
   border-radius    : 50%;
+  display          : flex;
   flex-direction   : column;
+  height           : 176px;
+  justify-content  : center;
+  width            : 176px;
 
 
   // .icon-slider__text
   &__text {
+    color       : #fff;
     font-size   : 18px;
     line-height : 22px;
-    text-align  : center;
-    color       : #fff;
     margin-top  : 8px;
+    text-align  : center;
   }
 
   // .icon-slider__icon

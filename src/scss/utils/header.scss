@@ -14,6 +14,10 @@
     @media screen and (max-width : 1600px) {
       height : 118px;
     }
+
+    @media screen and (max-width : 1023px) {
+      height : 142px;
+    }
   }
 
   // .header__inner
@@ -31,7 +35,15 @@
       }
 
       @media screen and (max-width : 1280px) {
-        flex-wrap : wrap;
+        flex-wrap       : wrap;
+        justify-content : flex-start;
+        padding-top     : 15px;
+      }
+
+
+      @media screen and (max-width : 1023px) {
+        justify-content : space-between;
+        padding: 13px 10px 0 15px;
       }
     }
 
@@ -46,6 +58,9 @@
 
       @media screen and (max-width : 1600px) {
         padding-left : 15px;
+      }
+      @media screen and (max-width : 1600px) {
+        padding-top : 10px;
       }
     }
   }
@@ -65,6 +80,12 @@
       height     : 118px;
       width      : 198px;
     }
+
+    @media screen and (max-width : 1023px) {
+      flex-basis : 192px;
+      height     : 142px;
+      width      : 172px;
+    }
   }
 
   // .header__block
@@ -80,6 +101,10 @@
         flex         : 1 1 100%;
         margin-right : 0;
       }
+
+      @media screen and (max-width : 1023px) {
+        flex         : 0 1 auto;
+      }
     }
 
     // .header__block--2
@@ -92,9 +117,18 @@
       }
 
       @media screen and (max-width : 1280px) {
-        margin-left : 0;
-        max-width   : 370px;
+        margin-left  : 0;
+        margin-right : 10px;
+        margin-top   : 17px;
+        max-width    : 367px;
       }
+
+      @media screen and (max-width : 1023px) {
+        max-width : 310px;
+        margin-top: 22px;
+        margin-right: 0;
+      }
+
     }
 
     // .header__block--3
@@ -107,6 +141,16 @@
         margin-left : 15px;
       }
 
+      @media screen and (max-width : 1280px) {
+        margin-left : 10px;
+        margin-top  : 15px;
+      }
+
+      @media screen and (max-width : 1023px) {
+        margin-top : 0;
+        max-width: 200px;
+      }
+
 
     }
   }
@@ -116,6 +160,11 @@
     font-size   : 14px;
     line-height : 17px;
     white-space : nowrap;
+
+    @media screen and (max-width : 1023px) {
+      max-width   : 245px;
+      white-space : normal;
+    }
   }
 
   // .header__phones
@@ -156,7 +205,30 @@
 
 
   }
+
+  // .header__catalog-menu-btn
+  &__catalog-menu-btn {
+  }
 }
+
+
+.catalog-menu-btn {
+  align-items : center;
+  color       : rgb(255, 255, 255);
+  display     : none;
+  white-space : nowrap;
+
+  @media screen and (max-width : 1023px) {
+    display : flex;
+  }
+
+  // .catalog-menu-btn__icon
+  &__icon {
+    flex         : 0 0 auto;
+    margin-right : 10px;
+  }
+}
+
 
 .logo {
   background-color : $accentColor;
@@ -212,6 +284,11 @@
 .personal-block-header {
   display : flex;
 
+  @media screen and (max-width : 1023px) {
+    display               : grid;
+    grid-template-columns : 138px 101px;
+  }
+
 
   // .personal-block-header__link
   &__link {
@@ -227,6 +304,10 @@
       margin-right : 35px;
     }
 
+    @media screen and (max-width : 1023px) {
+      margin-right : 0;
+    }
+
     svg {
       flex         : auto 0 0;
       margin-right : 3px;
@@ -234,13 +315,32 @@
 
     &--auth {
 
+      @media screen and (max-width : 1023px) {
+        max-width   : 100px;
+        white-space : normal;
+        grid-column: 1 / 2;
+        grid-row:  1 / 2;
+      }
+
     }
 
     &--favorite {
 
+      @media screen and (max-width : 1023px) {
+        margin-top : 20px;
+        grid-column: 2 / 3;
+        grid-row:  2 / 3;
+      }
+
     }
 
     &--basket {
+
+      @media screen and (max-width : 1023px) {
+
+        grid-column: 2 / 3;
+        grid-row:  1 / 1;
+      }
     }
 
     &:last-child {
@@ -290,14 +390,17 @@
 
   @media screen and (max-width : 1600px) {
     margin-left  : 0;
-    margin-right : 30px;
+    margin-right : 10px;
   }
 
   @media screen and (max-width : 1440px) {
-    max-width    : none;
-    width        : auto
+    max-width : none;
+    width     : auto
   }
 
+  @media screen and (max-width : 1023px) {
+    display : none;
+  }
 
 
   // .catalog-menu__item
@@ -340,13 +443,13 @@
 
 
   @media screen and (max-width : 1600px) {
-    margin-left  : 30px;
+    margin-left  : 10px;
     margin-right : 0;
   }
 
   @media screen and (max-width : 1440px) {
-    max-width    : none;
-    width        : auto
+    max-width : none;
+    width     : auto
   }
 
   // .main-menu__item

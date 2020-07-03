@@ -1,5 +1,17 @@
 .form {
 
+
+  // .form__description
+  &__description{
+    color: rgb(28, 33, 39);
+    font-size: 13px;
+    font-weight: normal;
+    line-height: 16px;
+    width: 100%;
+    padding: 7px 0;
+  }
+
+
   // .form__inner
   &__inner {
   }
@@ -44,8 +56,6 @@
 
 }
 
-.form_description {
-}
 
 .item-form {
   // .item-form__label

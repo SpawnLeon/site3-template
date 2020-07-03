@@ -245,6 +245,10 @@
         <form class="form form--register"
               action="">
           <div class="form__inner">
+              <div class="form__description">
+                Все поля обязательны к заполнению
+              </div>
+
 
             <div class="form__content">
 
@@ -256,7 +260,7 @@
                       onblur="if (!this.value) {this.nextElementSibling.classList.remove('item-form__name--focus');}  "
                       type="text"
                       class="item-form__field item-form__field--text">
-                    <span class="item-form__name  item-form__name--text">E-mail</span>
+                    <span class="item-form__name  item-form__name--text">E-mail *</span>
                   </label>
                 </div>
                 <div class="form__item item-form">
@@ -266,7 +270,7 @@
                       onblur="if (!this.value) {this.nextElementSibling.classList.remove('item-form__name--focus');}  "
                       type="password"
                       class="item-form__field item-form__field--text">
-                    <span class="item-form__name  item-form__name--text">Пароль</span>
+                    <span class="item-form__name  item-form__name--text">Пароль *</span>
                   </label>
                 </div>
                 <div class="form__item item-form">
@@ -276,7 +280,7 @@
                       onblur="if (!this.value) {this.nextElementSibling.classList.remove('item-form__name--focus');}  "
                       type="password"
                       class="item-form__field item-form__field--text">
-                    <span class="item-form__name  item-form__name--text">Подтверждение пароля</span>
+                    <span class="item-form__name  item-form__name--text">Подтверждение пароля *</span>
                   </label>
                 </div>
                 <div class="form__item item-form">
@@ -286,7 +290,7 @@
                       onblur="if (!this.value) {this.nextElementSibling.classList.remove('item-form__name--focus');}  "
                       type="text"
                       class="item-form__field item-form__field--text">
-                    <span class="item-form__name  item-form__name--text">Контактное лицо</span>
+                    <span class="item-form__name  item-form__name--text">Контактное лицо *</span>
                   </label>
                 </div>
                 <div class="form__item item-form">
@@ -296,7 +300,7 @@
                       onblur="if (!this.value) {this.nextElementSibling.classList.remove('item-form__name--focus');}  "
                       type="text"
                       class="item-form__field item-form__field--text">
-                    <span class="item-form__name  item-form__name--text">Телефон</span>
+                    <span class="item-form__name  item-form__name--text">Телефон *</span>
                   </label>
                 </div>
 
@@ -314,7 +318,7 @@
                       onblur="if (!this.value) {this.nextElementSibling.classList.remove('item-form__name--focus');}  "
                       type="text"
                       class="item-form__field item-form__field--text">
-                    <span class="item-form__name  item-form__name--text">Краткое наименование</span>
+                    <span class="item-form__name  item-form__name--text">Краткое наименование *</span>
                   </label>
                 </div>
 
@@ -325,7 +329,7 @@
                       onblur="if (!this.value) {this.nextElementSibling.classList.remove('item-form__name--focus');}  "
                       type="text"
                       class="item-form__field item-form__field--text">
-                    <span class="item-form__name  item-form__name--text">Полное наименование</span>
+                    <span class="item-form__name  item-form__name--text">Полное наименование *</span>
                   </label>
                 </div>
 
@@ -336,7 +340,7 @@
                       onblur="if (!this.value) {this.nextElementSibling.classList.remove('item-form__name--focus');}  "
                       type="text"
                       class="item-form__field item-form__field--text">
-                    <span class="item-form__name  item-form__name--text">ИНН</span>
+                    <span class="item-form__name  item-form__name--text">ИНН *</span>
                   </label>
                 </div>
 
@@ -347,7 +351,7 @@
                       onblur="if (!this.value) {this.nextElementSibling.classList.remove('item-form__name--focus');}  "
                       type="text"
                       class="item-form__field item-form__field--text">
-                    <span class="item-form__name  item-form__name--text">КПП</span>
+                    <span class="item-form__name  item-form__name--text">КПП *</span>
                   </label>
                 </div>
 
@@ -358,7 +362,7 @@
                       onblur="if (!this.value) {this.nextElementSibling.classList.remove('item-form__name--focus');}  "
                       type="text"
                       class="item-form__field item-form__field--text">
-                    <span class="item-form__name  item-form__name--text">Номер расчетного счета</span>
+                    <span class="item-form__name  item-form__name--text">Номер расчетного счета *</span>
                   </label>
                 </div>
 
@@ -369,7 +373,7 @@
                       onblur="if (!this.value) {this.nextElementSibling.classList.remove('item-form__name--focus');}  "
                       type="text"
                       class="item-form__field item-form__field--text">
-                    <span class="item-form__name  item-form__name--text">Кор. счет</span>
+                    <span class="item-form__name  item-form__name--text">Кор. счет *</span>
                   </label>
                 </div>
 
@@ -380,7 +384,7 @@
                       onblur="if (!this.value) {this.nextElementSibling.classList.remove('item-form__name--focus');}  "
                       type="text"
                       class="item-form__field item-form__field--text">
-                    <span class="item-form__name  item-form__name--text">БИК</span>
+                    <span class="item-form__name  item-form__name--text">БИК *</span>
                   </label>
                 </div>
 
@@ -391,7 +395,7 @@
                       onblur="if (!this.value) {this.nextElementSibling.classList.remove('item-form__name--focus');}  "
                       type="text"
                       class="item-form__field item-form__field--text">
-                    <span class="item-form__name  item-form__name--text">Юридический адрес</span>
+                    <span class="item-form__name  item-form__name--text">Юридический адрес *</span>
                   </label>
                 </div>
 
@@ -403,7 +407,7 @@
                       onblur="if (!this.value) {this.nextElementSibling.classList.remove('item-form__name--focus');}  "
                       type="text"
                       class="item-form__field item-form__field--text">
-                    <span class="item-form__name  item-form__name--text">Фактический адрес</span>
+                    <span class="item-form__name  item-form__name--text">Фактический адрес *</span>
                   </label>
                 </div>
 
@@ -473,7 +477,7 @@
                       onblur="if (!this.value) {this.nextElementSibling.classList.remove('item-form__name--focus');}  "
                       type="text"
                       class="item-form__field item-form__field--text">
-                    <span class="item-form__name  item-form__name--text">Email</span>
+                    <span class="item-form__name  item-form__name--text">Email *</span>
                   </label>
                 </div>
 
@@ -484,7 +488,7 @@
                       onblur="if (!this.value) {this.nextElementSibling.classList.remove('item-form__name--focus');}  "
                       type="password"
                       class="item-form__field item-form__field--text">
-                    <span class="item-form__name  item-form__name--text">Пароль</span>
+                    <span class="item-form__name  item-form__name--text">Пароль *</span>
                   </label>
                 </div>
                 <div class="form__item item-form">
@@ -494,7 +498,7 @@
                       onblur="if (!this.value) {this.nextElementSibling.classList.remove('item-form__name--focus');}  "
                       type="password"
                       class="item-form__field item-form__field--text">
-                    <span class="item-form__name  item-form__name--text">Подтверждение пароля</span>
+                    <span class="item-form__name  item-form__name--text">Подтверждение пароля *</span>
                   </label>
                 </div>
 

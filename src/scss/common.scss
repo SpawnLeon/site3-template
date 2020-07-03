@@ -108,28 +108,30 @@ section,
     #EXAMPLE BLOCK TITLE
 \*------------------------------------*/
 
-// Modules
-// @import "modules/my-module.scss";
+
 
 .page {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+
   &__header {
   }
 
   &__footer {
+    margin-top : auto;
   }
 }
 
 
-.page {
-  &--has-sidebar {
-    display : flex;
-  }
-}
+
 
 .content {
   width : 100%;
 }
 
-.sidebar + .content {
-  max-width : calc(100% - 12px - 154px);
+
+.page-content {
+  margin-bottom : auto;
 }
+

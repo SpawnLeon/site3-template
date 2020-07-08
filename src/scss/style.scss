@@ -10,14 +10,23 @@
 @import "common";
 
 @import 'utils/buttons';
-@import 'utils/forms';
+
 @import 'utils/header';
 @import 'utils/footer';
 @import 'utils/breadcrumbs';
 @import 'utils/sidebar';
 @import 'utils/main-slider';
+@import 'utils/pagination';
 
 @import 'pages/index';
-@import 'pages/product-detail';
+@import 'pages/forms';
+@import 'pages/catalog';
+@import 'pages/category';
+@import 'pages/product';
+@import 'pages/delivery';
+@import 'pages/payment';
+@import 'pages/warranty';
+@import 'pages/checkout';
+@import 'pages/registration';
 
 

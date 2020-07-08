@@ -1,0 +1,32 @@
+<% var data = {
+title: "Заголовок | Проект",
+}; %>
+<%= _.template(require('./../includes/header.html').default)(data) %>
+
+<div class="container">
+  <div class="container__inner">
+
+    <%= _.template(require('./../includes/breadcrumbs.html').default)(data) %>
+    <h1 class="page-content__title">Оплата</h1>
+
+    <div class="page-content__payment payment-page">
+      <p>
+        Повседневная практика показывает, что дальнейшее развитие различных форм деятельности способствует подготовке и реализации соответствующих условий активизации. Лишь базовые сценарии поведения пользователей и по сей день остаются уделом либералов, которые жаждут быть своевременно верифицированы. Представители современных социальных резервов являются только методом политического участия и своевременно верифицированы.
+
+      </p>
+      <div class="payment-page__methods page-methods">
+        <div class="page-methods__title">Способы оплаты</div>
+        <div class="page-methods__inner">
+          <div class="page-methods__item">
+
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+</div>
+
+<%= _.template(require('./../includes/footer.html'). default)(data) %>

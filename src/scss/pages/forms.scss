@@ -70,8 +70,8 @@
     }
 
 
-    // .item-form__label--person-type
-    &--person-type {
+    // .item-form__label--radio-group
+    &--radio-group {
       &:not(:last-child) {
         margin-right : 40px;
       }
@@ -189,8 +189,8 @@
   // .item-form__inner
   &__inner {
 
-    //. item-form__inner--person-type
-    &--person-type {
+    //. item-form__inner--radio-group
+    &--radio-group {
       display : flex;
     }
   }

@@ -1,9 +1,9 @@
 
 html {
-  line-height : $mainLineHeight;
   font-size   : $mainFontSize;
-  color       : $mainFontColor;
+  line-height : $mainLineHeight;
   height      : 100%;
+  color       : $mainFontColor;
   @media screen and (max-width : $desktopWidth) {
     font-size : 16px;
   }
@@ -16,19 +16,19 @@ html {
 }
 
 body {
-  margin                  : 0;
-  padding                 : 0;
   font-family             : $mainFont;
   font-size               : $mainFontSize;
   font-weight             : $mainFontWeight;
-  line-height : $mainLineHeight;
-  -webkit-font-smoothing  : antialiased;
-  -moz-osx-font-smoothing : grayscale;
-  background-color        : #fff;
-  color                   : $mainFontColor;
+  line-height             : $mainLineHeight;
+  overflow-x              : hidden;
   width                   : 100%;
   max-width               : 100vw;
-  overflow-x              : hidden;
+  margin                  : 0;
+  padding                 : 0;
+  color                   : $mainFontColor;
+  background-color        : #fff;
+  -webkit-font-smoothing  : antialiased;
+  -moz-osx-font-smoothing : grayscale;
 }
 
 h1,
@@ -75,8 +75,8 @@ section,
 .wrapper {
   display        : flex;
   flex-direction : column;
-  margin         : 0 auto;
   min-height     : 100vh;
+  margin         : 0 auto;
 }
 
 .content-wrapper {
@@ -86,34 +86,22 @@ section,
 }
 
 .container {
-  width     : 100%;
-  flex      : 0 0 auto;
   position  : relative;
-  margin    : 0 auto;
+  flex      : 0 0 auto;
+  width     : 100%;
   max-width : $desktopWidth;
+  margin    : 0 auto;
   padding   : 0 $desktopGutter;
 
-  @media screen and (max-width : $smDesktopWidth) {
-    max-width : tableWidth;
-  }
-  @media screen and (max-width : $tableWidth) {
-    max-width : phoneWidth;
-  }
-  @media screen and (max-width : $phoneWidth) {
-    max-width : smPhoneWidth;
-  }
 }
 
-/*------------------------------------*\
-    #EXAMPLE BLOCK TITLE
-\*------------------------------------*/
 
 
 
 .page {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
+  display        : flex;
+  flex-direction : column;
+  min-height     : 100vh;
 
   &__header {
   }
@@ -124,8 +112,6 @@ section,
 }
 
 
-
-
 .content {
   width : 100%;
 }
@@ -133,5 +119,18 @@ section,
 
 .page-content {
   margin-bottom : auto;
+
+  // .page-content__title
+  &__title {
+    margin : 5px 0 30px;
+  }
 }
 
+[class*='has-sidebar'] {
+  display : flex;
+}
+
+.container__inner {
+  flex-grow : 1;
+  width     : auto;
+}

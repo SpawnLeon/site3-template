@@ -1,0 +1,36 @@
+
+.pagination-block {
+  display: flex;
+  justify-content: center;
+  margin-top: -16px;
+  align-items: center;
+
+  // .pagination-block__item
+  &__item {
+    margin: 0 7px;
+
+
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 16px;
+    text-decoration-line: underline;
+    color: #54585D;
+
+    // .pagination-block__item--left
+    &--left {
+    }
+
+    // .pagination-block__item--current
+    &--current,
+    &:active,
+    &:focus,
+    &:hover {
+      color: #EC621F;
+      text-decoration: none;
+    }
+
+    // .pagination-block__item--right
+    &--right {
+    }
+  }
+}

@@ -14,7 +14,7 @@
 <body>
 <div class="page">
   <header class="header">
-    <a href="/"
+    <a href="index.html"
        class="header__logo logo">
 
 
@@ -205,379 +205,259 @@
   <div class="forms-page">
 
 
-    <div style="display: flex;">
-      <div style="flex: 1 1 45%">
+    <form class="form form--register"
+          action="">
 
+      <div class="form__radio-group radio-group radio-group--select-person-type">
+        <div class="form__item item-form radio-group__item-form">
+          <div class="item-form__inner item-form__inner--radio-group">
 
-
-        <form class="form form--register"
-              action="">
-
-
-          <div class="form__radio-group radio-group radio-group--select-person-type">
-
-            <div class="form__item item-form radio-group__item-form">
-              <div class="item-form__inner item-form__inner--radio-group">
-
-                <label class="item-form__label item-form__label--radio item-form__label--radio-group">
-                  <input
-                    type="radio"
-                    name="person-type"
-                    value="private-person"
-                    class="item-form__field item-form__field--radio">
-                  <span></span>
-                  <span class="item-form__name item-form__name--radio">Частное лицо</span>
-
-                </label>
-
-
-                <label class="item-form__label item-form__label--radio item-form__label--radio-group">
-                  <input
-                    checked
-                    type="radio"
-                    name="person-type"
-                    value="private-person"
-                    class="item-form__field item-form__field--radio">
-                  <span></span>
-                  <span class="item-form__name item-form__name--radio">Юридическое лицо</span>
-
-                </label>
-
-              </div>
-
-            </div>
-
+            <label class="item-form__label item-form__label--radio item-form__label--radio-group">
+              <input
+                type="radio"
+                name="person-type"
+                value="private-person"
+                class="item-form__field item-form__field--radio">
+              <span></span>
+              <span class="item-form__name item-form__name--radio">Частное лицо</span>
+            </label>
+            <label class="item-form__label item-form__label--radio item-form__label--radio-group">
+              <input
+                checked
+                type="radio"
+                name="person-type"
+                value="private-person"
+                class="item-form__field item-form__field--radio">
+              <span></span>
+              <span class="item-form__name item-form__name--radio">Юридическое лицо</span>
+            </label>
           </div>
-
-
-
-          <div class="form__inner">
-            <div class="form__description">
-              Все поля обязательны к заполнению
-            </div>
-
-
-            <div class="form__content">
-
-              <div class="form__group group-form">
-                <div class="form__item item-form">
-                  <label class="item-form__label item-form__label--text">
-                    <input
-                      onfocus="this.nextElementSibling.classList.add('item-form__name--focus')"
-                      onblur="if (!this.value) {this.nextElementSibling.classList.remove('item-form__name--focus');}  "
-                      type="text"
-                      class="item-form__field item-form__field--text">
-                    <span class="item-form__name  item-form__name--text">E-mail *</span>
-                  </label>
-                </div>
-                <div class="form__item item-form">
-                  <label class="item-form__label item-form__label--text">
-                    <input
-                      onfocus="this.nextElementSibling.classList.add('item-form__name--focus')"
-                      onblur="if (!this.value) {this.nextElementSibling.classList.remove('item-form__name--focus');}  "
-                      type="password"
-                      class="item-form__field item-form__field--text">
-                    <span class="item-form__name  item-form__name--text">Пароль *</span>
-                  </label>
-                </div>
-                <div class="form__item item-form">
-                  <label class="item-form__label item-form__label--text">
-                    <input
-                      onfocus="this.nextElementSibling.classList.add('item-form__name--focus')"
-                      onblur="if (!this.value) {this.nextElementSibling.classList.remove('item-form__name--focus');}  "
-                      type="password"
-                      class="item-form__field item-form__field--text">
-                    <span class="item-form__name  item-form__name--text">Подтверждение пароля *</span>
-                  </label>
-                </div>
-                <div class="form__item item-form">
-                  <label class="item-form__label item-form__label--text">
-                    <input
-                      onfocus="this.nextElementSibling.classList.add('item-form__name--focus')"
-                      onblur="if (!this.value) {this.nextElementSibling.classList.remove('item-form__name--focus');}  "
-                      type="text"
-                      class="item-form__field item-form__field--text">
-                    <span class="item-form__name  item-form__name--text">Контактное лицо *</span>
-                  </label>
-                </div>
-                <div class="form__item item-form">
-                  <label class="item-form__label item-form__label--text">
-                    <input
-                      onfocus="this.nextElementSibling.classList.add('item-form__name--focus')"
-                      onblur="if (!this.value) {this.nextElementSibling.classList.remove('item-form__name--focus');}  "
-                      type="text"
-                      class="item-form__field item-form__field--text">
-                    <span class="item-form__name  item-form__name--text">Телефон *</span>
-                  </label>
-                </div>
-
-
-              </div>
-
-
-              <div class="form__group group-form">
-                <div class="group-form__title">Данные организации</div>
-
-                <div class="form__item item-form">
-                  <label class="item-form__label item-form__label--text">
-                    <input
-                      onfocus="this.nextElementSibling.classList.add('item-form__name--focus')"
-                      onblur="if (!this.value) {this.nextElementSibling.classList.remove('item-form__name--focus');}  "
-                      type="text"
-                      class="item-form__field item-form__field--text">
-                    <span class="item-form__name  item-form__name--text">Краткое наименование *</span>
-                  </label>
-                </div>
-
-                <div class="form__item item-form">
-                  <label class="item-form__label item-form__label--text">
-                    <input
-                      onfocus="this.nextElementSibling.classList.add('item-form__name--focus')"
-                      onblur="if (!this.value) {this.nextElementSibling.classList.remove('item-form__name--focus');}  "
-                      type="text"
-                      class="item-form__field item-form__field--text">
-                    <span class="item-form__name  item-form__name--text">Полное наименование *</span>
-                  </label>
-                </div>
-
-                <div class="form__item item-form">
-                  <label class="item-form__label item-form__label--text">
-                    <input
-                      onfocus="this.nextElementSibling.classList.add('item-form__name--focus')"
-                      onblur="if (!this.value) {this.nextElementSibling.classList.remove('item-form__name--focus');}  "
-                      type="text"
-                      class="item-form__field item-form__field--text">
-                    <span class="item-form__name  item-form__name--text">ИНН *</span>
-                  </label>
-                </div>
-
-                <div class="form__item item-form">
-                  <label class="item-form__label item-form__label--text">
-                    <input
-                      onfocus="this.nextElementSibling.classList.add('item-form__name--focus')"
-                      onblur="if (!this.value) {this.nextElementSibling.classList.remove('item-form__name--focus');}  "
-                      type="text"
-                      class="item-form__field item-form__field--text">
-                    <span class="item-form__name  item-form__name--text">КПП *</span>
-                  </label>
-                </div>
-
-                <div class="form__item item-form">
-                  <label class="item-form__label item-form__label--text">
-                    <input
-                      onfocus="this.nextElementSibling.classList.add('item-form__name--focus')"
-                      onblur="if (!this.value) {this.nextElementSibling.classList.remove('item-form__name--focus');}  "
-                      type="text"
-                      class="item-form__field item-form__field--text">
-                    <span class="item-form__name  item-form__name--text">Номер расчетного счета *</span>
-                  </label>
-                </div>
-
-                <div class="form__item item-form">
-                  <label class="item-form__label item-form__label--text">
-                    <input
-                      onfocus="this.nextElementSibling.classList.add('item-form__name--focus')"
-                      onblur="if (!this.value) {this.nextElementSibling.classList.remove('item-form__name--focus');}  "
-                      type="text"
-                      class="item-form__field item-form__field--text">
-                    <span class="item-form__name  item-form__name--text">Кор. счет *</span>
-                  </label>
-                </div>
-
-                <div class="form__item item-form">
-                  <label class="item-form__label item-form__label--text">
-                    <input
-                      onfocus="this.nextElementSibling.classList.add('item-form__name--focus')"
-                      onblur="if (!this.value) {this.nextElementSibling.classList.remove('item-form__name--focus');}  "
-                      type="text"
-                      class="item-form__field item-form__field--text">
-                    <span class="item-form__name  item-form__name--text">БИК *</span>
-                  </label>
-                </div>
-
-                <div class="form__item item-form">
-                  <label class="item-form__label item-form__label--text">
-                    <input
-                      onfocus="this.nextElementSibling.classList.add('item-form__name--focus')"
-                      onblur="if (!this.value) {this.nextElementSibling.classList.remove('item-form__name--focus');}  "
-                      type="text"
-                      class="item-form__field item-form__field--text">
-                    <span class="item-form__name  item-form__name--text">Юридический адрес *</span>
-                  </label>
-                </div>
-
-
-                <div class="form__item item-form">
-                  <label class="item-form__label item-form__label--text">
-                    <input
-                      onfocus="this.nextElementSibling.classList.add('item-form__name--focus')"
-                      onblur="if (!this.value) {this.nextElementSibling.classList.remove('item-form__name--focus');}  "
-                      type="text"
-                      class="item-form__field item-form__field--text">
-                    <span class="item-form__name  item-form__name--text">Фактический адрес *</span>
-                  </label>
-                </div>
-
-
-              </div>
-
-
-            </div>
-
-            <footer class="form__footer">
-              <div class="form__actions">
-                <button class="form__btn btn btn--orange btn--fill"
-                        type="submit">Зарегистрироваться
-                </button>
-              </div>
-            </footer>
-          </div>
-        </form>
-
+        </div>
       </div>
-      <div style="flex: 1 1 45%">
 
 
-        <form class="form form--register"
-              action="">
-          <div class="form__radio-group radio-group radio-group--select-person-type">
-
-            <div class="form__item item-form radio-group__item-form">
-              <div class="item-form__inner item-form__inner--radio-group">
-
-                <label class="item-form__label item-form__label--radio item-form__label--radio-group">
-                  <input
-                    checked
-                    type="radio"
-                    name="person-type"
-                    value="private-person"
-                    class="item-form__field item-form__field--radio">
-                  <span></span>
-                  <span class="item-form__name item-form__name--radio">Частное лицо</span>
-
-                </label>
+      <div class="form__inner">
+        <div class="form__description">
+          Все поля обязательны к заполнению
+        </div>
 
 
-                <label class="item-form__label item-form__label--radio item-form__label--radio-group">
-                  <input
+        <div class="form__content">
 
-                    type="radio"
-                    name="person-type"
-                    value="private-person"
-                    class="item-form__field item-form__field--radio">
-                  <span></span>
-                  <span class="item-form__name item-form__name--radio">Юридическое лицо</span>
-
-                </label>
-
+          <div class="form__group group-form">
+            <div class="form__item item-form item-form--select">
+              <label class="item-form__label item-form__label--select">
+                <input
+                  readonly
+                  type="text"
+                  value=""
+                  class="item-form__field item-form__field--text">
+                <span class="item-form__name  item-form__name--text">Служба доставки</span>
+                <svg
+                  class="item-form__triangle"
+                  width="10"
+                  height="5"
+                  class="logo__image">
+                  <use xlink:href="img/spritemap.svg#sprite-triangle-down"></use>
+                </svg>
+              </label>
+              <div class="item-form__dropdown dropdown-form dropdown-form--hidden">
+                <input type="hidden"
+                       class="dropdown-form__input">
+                <ul class="dropdown-form__list list--clear">
+                  <li class="dropdown-form__item"
+                      data-value="1">Первая доставка
+                  </li>
+                  <li class="dropdown-form__item"
+                      data-value="2">Вторая доставка
+                  </li>
+                  <li class="dropdown-form__item"
+                      data-value="3">Третья доставка
+                  </li>
+                </ul>
               </div>
+            </div>
+          </div>
 
+
+          <div class="form__group group-form">
+            <div class="group-form__title">Адрес доставки</div>
+            <div class="form__row">
+              <div class="form__col form__col--4">
+                <div class="form__item item-form">
+                  <label class="item-form__label item-form__label--text">
+                    <input
+
+                      type="text"
+                      class="item-form__field item-form__field--text">
+                    <span class="item-form__name  item-form__name--text">Индекс</span>
+                  </label>
+                </div>
+              </div>
+              <div class="form__col form__col--8">
+                <div class="form__item item-form item-form--select">
+                  <label class="item-form__label item-form__label--select">
+                    <input
+                      readonly
+                      type="text"
+                      value=""
+                      class="item-form__field item-form__field--text">
+                    <span class="item-form__name  item-form__name--text">Город</span>
+                    <svg
+                      class="item-form__triangle"
+                      width="10"
+                      height="5"
+                      class="logo__image">
+                      <use xlink:href="img/spritemap.svg#sprite-triangle-down"></use>
+                    </svg>
+                  </label>
+                  <div class="item-form__dropdown dropdown-form dropdown-form--hidden">
+                    <input type="hidden"
+                           class="dropdown-form__input">
+                    <ul class="dropdown-form__list list--clear">
+                      <li class="dropdown-form__item"
+                          data-value="1">Первая
+                      </li>
+                      <li class="dropdown-form__item"
+                          data-value="2">Вторая
+                      </li>
+                      <li class="dropdown-form__item"
+                          data-value="3">Третья
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
             </div>
 
-          </div>
-          <div class="form__inner">
-
-            <div class="form__content">
-
-              <div class="form__group group-form">
-
-
+            <div class="form__row">
+              <div class="form__col form__col--4">
                 <div class="form__item item-form">
                   <label class="item-form__label item-form__label--text">
                     <input
-                      onfocus="this.nextElementSibling.classList.add('item-form__name--focus')"
-                      onblur="if (!this.value) {this.nextElementSibling.classList.remove('item-form__name--focus');}  "
+
                       type="text"
                       class="item-form__field item-form__field--text">
-                    <span class="item-form__name  item-form__name--text">Email *</span>
+                    <span class="item-form__name  item-form__name--text">Улица</span>
                   </label>
                 </div>
+              </div>
+              <div class="form__col form__col--8">
 
-                <div class="form__item item-form">
-                  <label class="item-form__label item-form__label--text">
-                    <input
-                      onfocus="this.nextElementSibling.classList.add('item-form__name--focus')"
-                      onblur="if (!this.value) {this.nextElementSibling.classList.remove('item-form__name--focus');}  "
-                      type="password"
-                      class="item-form__field item-form__field--text">
-                    <span class="item-form__name  item-form__name--text">Пароль *</span>
-                  </label>
-                </div>
-                <div class="form__item item-form">
-                  <label class="item-form__label item-form__label--text">
-                    <input
-                      onfocus="this.nextElementSibling.classList.add('item-form__name--focus')"
-                      onblur="if (!this.value) {this.nextElementSibling.classList.remove('item-form__name--focus');}  "
-                      type="password"
-                      class="item-form__field item-form__field--text">
-                    <span class="item-form__name  item-form__name--text">Подтверждение пароля *</span>
-                  </label>
-                </div>
+                <div class="form__row">
+                  <div class="form__col form__col--4">
+                    <div class="form__item item-form">
+                      <label class="item-form__label item-form__label--text">
+                        <input
 
+                          type="text"
+                          class="item-form__field item-form__field--text">
+                        <span class="item-form__name  item-form__name--text">Улица</span>
+                      </label>
+                    </div>
 
-                <div class="form__item item-form">
-                  <label class="item-form__label item-form__label--text">
-                    <input
-                      onfocus="this.nextElementSibling.classList.add('item-form__name--focus')"
-                      onblur="if (!this.value) {this.nextElementSibling.classList.remove('item-form__name--focus');}  "
-                      type="text"
-                      class="item-form__field item-form__field--text">
-                    <span class="item-form__name  item-form__name--text">Фамилия</span>
-                  </label>
-                </div>
+                  </div>
 
-                <div class="form__item item-form">
-                  <label class="item-form__label item-form__label--text">
-                    <input
-                      onfocus="this.nextElementSibling.classList.add('item-form__name--focus')"
-                      onblur="if (!this.value) {this.nextElementSibling.classList.remove('item-form__name--focus');}  "
-                      type="text"
-                      class="item-form__field item-form__field--text">
-                    <span class="item-form__name  item-form__name--text">Имя</span>
-                  </label>
-                </div>
+                  <div class="form__col form__col--4">
+                    <div class="form__item item-form">
+                      <label class="item-form__label item-form__label--text">
+                        <input
 
-                <div class="form__item item-form">
-                  <label class="item-form__label item-form__label--text">
-                    <input
-                      onfocus="this.nextElementSibling.classList.add('item-form__name--focus')"
-                      onblur="if (!this.value) {this.nextElementSibling.classList.remove('item-form__name--focus');}  "
-                      type="text"
-                      class="item-form__field item-form__field--text">
-                    <span class="item-form__name  item-form__name--text">Отчество</span>
-                  </label>
-                </div>
+                          type="text"
+                          class="item-form__field item-form__field--text">
+                        <span class="item-form__name  item-form__name--text">Улица</span>
+                      </label>
+                    </div>
 
+                  </div>
 
-                <div class="form__item item-form">
-                  <label class="item-form__label item-form__label--text">
-                    <input
-                      onfocus="this.nextElementSibling.classList.add('item-form__name--focus')"
-                      onblur="if (!this.value) {this.nextElementSibling.classList.remove('item-form__name--focus');}  "
-                      type="text"
-                      class="item-form__field item-form__field--text">
-                    <span class="item-form__name  item-form__name--text">Телефон</span>
-                  </label>
+                  <div class="form__col form__col--4">
+                    <div class="form__item item-form">
+                      <label class="item-form__label item-form__label--text">
+                        <input
+
+                          type="text"
+                          class="item-form__field item-form__field--text">
+                        <span class="item-form__name  item-form__name--text">Улица</span>
+                      </label>
+                    </div>
+
+                  </div>
                 </div>
 
 
               </div>
-
-
             </div>
 
-            <footer class="form__footer">
-              <div class="form__actions">
-                <button class="form__btn btn btn--orange btn--fill"
-                        type="submit">Зарегистрироваться
-                </button>
-              </div>
-            </footer>
-          </div>
-        </form>
+            <div class="form__item item-form">
+              <label class="item-form__label item-form__label--text">
+                <input
 
+                  type="text"
+                  class="item-form__field item-form__field--text">
+                <span class="item-form__name  item-form__name--text">E-mail *</span>
+              </label>
+            </div>
+          </div>
+
+
+          <div class="form__group group-form">
+            <div class="group-form__title">Данные организации</div>
+
+            <div class="form__item item-form item-form--error">
+              <label class="item-form__label item-form__label--text">
+                <input type="text"
+                       class="item-form__field item-form__field--text">
+                <span class="item-form__name  item-form__name--text">Краткое наименование *</span>
+              </label>
+              <div class="item-form__error">
+                Обязательное поле
+              </div>
+            </div>
+
+            <div class="form__item item-form">
+              <label class="item-form__label item-form__label--text">
+                <input
+
+                  type="text"
+                  class="item-form__field item-form__field--text">
+                <span class="item-form__name  item-form__name--text">Полное наименование *</span>
+              </label>
+            </div>
+
+            <div class="form__item item-form">
+              <label class="item-form__label item-form__label--text">
+                <input
+
+                  type="text"
+                  class="item-form__field item-form__field--text">
+                <span class="item-form__name  item-form__name--text">ИНН *</span>
+              </label>
+            </div>
+
+            <div class="form__item item-form">
+              <label class="item-form__label item-form__label--text">
+                <input
+
+                  type="text"
+                  class="item-form__field item-form__field--text">
+                <span class="item-form__name  item-form__name--text">КПП *</span>
+              </label>
+            </div>
+          </div>
+
+
+        </div>
+
+        <footer class="form__footer">
+          <div class="form__actions">
+            <button class="form__btn btn btn--orange btn--fill"
+                    type="submit">Зарегистрироваться
+            </button>
+          </div>
+        </footer>
       </div>
-    </div>
+    </form>
 
 
   </div>
@@ -594,7 +474,7 @@
     <div class="footer__top">
 
       <div class="footer__block footer__block--1">
-        <a href="/"
+        <a href="index.html"
            class="footer__logo logo">
           <svg
             width="130"

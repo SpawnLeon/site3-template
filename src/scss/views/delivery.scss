@@ -1,0 +1,51 @@
+.page-content {
+  // .page-content__delivery
+  &__delivery {
+  }
+}
+
+.delivery-page {
+}
+
+.transport-companies {
+  // .transport-companies__title
+  &__title {
+    font-size   : 15px;
+    font-weight : bold;
+
+  }
+
+  // .transport-companies__list
+  &__list {
+  }
+
+  // .transport-companies__table
+  &__table {
+    font-family     : Verdana;
+    font-size       : 13px;
+    font-weight     : normal;
+    font-style      : normal;
+    line-height     : 1.23;
+    width           : 100%;
+    border-collapse : collapse;
+    margin-top: 20px;
+
+
+    tr {
+      border-bottom : 1px solid rgba(0, 0, 0, 0.25);
+    }
+
+    th {
+      padding : 15px 0;
+
+    }
+
+    td {
+      padding : 18px 15px 18px 0;
+
+      &:first-child {
+        font-weight : bold;
+      }
+    }
+  }
+}

@@ -1,0 +1,52 @@
+.qnt-block {
+  display : flex;
+  align-items : center;
+
+  // .qnt-block__btn
+  &__btn {
+    width  : 26px;
+    height : 25px;
+    cursor : pointer;
+    background-color: rgba(196, 211, 230, 0.5);
+    font-weight : bold;
+    display : flex;
+    align-items : center;
+    justify-content : center;
+
+    // .qnt-block__btn--minus
+    &--minus {
+    }
+
+    // .qnt-block__btn--plus
+    &--plus {
+    }
+  }
+
+  // .qnt-block__field
+  &__field {
+    font-weight: bold;
+    font-size: 15px;
+    text-align: center;
+    color: #54585D;
+    width : 34px;
+    margin : 0 2px;
+    position : relative;
+    height : 25px;
+
+    & > input {
+      height : 100%;
+      width : 100%;
+      text-align : center;
+    }
+
+    &::after {
+      content : '';
+      border-bottom : 1px solid #54585D;
+      position : absolute;
+      left : 0;
+      right : 0;
+      bottom : -5px;
+      display : block;
+    }
+  }
+}

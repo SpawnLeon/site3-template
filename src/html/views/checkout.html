@@ -12,6 +12,290 @@ title: "Заголовок | Проект",
     <div class="page-content__checkout checkout-page">
 
 
+      <form class="form form--checkout checkout-form">
+
+        <div class="form__inner">
+
+
+          <div class="form__content">
+
+            <div class="form__group group-form">
+
+              <div class="group-form__title">Доставка</div>
+
+              <div class="form__item item-form radio-group__item-form">
+                <div class="item-form__inner item-form__inner--radio-group">
+
+                  <label class="item-form__label item-form__label--radio item-form__label--radio-group">
+                    <input
+                      checked
+                      type="radio"
+                      name="person-type"
+                      value="delivery"
+                      data-tab-target="delivery"
+                      class="item-form__field item-form__field--radio">
+                    <span></span>
+                    <span class="item-form__name item-form__name--radio">Доставка</span>
+                  </label>
+                  <label class="item-form__label item-form__label--radio item-form__label--radio-group">
+                    <input
+
+                      type="radio"
+                      name="person-type"
+                      value="pickup"
+                      data-tab-target="pickup"
+                      class="item-form__field item-form__field--radio">
+                    <span></span>
+                    <span class="item-form__name item-form__name--radio">Самовывоз</span>
+                  </label>
+                </div>
+              </div>
+
+              <div class=""
+                   data-tab="delivery"
+              >
+                <div class="form__item item-form item-form--select">
+                  <label class="item-form__label item-form__label--select">
+                    <input
+                      readonly
+                      type="text"
+                      value=""
+                      class="item-form__field item-form__field--text">
+                    <span class="item-form__name  item-form__name--text">Служба доставки</span>
+                    <svg
+                      class="item-form__triangle"
+                      width="10"
+                      height="5"
+                      class="logo__image">
+                      <use xlink:href="img/spritemap.svg#sprite-triangle-down"></use>
+                    </svg>
+                  </label>
+                  <div class="item-form__dropdown dropdown-form dropdown-form--hidden">
+                    <input type="hidden"
+                           class="dropdown-form__input">
+                    <ul class="dropdown-form__list list--clear">
+                      <li class="dropdown-form__item"
+                          data-value="1">Первая доставка
+                      </li>
+                      <li class="dropdown-form__item"
+                          data-value="2">Вторая доставка
+                      </li>
+                      <li class="dropdown-form__item"
+                          data-value="3">Третья доставка
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="form__group group-form">
+                  <div class="group-form__title">Адрес доставки</div>
+                  <div class="form__row">
+                    <div class="form__col form__col--4">
+                      <div class="form__item item-form">
+                        <label class="item-form__label item-form__label--text">
+                          <input
+
+                            type="text"
+                            class="item-form__field item-form__field--text">
+                          <span class="item-form__name  item-form__name--text">Индекс</span>
+                        </label>
+                      </div>
+                    </div>
+                    <div class="form__col form__col--8">
+                      <div class="form__item item-form item-form--select">
+                        <label class="item-form__label item-form__label--select">
+                          <input
+                            readonly
+                            type="text"
+                            value=""
+                            class="item-form__field item-form__field--text">
+                          <span class="item-form__name  item-form__name--text">Город</span>
+                          <svg
+                            class="item-form__triangle"
+                            width="10"
+                            height="5"
+                            class="logo__image">
+                            <use xlink:href="img/spritemap.svg#sprite-triangle-down"></use>
+                          </svg>
+                        </label>
+                        <div class="item-form__dropdown dropdown-form dropdown-form--hidden">
+                          <input type="hidden"
+                                 class="dropdown-form__input">
+                          <ul class="dropdown-form__list list--clear">
+                            <li class="dropdown-form__item"
+                                data-value="1">Первая
+                            </li>
+                            <li class="dropdown-form__item"
+                                data-value="2">Вторая
+                            </li>
+                            <li class="dropdown-form__item"
+                                data-value="3">Третья
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="form__row">
+                    <div class="form__col form__col--4">
+                      <div class="form__item item-form">
+                        <label class="item-form__label item-form__label--text">
+                          <input
+
+                            type="text"
+                            class="item-form__field item-form__field--text">
+                          <span class="item-form__name  item-form__name--text">Улица</span>
+                        </label>
+                      </div>
+                    </div>
+                    <div class="form__col form__col--8">
+
+                      <div class="form__row">
+                        <div class="form__col form__col--4">
+                          <div class="form__item item-form">
+                            <label class="item-form__label item-form__label--text">
+                              <input
+
+                                type="text"
+                                class="item-form__field item-form__field--text">
+                              <span class="item-form__name  item-form__name--text">Дом</span>
+                            </label>
+                          </div>
+
+                        </div>
+
+                        <div class="form__col form__col--4">
+                          <div class="form__item item-form">
+                            <label class="item-form__label item-form__label--text">
+                              <input
+
+                                type="text"
+                                class="item-form__field item-form__field--text">
+                              <span class="item-form__name  item-form__name--text">Копр.</span>
+                            </label>
+                          </div>
+
+                        </div>
+
+                        <div class="form__col form__col--4">
+                          <div class="form__item item-form">
+                            <label class="item-form__label item-form__label--text">
+                              <input
+
+                                type="text"
+                                class="item-form__field item-form__field--text">
+                              <span class="item-form__name  item-form__name--text">Оф. / кв.</span>
+                            </label>
+                          </div>
+
+                        </div>
+                      </div>
+
+
+                    </div>
+                  </div>
+
+                  <div class="form__item item-form">
+                    <label class="item-form__label item-form__label--text">
+                      <input
+
+                        type="text"
+                        class="item-form__field item-form__field--text">
+                      <span class="item-form__name  item-form__name--text">Получатель</span>
+                    </label>
+                  </div>
+                </div>
+              </div>
+
+
+              <div class=""
+                   hidden
+                   data-tab="pickup">
+                <div class="form__item item-form">
+                  <label class="item-form__label item-form__label--text">
+                    <input
+
+                      type="text"
+                      class="item-form__field item-form__field--text">
+                    <span class="item-form__name  item-form__name--text">Получатель</span>
+                  </label>
+                </div>
+
+              </div>
+
+
+            </div>
+          </div>
+        </div>
+        <div class="checkout-form__footer">
+          <%= _.template(require('./../includes/total-block.html').default)(data) %>
+
+
+          <div class="checkout-form__payments form__group group-form">
+
+            <div class="group-form__title">Способы оплаты</div>
+
+            <div class="form__item item-form radio-group__item-form">
+              <div class="item-form__inner item-form__inner--radio-group">
+
+                <label class="item-form__label item-form__label--radio item-form__label--radio-group">
+                  <input
+                    checked
+                    type="radio"
+                    name="person-type"
+                    value="bill"
+                    data-tab-target="bill"
+                    class="item-form__field item-form__field--radio">
+                  <span></span>
+                  <span class="item-form__name item-form__name--radio">Выставить счет</span>
+                </label>
+                <label class="item-form__label item-form__label--radio item-form__label--radio-group">
+                  <input
+
+                    type="radio"
+                    name="person-type"
+                    value="online-payment-system"
+                    data-tab-target="online-payment-system"
+                    class="item-form__field item-form__field--radio">
+                  <span></span>
+                  <span class="item-form__name item-form__name--radio">Платежная система онлайн</span>
+                </label>
+              </div>
+            </div>
+
+            <div class=""
+                 data-tab="bill"></div>
+            <div hidden class=""
+                 data-tab="online-payment-system">
+              <div class="payments-block">
+                <div class="payments-block__item item-payment">
+                  <div class="item-payment__title">Оплата картой</div>
+                  <div class="item-payment__inner">
+
+                  </div>
+                </div>
+                <div class="payments-block__item item-payment">
+                  <div class="item-payment__title">Электронный кошелек</div>
+                  <div class="item-payment__inner">
+
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+
+
+          <div class="checkout-form__actions form__actions">
+            <button class="checkout-form__btn form__btn btn btn--orange btn--fill"
+                    type="submit">Оформить заказ
+            </button>
+          </div>
+        </div>
+
+
+      </form>
 
 
     </div>

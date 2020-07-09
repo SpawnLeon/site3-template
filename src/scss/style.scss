@@ -4,29 +4,33 @@
 
 
 @import 'fonts';
-@import 'utils/reset';
-@import 'utils/vars';
+@import 'includes/reset';
+@import 'includes/vars';
 
 @import "common";
 
-@import 'utils/buttons';
+@import 'includes/buttons';
 
-@import 'utils/header';
-@import 'utils/footer';
-@import 'utils/breadcrumbs';
-@import 'utils/sidebar';
-@import 'utils/main-slider';
-@import 'utils/pagination';
+@import 'includes/header';
+@import 'includes/footer';
+@import 'includes/breadcrumbs';
+@import 'includes/sidebar';
+@import 'includes/main-slider';
+@import 'includes/pagination';
+@import 'includes/total-block';
+@import 'includes/qty-block';
 
-@import 'pages/index';
-@import 'pages/forms';
-@import 'pages/catalog';
-@import 'pages/category';
-@import 'pages/product';
-@import 'pages/delivery';
-@import 'pages/payment';
-@import 'pages/warranty';
-@import 'pages/checkout';
-@import 'pages/registration';
+//pages
+@import 'views/index';
+@import 'views/forms';
+@import 'views/catalog';
+@import 'views/category';
+@import 'views/product';
+@import 'views/delivery';
+@import 'views/payment';
+@import 'views/warranty';
+@import 'views/checkout';
+@import 'views/registration';
+@import 'views/basket';
 
 

@@ -1,0 +1,49 @@
+.total-block {
+  font-size   : 15px;
+  line-height : 28px;
+  color       : #54585d;
+
+  // .total-block__row
+  &__row {
+    display         : flex;
+    justify-content : space-between;
+    \margin-bottom : 17px ;
+
+    // .total-block__row--vat
+    &--vat {
+    }
+  }
+
+  // .total-block__title
+  &__title {
+    font-weight : bold;
+
+    // .total-block__title--vat
+    &--vat {
+      font-weight : normal;
+      font-size: 15px;
+
+    }
+  }
+
+  // .total-block__value
+  &__value {
+    font-size   : 20px;
+
+    color       : #526584;
+
+    // .total-block__value--big
+    &--big {
+      font-size   : 24px;
+      font-weight : bold;
+
+    }
+
+    // .total-block__value--vat
+    &--vat {
+      font-weight : normal;
+      font-size: 15px;
+
+    }
+  }
+}

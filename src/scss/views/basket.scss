@@ -1,0 +1,187 @@
+.page-content {
+  // .page-content__basket
+  &__basket {
+    margin-top : 60px;
+  }
+}
+
+.basket-page {
+  // .basket-page__list
+  &__list {
+  }
+}
+
+.basket-list {
+  // .basket-list__inner
+  &__inner {
+  }
+
+  // .basket-list__item
+  &__item {
+    margin-bottom : 5px;
+  }
+
+  // .basket-list__footer
+  &__footer {
+    max-width   : 350px;
+    margin-top  : 30px;
+    margin-left : auto;
+  }
+
+  // .basket-list__btn
+  &__btn {
+    display     : block;
+    margin-left : auto;
+  }
+}
+
+
+.item-basket-list {
+  position         : relative;
+  display          : flex;
+  align-items      : center;
+  justify-content  : space-between;
+  box-sizing       : border-box;
+  padding          : 15px 20px;
+  border           : 1px solid rgb(196, 196, 196);
+  background-color : rgb(255, 255, 255);
+
+
+  // .item-basket-list__image
+  &__image {
+    width        : 60px;
+    height       : 60px;
+    margin-right : 25px;
+  }
+
+  // .item-basket-list__info
+  &__info {
+    max-width    : 500px;
+    margin-right : auto;
+  }
+
+  // .item-basket-list__name
+  &__name {
+    font-size   : 15px;
+    font-weight : bold;
+
+  }
+
+  // .item-basket-list__props
+  &__props {
+  }
+
+  // .item-basket-list__price
+  &__price {
+    font-size   : 15px;
+    font-weight : bold;
+    margin-left : 60px;
+    color       : #54585d;
+  }
+
+  // .item-basket-list__price-total
+  &__price-total {
+    font-size   : 15px;
+    font-weight : bold;
+    margin-left : 90px;
+    color       : #54585d;
+  }
+
+  // .item-basket-list__footer
+  &__footer {
+    margin-left : 60px;
+  }
+
+  // .item-basket-list__delete
+  &__delete {
+  }
+
+  // .item-basket-list__qty
+  &__qty {
+    margin-left : 30px;
+  }
+}
+
+.item-basket-list:first-child {
+
+  & > *::before {
+    font-size   : 13px;
+    font-weight : normal;
+    font-style  : normal;
+    line-height : 16px;
+    position    : absolute;
+    top         : -30px;
+    display     : block;
+    color       : #54585d;
+
+  }
+
+  // .item-basket-list__image
+  .item-basket-list__image {
+    &::before {
+      content : 'Фото';
+
+    }
+  }
+
+  // .item-basket-list__info
+  .item-basket-list__info {
+    &::before {
+      content : 'Наименование';
+
+    }
+  }
+
+  // .item-basket-list__qty
+  .item-basket-list__qty {
+    &::before {
+      content : 'Количество';
+
+    }
+  }
+
+  // .item-basket-list__price
+  .item-basket-list__price {
+    &::before {
+      content : 'Цена';
+
+    }
+  }
+
+  // .item-basket-list__price-total
+  .item-basket-list__price-total {
+    &::before {
+      content : 'Стоимость';
+
+    }
+  }
+
+}
+
+
+.props-item-basket-list {
+  // .props-item-basket-list__item
+  &__item {
+  }
+}
+
+.prop-item-basket-list {
+  font-size   : 13px;
+  line-height : 16px;
+  display     : inline-block;
+  color       : rgb(84, 88, 93);
+
+  // .prop-item-basket-list__name
+  &__name {
+  }
+
+  // .prop-item-basket-list__value
+  &__value {
+  }
+}
+
+.prices-item-basket-list {
+  // .prices-item-basket-list__price
+  &__price {
+  }
+}

@@ -229,11 +229,11 @@
 
   // .item-form__error
   &__error {
-    flex  : 0 0 auto;
-    color : #ec621f;
-    margin-right: -100%;
-    position : relative;
-    left : 30px;
+    position     : relative;
+    left         : 30px;
+    flex         : 0 0 auto;
+    margin-right : -100%;
+    color        : #ec621f;
   }
 
 
@@ -265,7 +265,7 @@
   &__title {
     font-size   : 14px;
     font-weight : bold;
-    line-height : 2.14px;
+    line-height : 2.14;
     color       : #000;
 
   }

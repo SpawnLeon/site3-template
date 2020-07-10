@@ -4,51 +4,51 @@
 
   // .main-slider__container
   &__container {
-    list-style   : none;
-    margin-left  : auto;
-    margin-right : auto;
-    padding      : 0;
     position     : relative;
     z-index      : 1;
+    margin-right : auto;
+    margin-left  : auto;
+    padding      : 0;
+    list-style   : none;
   }
 
   // .main-slider__wrapper
   &__wrapper {
-    box-sizing          : content-box;
-    display             : flex;
-    height              : 100%;
     position            : relative;
-    transition-property : transform;
-    width               : 100%;
     z-index             : 1;
+    display             : flex;
+    box-sizing          : content-box;
+    width               : 100%;
+    height              : 100%;
+    transition-property : transform;
   }
 
   // .main-slider__slide
   &__slide {
-    flex-shrink         : 0;
-    height              : 100%;
     position            : relative;
-    transition-property : transform;
+    flex-shrink         : 0;
     width               : 100%;
+    height              : 100%;
+    transition-property : transform;
   }
 
   // .main-slider__pagination
   &__pagination {
+    position        : absolute;
     bottom          : -32px;
     display         : flex;
     justify-content : center;
-    position        : absolute;
-    text-align      : center;
     width           : 100%;
+    text-align      : center;
 
     .swiper-pagination-bullet {
-      background-color : #ced0d1;
-      border-radius    : 50%;
       display          : inline-block;
+      width            : 12px;
       height           : 12px;
       margin           : 0 12px;
       vertical-align   : bottom;
-      width            : 12px;
+      border-radius    : 50%;
+      background-color : #ced0d1;
     }
 
     .swiper-pagination-bullet-active {
@@ -59,30 +59,14 @@
 
   // .main-slider__write-us
   &__write-us {
-    bottom   : 0;
     position : absolute;
-    right    : 0;
     z-index  : 1;
+    right    : 0;
+    bottom   : 0;
   }
 }
 
-.write-us-btn {
-  background-color : $accentColor;
-  color            : #fff;
-  display          : flex;
-  font-size        : 13px;
-  line-height      : 16px;
-  padding          : 15px 30px 13px 20px;
 
-  // .write-us-btn__icon
-  &__icon {
-    margin-right : 12px;
-    position     : relative;
-    top          : 2px;
-  }
-
-
-}
 
 ////////////////////////////////////
 .swiper-slide {
@@ -93,8 +77,11 @@
 
   // .main-slide__container
   &__container {
-    max-width : 1680px;
+    max-width : calc(100% - 280px);
 
+    @media screen and (max-width : 1600px) {
+      max-width : calc(100% - 70px);
+    }
   }
 
   // .main-slide__left
@@ -126,29 +113,29 @@
 
   // .main-slide__bg
   &__bg {
+    width               : 100%;
+    height              : 874px;
     background-position : center;
     background-size     : cover;
-    height              : 874px;
-    width               : 100%;
 
   }
 
   // .swiper-slide__text
   &__text {
-    color       : #36393a;
     font-size   : 35px;
-    font-style  : normal;
     font-weight : bold;
+    font-style  : normal;
     line-height : 43px;
-    margin-top  : 19px;
     max-width   : 440px;
+    margin-top  : 19px;
+    color       : #36393a;
   }
 
   // .main-slide__right
   &__right {
-    padding-top : 85px;
     position    : absolute;
     right       : 0;
+    padding-top : 85px;
 
     @media screen and (max-width : 1740px) {
       right : 30px;
@@ -162,23 +149,23 @@
 }
 
 .icon-slider {
-  align-items      : center;
-  background-color : $accentColor;
-  border-radius    : 50%;
   display          : flex;
+  align-items      : center;
   flex-direction   : column;
-  height           : 176px;
   justify-content  : center;
   width            : 176px;
+  height           : 176px;
+  border-radius    : 50%;
+  background-color : $accentColor;
 
 
   // .icon-slider__text
   &__text {
-    color       : #fff;
     font-size   : 18px;
     line-height : 22px;
     margin-top  : 8px;
     text-align  : center;
+    color       : #fff;
   }
 
   // .icon-slider__icon

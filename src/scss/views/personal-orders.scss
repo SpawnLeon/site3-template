@@ -1,0 +1,78 @@
+.table-orders {
+  font-size       : 13px;
+  font-weight     : normal;
+  line-height     : 1.23;
+  width           : 100%;
+  margin-top      : 20px;
+  border-collapse : collapse;
+
+  tr {
+    border-bottom : 1px solid rgba(0, 0, 0, 0.25);
+  }
+
+  th {
+    padding : 18px 15px 18px 15px;
+  }
+
+  td {
+    padding : 18px 15px 18px 15px;
+
+    &:first-child {
+      font-weight : bold;
+    }
+
+    &:last-child {
+      text-align : right;
+    }
+  }
+
+
+  // .table-orders__status
+  &__status {
+
+    // .table-orders__status--new
+    &--new {
+      font-weight : bold;
+      color       : #639f0e;
+    }
+
+    // .table-orders__status--process
+    &--process {
+      font-weight : bold;
+      color       : #639f0e;
+
+    }
+
+  }
+
+  // .table-orders__count
+  &__count {
+  }
+
+  // .table-orders__total
+  &__total {
+  }
+
+  // .table-orders__actions
+  &__actions {
+    display : flex;
+    align-items : flex-start;
+    justify-content : flex-end;
+  }
+}
+
+.personal-orders {
+
+  // .personal-orders__copy-orders
+  &__copy-orders {
+
+  }
+
+  // .personal-orders__pdf
+  &__pdf {
+    margin-left: 20px;
+
+  }
+
+
+}

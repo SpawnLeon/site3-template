@@ -1,8 +1,6 @@
 @import "../../node_modules/animate.css/animate.min.css";
 @import '../../node_modules/@fancyapps/fancybox/dist/jquery.fancybox.css';
 
-
-
 @import 'fonts';
 @import 'includes/reset';
 @import 'includes/vars';
@@ -32,5 +30,10 @@
 @import 'views/checkout';
 @import 'views/registration';
 @import 'views/basket';
+@import 'views/about';
+@import 'views/contacts';
+@import 'views/personal';
+@import 'views/personal-orders';
+@import 'views/order';
 
 

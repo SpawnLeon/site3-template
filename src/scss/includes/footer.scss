@@ -1,13 +1,13 @@
 .footer {
-  background-color : #1c2127;
-  border-top       : 4px solid #f63;
-  color            : #fff;
   margin-top       : 50px;
+  color            : #fff;
+  border-top       : 4px solid #f63;
+  background-color : #1c2127;
 
   // .footer__phones
   &__phones {
-    margin-left : 21px;
     margin-top  : 7px;
+    margin-left : 21px;
   }
 
   // .footer__menus
@@ -41,11 +41,11 @@
 
   // .footer__middle
   &__middle {
-    color           : #808285;
-    display         : flex;
     font-size       : 14px;
+    display         : flex;
     justify-content : space-between;
     margin-top      : 70px;
+    color           : #808285;
   }
 
   // .footer__block
@@ -53,36 +53,36 @@
 
     // ..footer__block--1
     &--1 {
-      align-items : center;
       display     : flex;
+      align-items : center;
       flex-wrap   : wrap;
     }
   }
 
   // .footer__promo
   &__promo {
-    color                : #fff;
-    flex                 : 1 1 100%;
     font-size            : 14px;
     font-weight          : normal;
     line-height          : 17px;
+    flex                 : 1 1 100%;
     margin-top           : 23px;
+    color                : #fff;
     text-decoration-line : underline;
 
     &:active,
     &:focus,
     &:hover {
-      color           : #fff;
       text-decoration : none;
+      color           : #fff;
     }
   }
 
   // .footer__company
   &__company {
-    color       : rgba(255, 255, 255, 0.8);
     font-size   : 16px;
     font-weight : normal;
     line-height : 19px;
+    color       : rgba(255, 255, 255, 0.8);
 
   }
 
@@ -94,25 +94,25 @@
 
   // .footer__bottom
   &__bottom {
-    color           : rgba(255, 255, 255, 0.8);
-    display         : flex;
     font-size       : 11px;
-    justify-content : space-between;
     line-height     : 13px;
-    margin-top      : 2px;
-    padding-bottom  : 35px;
-    padding-top     : 14px;
     position        : relative;
+    display         : flex;
+    justify-content : space-between;
+    margin-top      : 2px;
+    padding-top     : 14px;
+    padding-bottom  : 35px;
+    color           : rgba(255, 255, 255, 0.8);
 
     &::after {
-      background-color : rgba(255, 255, 255, 0.3);
       content          : '';
-      display          : block;
-      height           : 1px;
-      left             : calc(-100vw / 2 + 50%);
       position         : absolute;
       top              : 0;
+      left             : calc(-100vw / 2 + 50%);
+      display          : block;
       width            : 100vw;
+      height           : 1px;
+      background-color : rgba(255, 255, 255, 0.3);
     }
 
     a {
@@ -126,7 +126,8 @@
 
   // .footer__copyright
   &__copyright {
-    margin-top: 5px;
+    margin-top : 5px;
+
     a {
       color : rgba(255, 255, 255, 0.8);
     }
@@ -134,16 +135,16 @@
 
   // .footer__year
   &__year {
-    margin-top: 5px;
+    margin-top : 5px;
   }
 
   // .footer__logo
   &__logo {
-    align-items     : center;
     display         : flex;
-    height          : 83px;
+    align-items     : center;
     justify-content : center;
     width           : 197px;
+    height          : 83px;
 
 
   }
@@ -164,12 +165,12 @@
 .phones-block-v1 {
   // .phones-block-v1__item
   &__item {
-    color       : #fff;
-    display     : block;
     font-size   : 16px;
     font-weight : bold;
     line-height : 19px;
+    display     : block;
     white-space : nowrap;
+    color       : #fff;
 
     &:first-child {
       margin-bottom : 8px;
@@ -178,8 +179,8 @@
     &:active,
     &:focus,
     &:hover {
-      color           : #fff;
       text-decoration : none;
+      color           : #fff;
     }
 
   }
@@ -212,10 +213,10 @@
 
   // .bottom-menu__link
   &__link {
-    color       : #fff;
-    display     : inline-block;
     font-size   : 13px;
     line-height : 16px;
+    display     : inline-block;
+    color       : #fff;
 
 
   }
@@ -232,11 +233,11 @@
 
   // .bottom-catalog__link
   &__link {
-    color       : #fff;
     font-size   : 13px;
     font-weight : normal;
     line-height : 16px;
     white-space : nowrap;
+    color       : #fff;
 
   }
 }
@@ -244,12 +245,12 @@
 .socials-block {
   // .socials-block__item
   &__item {
-    border-radius : 50%;
     display       : inline-block;
-    height        : 30px;
-    margin-left   : 35px;
     overflow      : hidden;
     width         : 30px;
+    height        : 30px;
+    margin-left   : 35px;
+    border-radius : 50%;
 
 
     // .socials-block__item--fb
@@ -272,12 +273,34 @@
 .law-block {
   // .law-block__item
   &__item {
-    color           : rgba(255, 255, 255, 0.8);
     display         : block;
     text-decoration : underline;
+    color           : rgba(255, 255, 255, 0.8);
 
     &:not(:last-child) {
       margin-bottom : 13px;
     }
   }
+}
+
+
+.write-us-btn {
+  font-size        : 13px;
+  line-height      : 16px;
+  position         : fixed;
+  display          : flex;
+  padding          : 15px 30px 13px 20px;
+  color            : #fff;
+  background-color : $accentColor;
+  bottom : 60px;
+  right : 0;
+  z-index : 100;
+
+  // .write-us-btn__icon
+  &__icon {
+    position     : relative;
+    top          : 2px;
+    margin-right : 12px;
+  }
+
 }

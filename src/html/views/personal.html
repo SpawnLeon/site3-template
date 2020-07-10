@@ -1,0 +1,310 @@
+<% var data = {
+title: "Заголовок | Проект",
+
+}; %>
+<%= _.template(require('./../includes/header.html').default)(data) %>
+
+
+<div class="container">
+  <%= _.template(require('./../includes/breadcrumbs.html').default)(data) %>
+  <h1 class="page-content__title">Личный кабинет</h1>
+  <div class="page-content__personal personal-page">
+    <div class="personal-page__inner">
+      <aside class="personal-page__sidebar sidebar-personal">
+        <nav class="sidebar-personal__nav">
+          <ul class="sidebar-personal__sidebar-personal-menu sidebar-personal-menu list--clear">
+            <li class="sidebar-personal-menu__item">
+              <a href=""
+                 class="sidebar-personal-menu__link sidebar-personal-menu__link--active">Профиль</a>
+            </li>
+            <li class="sidebar-personal-menu__item">
+              <a href=""
+                 class="sidebar-personal-menu__link">Заказы</a>
+            </li>
+            <li class="sidebar-personal-menu__item">
+              <a href=""
+                 class="sidebar-personal-menu__link">Бланк оптового заказа</a>
+            </li>
+          </ul>
+        </nav>
+      </aside>
+
+
+      <div class="personal-page__content content-personal">
+        <form class="form form--register"
+              action="">
+
+          <div class="form__inner">
+            <div class="form__content">
+              <div class="form__group group-form">
+
+                <div class="form__item item-form">
+                  <label class="item-form__label item-form__label--text">
+                    <input
+                      type="text"
+                      value="anna@domain.com"
+                      class="item-form__field item-form__field--text">
+                    <span class="item-form__name  item-form__name--text">Email *</span>
+                  </label>
+                </div>
+
+                <div class="form__item item-form">
+                  <label class="item-form__label item-form__label--text">
+                    <input
+                      value="password"
+                      type="password"
+                      class="item-form__field item-form__field--text">
+                    <span class="item-form__name  item-form__name--text">Пароль *</span>
+                  </label>
+                </div>
+                <div class="form__item item-form">
+                  <label class="item-form__label item-form__label--text">
+                    <input
+                      value="password"
+                      type="password"
+                      class="item-form__field item-form__field--text">
+                    <span class="item-form__name  item-form__name--text">Подтверждение пароля *</span>
+                  </label>
+                </div>
+
+
+                <div class="form__item item-form">
+                  <label class="item-form__label item-form__label--text">
+                    <input
+                      value="Иванова"
+                      type="text"
+                      class="item-form__field item-form__field--text">
+                    <span class="item-form__name  item-form__name--text">Фамилия</span>
+                  </label>
+                </div>
+
+                <div class="form__item item-form">
+                  <label class="item-form__label item-form__label--text">
+                    <input
+                      value="Марина"
+                      type="text"
+                      class="item-form__field item-form__field--text">
+                    <span class="item-form__name  item-form__name--text">Имя</span>
+                  </label>
+                </div>
+
+                <div class="form__item item-form">
+                  <label class="item-form__label item-form__label--text">
+                    <input
+                      value="Сергеевна"
+                      type="text"
+                      class="item-form__field item-form__field--text">
+                    <span class="item-form__name  item-form__name--text">Отчество</span>
+                  </label>
+                </div>
+
+
+                <div class="form__item item-form">
+                  <label class="item-form__label item-form__label--text">
+                    <input
+                      value="+7 (999) 123-45-99"
+                      type="text"
+                      class="item-form__field item-form__field--text">
+                    <span class="item-form__name  item-form__name--text">Телефон</span>
+                  </label>
+                </div>
+
+
+              </div>
+
+
+            </div>
+
+            <footer class="form__footer">
+              <div class="form__actions">
+                <button class="form__btn btn btn--orange btn--fill"
+                        type="submit">Сохранить
+                </button>
+              </div>
+            </footer>
+          </div>
+        </form>
+
+        <br><br><br>
+
+        <form class="form form--register"
+              data-tab="legal-entity"
+              action="">
+
+
+          <div class="form__inner">
+            <div class="form__description">
+              Все поля обязательны к заполнению
+            </div>
+
+
+            <div class="form__content">
+
+              <div class="form__group group-form">
+                <div class="form__item item-form">
+                  <label class="item-form__label item-form__label--text">
+                    <input
+                      value="company-name@domain.com"
+                      type="text"
+                      class="item-form__field item-form__field--text">
+                    <span class="item-form__name  item-form__name--text">E-mail *</span>
+                  </label>
+                </div>
+                <div class="form__item item-form">
+                  <label class="item-form__label item-form__label--text">
+                    <input
+                      value="password"
+                      type="password"
+                      class="item-form__field item-form__field--text">
+                    <span class="item-form__name  item-form__name--text">Пароль *</span>
+                  </label>
+                </div>
+                <div class="form__item item-form">
+                  <label class="item-form__label item-form__label--text">
+                    <input
+                      value="password"
+                      type="password"
+                      class="item-form__field item-form__field--text">
+                    <span class="item-form__name  item-form__name--text">Подтверждение пароля *</span>
+                  </label>
+                </div>
+                <div class="form__item item-form">
+                  <label class="item-form__label item-form__label--text">
+                    <input
+                      value="Иванова Анастасия Сергеевна"
+                      type="text"
+                      class="item-form__field item-form__field--text">
+                    <span class="item-form__name  item-form__name--text">Контактное лицо *</span>
+                  </label>
+                </div>
+                <div class="form__item item-form">
+                  <label class="item-form__label item-form__label--text">
+                    <input
+                      value="+7 (999) 987-54-44"
+                      type="text"
+                      class="item-form__field item-form__field--text">
+                    <span class="item-form__name  item-form__name--text">Телефон *</span>
+                  </label>
+                </div>
+
+
+              </div>
+
+
+              <div class="form__group group-form">
+                <div class="group-form__title">Данные организации</div>
+
+                <div class="form__item item-form">
+                  <label class="item-form__label item-form__label--text">
+                    <input
+                      value="ООО 'Краткое наименование компании'"
+                      type="text"
+                      class="item-form__field item-form__field--text">
+                    <span class="item-form__name  item-form__name--text">Краткое наименование *</span>
+                  </label>
+                </div>
+
+                <div class="form__item item-form">
+                  <label class="item-form__label item-form__label--text">
+                    <input
+                      value="ООО 'Полное наименование компании'"
+                      type="text"
+                      class="item-form__field item-form__field--text">
+                    <span class="item-form__name  item-form__name--text">Полное наименование *</span>
+                  </label>
+                </div>
+
+                <div class="form__item item-form">
+                  <label class="item-form__label item-form__label--text">
+                    <input
+                      value="65454548489715486486"
+                      type="text"
+                      class="item-form__field item-form__field--text">
+                    <span class="item-form__name  item-form__name--text">ИНН *</span>
+                  </label>
+                </div>
+
+                <div class="form__item item-form">
+                  <label class="item-form__label item-form__label--text">
+                    <input
+                      value="546846889484"
+                      type="text"
+                      class="item-form__field item-form__field--text">
+                    <span class="item-form__name  item-form__name--text">КПП *</span>
+                  </label>
+                </div>
+
+                <div class="form__item item-form">
+                  <label class="item-form__label item-form__label--text">
+                    <input
+                      value="4654646846846886"
+                      type="text"
+                      class="item-form__field item-form__field--text">
+                    <span class="item-form__name  item-form__name--text">Номер расчетного счета *</span>
+                  </label>
+                </div>
+
+                <div class="form__item item-form">
+                  <label class="item-form__label item-form__label--text">
+                    <input
+                      value="654684864864864864"
+                      type="text"
+                      class="item-form__field item-form__field--text">
+                    <span class="item-form__name  item-form__name--text">Кор. счет *</span>
+                  </label>
+                </div>
+
+                <div class="form__item item-form">
+                  <label class="item-form__label item-form__label--text">
+                    <input
+                      value="8786455134616"
+                      type="text"
+                      class="item-form__field item-form__field--text">
+                    <span class="item-form__name  item-form__name--text">БИК *</span>
+                  </label>
+                </div>
+
+                <div class="form__item item-form">
+                  <label class="item-form__label item-form__label--text">
+                    <input
+                      value="698356 г.Москва, ул. Ленина, 14, кв. 14"
+                      type="text"
+                      class="item-form__field item-form__field--text">
+                    <span class="item-form__name  item-form__name--text">Юридический адрес *</span>
+                  </label>
+                </div>
+
+
+                <div class="form__item item-form">
+                  <label class="item-form__label item-form__label--text">
+                    <input
+                      value="698356 г.Москва, ул. Ленина, 14, кв. 14"
+                      type="text"
+                      class="item-form__field item-form__field--text">
+                    <span class="item-form__name  item-form__name--text">Фактический адрес *</span>
+                  </label>
+                </div>
+
+
+              </div>
+
+
+            </div>
+
+            <footer class="form__footer">
+              <div class="form__actions">
+                <button class="form__btn btn btn--orange btn--fill"
+                        type="submit">Сохранить
+                </button>
+              </div>
+            </footer>
+          </div>
+        </form>
+      </div>
+    </div>
+
+
+  </div>
+</div>
+
+<%= _.template(require('./../includes/footer.html').default)(data) %>

@@ -88,7 +88,7 @@
               </svg>
               Избранное
             </a>
-            <a href=""
+            <a href="basket.html"
                class="personal-block-header__link basket-link personal-block-header__link--basket">
               <svg
                 width="18"
@@ -123,8 +123,89 @@
                 height="10">
                 <use xlink:href="img/spritemap.svg#sprite-burger"></use>
               </svg>
-
               Запасные части УРАЛ</a>
+            <ul class="catalog-menu__submenu header-catalog-submenu list--clear">
+              <li class="header-catalog-submenu__item">
+                <a href="catalog.html"
+                   class="header-catalog-submenu__link">
+                  Двигатель
+                </a>
+              </li>
+              <li class="header-catalog-submenu__item">
+                <a href="catalog.html"
+                   class="header-catalog-submenu__link">
+                  Трансмиссия
+                </a>
+              </li>
+              <li class="header-catalog-submenu__item">
+                <a href="catalog.html"
+                   class="header-catalog-submenu__link">
+                  Ходовая часть
+                </a>
+              </li>
+              <li class="header-catalog-submenu__item">
+                <a href="catalog.html"
+                   class="header-catalog-submenu__link">
+                  Рулевое управление
+                </a>
+              </li>
+              <li class="header-catalog-submenu__item">
+                <a href="catalog.html"
+                   class="header-catalog-submenu__link">
+                  Тормозная система
+                </a>
+              </li>
+              <li class="header-catalog-submenu__item">
+                <a href="catalog.html"
+                   class="header-catalog-submenu__link">
+                  Электрооборудование
+                </a>
+              </li>
+              <li class="header-catalog-submenu__item">
+                <a href="catalog.html"
+                   class="header-catalog-submenu__link">
+                  Двигатель
+                </a>
+              </li>
+              <li class="header-catalog-submenu__item">
+                <a href="catalog.html"
+                   class="header-catalog-submenu__link">
+                  Инструмент и принадлежности
+                </a>
+              </li>
+              <li class="header-catalog-submenu__item">
+                <a href="catalog.html"
+                   class="header-catalog-submenu__link">
+                  Кабина и оперение
+                </a>
+              </li>
+              <li class="header-catalog-submenu__item">
+                <a href="catalog.html"
+                   class="header-catalog-submenu__link">
+                  Платформа и кузов
+                </a>
+              </li>
+              <li class="header-catalog-submenu__item">
+                <a href="catalog.html"
+                   class="header-catalog-submenu__link">
+                  Нормали
+                </a>
+              </li>
+              <li class="header-catalog-submenu__item">
+                <a href="catalog.html"
+                   class="header-catalog-submenu__link">
+                  Подшипники
+                </a>
+              </li>
+              <li class="header-catalog-submenu__item">
+                <a href="catalog.html"
+                   class="header-catalog-submenu__link">
+                  Ремни, РТИ
+                </a>
+              </li>
+
+
+            </ul>
           </li>
           <li class="catalog-menu__item">
             <a href="catalog.html"
@@ -173,13 +254,17 @@
   </header>
 
   <div class="page-content">
-<!--    <div class="container">  -->
+    <!--    <div class="container">  -->
+
+
+<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=adcbc647-465e-457a-883c-86b24d6f99d0"
+        type="text/javascript"></script>
 
 
 <div class="container">
-  <div class="container__inner">
+    <div class="container__inner">
 
-    <ul class="breadcrumbs list--clear" itemscope itemtype="http://schema.org/BreadcrumbList">
+        <ul class="breadcrumbs list--clear" itemscope itemtype="http://schema.org/BreadcrumbList">
   <li class="breadcrumbs__item" itemprop="itemListElement" itemscope
       itemtype="http://schema.org/ListItem">
     <a href="" class="breadcrumbs__link" itemprop="item">
@@ -203,17 +288,156 @@
   </li>
 </ul>
 
-    <h1 class="page-content__title">Доставка запасных частей по РФ</h1>
+        <h1 class="page-content__title">Доставка запасных частей по РФ</h1>
 
-    <div class="page-content__delivery delivery-page">
+        <div class="page-content__delivery delivery-page">
+
+            <div class="delivery-page__item">
+                <p>
+                    <b> Отгрузка запасных частей на условиях самовывоза:</b>
+                    После оформления заказа с Вами свяжется наш специалист и согласует сроки комплектации, дату и время
+                    получения Вашего заказа.
+                </p>
+
+                <p>
+                    Выдача заказов производится по адресу: Челябинская область, г. Миасс, Динамовское шоссе 1, <b>Фирменный
+                    магазин УРАЛ.</b>
+                </p>
+
+            </div>
+
+            <div id="delivery-page__map"
+                 class="delivery-page__map"></div>
+
+            <script>
+                //delivery map
+                ymaps.ready(function () {
+                    const myMap = new ymaps.Map('delivery-page__map', {
+                            center: [55.0640345696626, 60.10216149999999],
+                            zoom: 17
+                        }, {
+                            searchControlProvider: 'yandex#search'
+                        }),
 
 
+                        MyIconContentLayout = ymaps.templateLayoutFactory.createClass(
+                            '<div style="color: #fff; font-weight: bold;">$[properties.iconContent]</div>'
+                        ),
 
 
+                        myPlacemarkWithContent = new ymaps.Placemark([55.0640345696626, 60.10216149999999], {}, {
+
+                            iconLayout: 'default#imageWithContent',
+                            iconImageHref: 'img/svg/map.svg',
+                            iconImageSize: [60, 68],
+                            iconImageOffset: [-30, -66],
+                            iconContentLayout: MyIconContentLayout
+                        });
+
+                    myMap.geoObjects
+                        .add(myPlacemarkWithContent);
+                });
+            </script>
+
+            <div class="delivery-page__item">
+                <b> Отправка запасных частей через транспортные компании:</b>
+                После оформления и оплаты заказа наш специалист сообщит Вам о готовности заказа к выдаче, после чего Вы
+                обращаетесь в любую транспортную компанию. Вы всегда можете выбрать удобную для Вас транспортную
+                компанию, с которой нравится работать именно Вам.
+
+            </div>
+            <div class="delivery-page__transport transport-companies">
+                <div class="transport-companies__title">
+                    ТОП-10 представительств транспортных компаний в г. Миасс:
+                </div>
+                <div class="transport-companies__list">
+                    <table class="transport-companies__table">
+                        <tr>
+                            <th>Название</th>
+                            <th>Адрес</th>
+                            <th>Телефон</th>
+                            <th>Время работы</th>
+                        </tr>
+                        <tr>
+                            <td>Деловые Линии</td>
+                            <td>Академика Павлова ул., 8</td>
+                            <td>+7(3513)25-00-25</td>
+                            <td>пн-пт 9:00–19:00, сб 9:00–16:00</td>
+                        </tr>
+                        <tr>
+                            <td>ПЭК</td>
+                            <td>ул. Академика Павлова, 8
+                            </td>
+                            <td>+7 (3513) 28-96-04
+                            </td>
+                            <td>пн-пт 9:00–18:00
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>КИТ</td>
+                            <td>Хлебозаводская 1а
+                            </td>
+                            <td>8(800)234-59-60,+7(3513)26-47-07
+                            </td>
+                            <td>пн-пт 9:00-18:00, сб 10:00-15:00
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>ЖелДорЭкспедиция</td>
+                            <td>ул. Хлебозаводская 1А
+                            </td>
+                            <td>+7(3513) 26-49-09
+                            </td>
+                            <td>пн-пт 9:00–18:00
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Байкал Сервис</td>
+                            <td>ул. Хлебозаводская, 1а
+                            </td>
+                            <td>+7 (351-3) 25-00-72, 36811, 36828, 36845, 36844, 36899</td>
+                            <td>пн-пт 9:00–18:00, сб 9:00–15:00</td>
+                        </tr>
+                        <tr>
+                            <td>Boxberry</td>
+                            <td>проспект Автозаводцев, 20</td>
+                            <td>8(800)222-80-00,8(800)700-54-30</td>
+                            <td>пн-пт 10:00-19:00, сб,вс 10:00-15:00</td>
+                        </tr>
+                        <tr>
+                            <td>DPD</td>
+                            <td>ш Тургоякское, дом 13/31
+                            </td>
+                            <td>8 (800) 250-44-34
+                            </td>
+                            <td>Пн-Пт 09.00-18.00 Сб,Вс выходной</td>
+                        </tr>
+                        <tr>
+                            <td> ГлавДоставка</td>
+                            <td>ул. Тугоякское ш.13/35</td>
+                            <td>8 (800) 600-11-00, +7 (3512) 44-87-29</td>
+                            <td>пн-пт 9:00-19:00, сб 10:00-16:00</td>
+                        </tr>
+                        <tr>
+                            <td>Грузлайн</td>
+                            <td>Тургоякское шоссе, 7</td>
+                            <td>+7(922) 750-26-58</td>
+                            <td>Пн-Пт 9:00-18:00
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>СДЭК</td>
+                            <td>улица Романенко, 93</td>
+                            <td>8(800)250-04-05,8(800)250-14-05</td>
+                            <td>пн-пт 9:00–19:00, сб 10:00–16:00</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
 
 
+        </div>
     </div>
-  </div>
 
 
 </div>
@@ -343,6 +567,18 @@
   </div>
 
 </footer>
+
+<button type="button"
+        class="write-us-btn">
+  <svg
+          class="write-us-btn__icon"
+          width="18"
+          height="12">
+    <use xlink:href="img/spritemap.svg#sprite-letter"></use>
+  </svg>
+  Написать нам
+</button>
+
 
 <script type="text/javascript" src="./js/1.bundle.js"></script><script type="text/javascript" src="./js/bundle.js"></script></body>
 

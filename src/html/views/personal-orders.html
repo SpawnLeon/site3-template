@@ -33,7 +33,7 @@ title: "Заголовок | Проект",
       <div class="personal-page__content content-personal">
          <div class="personal-orders">
           <table class="personal-orders__table table-orders">
-            <tr>
+            <tr class="personal-orders__item">
               <th>№</th>
               <th>Статус</th>
               <th>Позиций</th>
@@ -42,7 +42,7 @@ title: "Заголовок | Проект",
               <th>Доставлен</th>
               <th></th>
             </tr>
-            <tr>
+            <tr class="personal-orders__item">
               <td>555/21/52</td>
               <td>
                 <div class="table-orders__status table-orders__status--process">
@@ -87,7 +87,7 @@ title: "Заголовок | Проект",
 
               </td>
             </tr>
-            <tr>
+            <tr class="personal-orders__item">
               <td>555/21/52</td>
               <td>
                 <div class="table-orders__status">
@@ -121,7 +121,7 @@ title: "Заголовок | Проект",
                 </div>
               </td>
             </tr>
-            <tr>
+            <tr class="personal-orders__item">
               <td>555/21/52</td>
               <td>
                 <div class="table-orders__status table-orders__status--process">
@@ -174,5 +174,12 @@ title: "Заголовок | Проект",
 
   </div>
 </div>
+
+<div class="personal-orders-order-detail-wrapper" id="personal-orders-order-detail" style="display: none;">
+  <% data.addClass = '' %>
+  <%= _.template(require('./../includes/order.html').default)(data) %>
+</div>
+
+
 
 <%= _.template(require('./../includes/footer.html').default)(data) %>

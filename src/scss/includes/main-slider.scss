@@ -95,6 +95,11 @@
 
   // .main-slide__car
   &__car {
+
+    @media screen and (max-width : 1600px) {
+      max-width : 187px;
+    }
+
     // .main-slide__car---1
     &---1 {
       margin-top : 40px;
@@ -158,18 +163,32 @@
   border-radius    : 50%;
   background-color : $accentColor;
 
+  @media screen and (max-width : 1600px) {
+    width            : 136px;
+    height           : 136px;
+  }
+
 
   // .icon-slider__text
   &__text {
     font-size   : 18px;
-    line-height : 22px;
+    line-height : 1.2222;
     margin-top  : 8px;
     text-align  : center;
     color       : #fff;
+
+    @media screen and (max-width : 1600px) {
+      font-size: 14px;
+      margin-top: 5px;
+    }
   }
 
   // .icon-slider__icon
   &__icon {
+    @media screen and (max-width : 1600px) {
+      max-width : 86px ;
+      max-height : 52px;
+    }
 
   }
 

@@ -27,6 +27,7 @@
     display       : flex;
     align-items   : center;
     margin-bottom : 35px;
+    margin-top : -10px;
   }
 
   // .order-product-list__title
@@ -79,7 +80,7 @@
   justify-content  : space-between;
   box-sizing       : border-box;
   padding          : 15px 100px 15px 20px;
-  border           : 1px solid rgb(196, 196, 196);
+  border           : 1px solid #f1efef;
   background-color : rgb(255, 255, 255);
 
   // .item-order-product-list__image
@@ -92,7 +93,8 @@
   // .item-order-product-list__info
   &__info {
     max-width    : 500px;
-    margin-right : auto;
+    margin-right : 50px;
+
   }
 
   // .item-order-product-list__name
@@ -103,13 +105,15 @@
 
   // .item-order-product-list__props
   &__props {
+    margin-top : 3px;
   }
 
   // .item-order-product-list__qty
   &__qty {
     font-size   : 15px;
     font-weight : bold;
-    margin-left : 30px;
+    margin-left : 50px;
+    margin-right : 50px;
     color       : rgb(84, 88, 93);
   }
 
@@ -117,7 +121,7 @@
   &__price {
     font-size   : 15px;
     font-weight : bold;
-    margin-left : 90px;
+    margin-left : 50px;
     color       : rgb(84, 88, 93);
   }
 
@@ -155,27 +159,39 @@
 .order-total-block {
 
 
-  // .order-total-block__row
-  &__row {
+  // .order-total-block__item
+  &__item {
     display : flex;
+
+    &:not(:last-child) {
+      margin-right : 60px;
+    }
+
+    // .order-total-block__item--right
+    &--right {
+      margin-left : auto;
+    }
 
     // .order-total-block__row--vat
     &--vat {
+      margin-left : -25px;
     }
   }
 
   // .order-total-block__title
   &__title {
-    font-size    : 15px;
-    font-weight  : bold;
-    line-height  : 28px;
-    margin-right : 25px;
-    color        : #54585d;
+    font-size      : 15px;
+    font-weight    : bold;
+    line-height    : 28px;
+    margin-right   : 25px;
+    text-transform : uppercase;
+    color          : #54585d;
 
     // .order-total-block__title--vat
     &--vat {
       font-size   : 15px;
       font-weight : normal;
+      text-transform: lowercase;
     }
   }
 
@@ -192,17 +208,19 @@
     &--vat {
       font-size   : 15px;
       font-weight : normal;
+      line-height : 28px;
+      color: #54585D
     }
   }
 
   // .order-total-block__inner
   &__inner {
     display : flex;
-    padding: 30px 0;
+    padding : 30px 0;
 
     // .order-total-block__inner--top
     &--top {
-      border-bottom: 1px solid #C4C4C4;
+      border-bottom : 1px solid #c4c4c4;
 
     }
 

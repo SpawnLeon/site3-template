@@ -37,6 +37,10 @@
   &__top {
     display : flex;
 
+    @media screen and (max-width : 1600px) {
+      flex-wrap: wrap;
+    }
+
   }
 
   // .footer__middle
@@ -51,11 +55,16 @@
   // .footer__block
   &__block {
 
-    // ..footer__block--1
+    // .footer__block--1
     &--1 {
       display     : flex;
       align-items : center;
       flex-wrap   : wrap;
+
+      @media screen and (max-width : 1023px) {
+        width : 100%;
+      }
+
     }
   }
 
@@ -68,6 +77,12 @@
     margin-top           : 23px;
     color                : #fff;
     text-decoration-line : underline;
+
+    @media screen and (max-width : 1023px) {
+      flex: 0 0 auto;
+      margin-top: 0;
+      margin-left: auto;
+    }
 
     &:active,
     &:focus,
@@ -204,10 +219,17 @@
 
     &:nth-child(odd) {
       flex : 0 0 220px;
+
+      @media screen and (max-width : 1600px) {
+        flex : 0 0 160px;
+      }
     }
 
-    &:nth-child(even ) {
+    &:nth-child(even) {
       flex : 0 0 190px;
+      @media screen and (max-width : 1600px) {
+        flex : 0 0 160px;
+      }
     }
   }
 

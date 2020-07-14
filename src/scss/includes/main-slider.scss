@@ -67,7 +67,6 @@
 }
 
 
-
 ////////////////////////////////////
 .swiper-slide {
 }
@@ -160,12 +159,13 @@
   justify-content  : center;
   width            : 176px;
   height           : 176px;
+  cursor           : pointer;
   border-radius    : 50%;
   background-color : $accentColor;
 
   @media screen and (max-width : 1600px) {
-    width            : 136px;
-    height           : 136px;
+    width  : 136px;
+    height : 136px;
   }
 
 
@@ -178,15 +178,15 @@
     color       : #fff;
 
     @media screen and (max-width : 1600px) {
-      font-size: 14px;
-      margin-top: 5px;
+      font-size  : 14px;
+      margin-top : 5px;
     }
   }
 
   // .icon-slider__icon
   &__icon {
     @media screen and (max-width : 1600px) {
-      max-width : 86px ;
+      max-width  : 86px;
       max-height : 52px;
     }
 

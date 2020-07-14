@@ -1,0 +1,20 @@
+.warranty-block {
+  display : none;
+  max-width : 400px;
+  padding: 30px 25px;
+
+  // .warranty-block__title
+  &__title {
+    font-size     : 20px;
+    font-weight   : bold;
+    line-height   : 1.5;
+    margin-bottom : 15px;
+  }
+
+  // .warranty-block__inner
+  &__inner {
+    font-size   : 13px;
+    line-height : 1.23;
+
+  }
+}

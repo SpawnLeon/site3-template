@@ -104,6 +104,20 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
+
+  //warranty-block
+  document.querySelectorAll('.icon-slide--warranty').forEach((el, i) => {
+
+    el.addEventListener('click', function(event) {
+      event.preventDefault();
+
+      $.fancybox.open({
+        src: '#warranty-block',
+        type: 'inline',
+      });
+    });
+  });
+
 });
 
 

@@ -1,10 +1,587 @@
-<!DOCTYPE html>
+
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Title</title>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible"
+        content="ie=edge">
+
+  <title>Document</title>
+
 <link href="./css/1.style.bundle.css" rel="stylesheet"><link href="./css/style.bundle.css" rel="stylesheet"></head>
 <body>
+<div class="page">
+  <header class="header">
+    <a href="index.html"
+       class="header__logo logo">
+
+
+      <svg
+        width="136"
+        height="18"
+        class="logo__image">
+        <use xlink:href="img/spritemap.svg#sprite-header-logo"></use>
+      </svg>
+      <span class="logo__text">
+           Автомобильный завод
+         </span>
+    </a>
+
+    <div class="header__right">
+      <div class="header__inner header__inner--top">
+
+
+        <div class="header__block header__block--1">
+          <div class="header__promo">
+            Официальный интернет-магазин запасных частей АО «АЗ «УРАЛ»
+          </div>
+
+          <div class="header__phones">
+            <a href="tel:+73513555311"
+               class="header__phone">8 (3513) 55 53 11</a>
+
+            <a href="tel:+73513555377"
+               class="header__phone">8 (3513) 55 53 77</a>
+          </div>
+        </div>
+
+
+        <div class="header__block header__block--2">
+          <form action=""
+                class="header__search search-block">
+            <label class="search-block__label">
+              <input class="search-block__field"
+                     type="text"
+                     placeholder="Поиск запчастей">
+            </label>
+            <button
+              class="search-block__btn"
+              type="submit"
+              value="Поиск">
+              <svg
+                width="14"
+                height="15">
+                <use xlink:href="img/spritemap.svg#sprite-search"></use>
+              </svg>
+            </button>
+          </form>
+        </div>
+        <div class="header__block header__block--3">
+          <div class="header__personal personal-block-header">
+            <a href="registration.html"
+               class="personal-block-header__link personal-block-header__link--auth">
+              <svg
+                width="15"
+                height="20">
+                <use xlink:href="img/spritemap.svg#sprite-auth"></use>
+              </svg>
+              Личный кабинет
+            </a>
+            <a href=""
+               class="personal-block-header__link personal-block-header__link--favorite">
+              <svg
+                width="15"
+                height="21">
+                <use xlink:href="img/spritemap.svg#sprite-favorite"></use>
+              </svg>
+              Избранное
+            </a>
+            <a href="basket.html"
+               class="personal-block-header__link basket-link personal-block-header__link--basket">
+              <svg
+                width="18"
+                height="21">
+                <use xlink:href="img/spritemap.svg#sprite-basket"></use>
+              </svg>
+              Корзина <span class="basket-link__count">3</span>
+            </a>
+          </div>
+        </div>
+
+
+      </div>
+
+      <nav class="header__inner header__inner--nav">
+        <button type="button"
+                class=" header__catalog-menu-btn catalog-menu-btn">
+          <svg
+            class="catalog-menu-btn__icon"
+            width="9"
+            height="10">
+            <use xlink:href="img/spritemap.svg#sprite-burger"></use>
+          </svg>
+          Каталог
+        </button>
+        <ul class="header__catalog catalog-menu list--clear">
+          <li class="catalog-menu__item">
+            <a href="catalog.html"
+               class="catalog-menu__link">
+              <svg
+                width="9"
+                height="10">
+                <use xlink:href="img/spritemap.svg#sprite-burger"></use>
+              </svg>
+              Запчасти УРАЛ
+            </a>
+            <ul class="catalog-menu__submenu header-catalog-submenu list--clear">
+              <li class="header-catalog-submenu__item">
+                <a href="catalog.html"
+                   class="header-catalog-submenu__link">
+                  Двигатель
+                </a>
+              </li>
+              <li class="header-catalog-submenu__item">
+                <a href="catalog.html"
+                   class="header-catalog-submenu__link">
+                  Трансмиссия
+                </a>
+              </li>
+              <li class="header-catalog-submenu__item">
+                <a href="catalog.html"
+                   class="header-catalog-submenu__link">
+                  Ходовая часть
+                </a>
+              </li>
+              <li class="header-catalog-submenu__item">
+                <a href="catalog.html"
+                   class="header-catalog-submenu__link">
+                  Рулевое управление
+                </a>
+              </li>
+              <li class="header-catalog-submenu__item">
+                <a href="catalog.html"
+                   class="header-catalog-submenu__link">
+                  Тормозная система
+                </a>
+              </li>
+              <li class="header-catalog-submenu__item">
+                <a href="catalog.html"
+                   class="header-catalog-submenu__link">
+                  Электрооборудование
+                </a>
+              </li>
+              <li class="header-catalog-submenu__item">
+                <a href="catalog.html"
+                   class="header-catalog-submenu__link">
+                  Двигатель
+                </a>
+              </li>
+              <li class="header-catalog-submenu__item">
+                <a href="catalog.html"
+                   class="header-catalog-submenu__link">
+                  Инструмент и принадлежности
+                </a>
+              </li>
+              <li class="header-catalog-submenu__item">
+                <a href="catalog.html"
+                   class="header-catalog-submenu__link">
+                  Кабина и оперение
+                </a>
+              </li>
+              <li class="header-catalog-submenu__item">
+                <a href="catalog.html"
+                   class="header-catalog-submenu__link">
+                  Платформа и кузов
+                </a>
+              </li>
+              <li class="header-catalog-submenu__item">
+                <a href="catalog.html"
+                   class="header-catalog-submenu__link">
+                  Нормали
+                </a>
+              </li>
+              <li class="header-catalog-submenu__item">
+                <a href="catalog.html"
+                   class="header-catalog-submenu__link">
+                  Подшипники
+                </a>
+              </li>
+              <li class="header-catalog-submenu__item">
+                <a href="catalog.html"
+                   class="header-catalog-submenu__link">
+                  Ремни, РТИ
+                </a>
+              </li>
+
+
+            </ul>
+          </li>
+          <li class="catalog-menu__item">
+            <a href="catalog.html"
+               class="catalog-menu__link">
+              <svg
+                width="9"
+                height="10">
+                <use xlink:href="img/spritemap.svg#sprite-burger"></use>
+              </svg>
+              Сувенирная продукция
+            </a>
+          </li>
+          <li class="catalog-menu__item">
+            <a href="catalog.html"
+               class="catalog-menu__link">
+              <svg
+                width="9"
+                height="10">
+                <use xlink:href="img/spritemap.svg#sprite-burger"></use>
+              </svg>
+              Запчасти для ТО
+            </a>
+          </li>
+        </ul>
+
+        <ul class="header__main-menu main-menu list--clear">
+          <li class="main-menu__item">
+            <a href="payment.html"
+               class="main-menu__link">Оплата</a>
+          </li>
+          <li class="main-menu__item">
+            <a href="delivery.html"
+               class="main-menu__link">Доставка</a>
+          </li>
+          <li class="main-menu__item">
+            <a href="about.html"
+               class="main-menu__link">О компании</a>
+          </li>
+          <li class="main-menu__item">
+            <a href="contacts.html"
+               class="main-menu__link">Контакты</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <div class="page-content">
+    <!--    <div class="container">  -->
+
+
+<div class="container container__inner--has-sidebar">
+  <aside class="sidebar">
+  <nav class="sidebar__nav">
+    <ul class="sidebar__sidebar-menu sidebar-menu list--clear">
+      <li class="sidebar-menu__item">
+        <a href="" class="sidebar-menu__link">Двигатель</a>
+      </li>
+      <li class="sidebar-menu__item">
+        <a href="" class="sidebar-menu__link">Трансмиссия</a>
+      </li>
+      <li class="sidebar-menu__item">
+        <a href="" class="sidebar-menu__link">Шасси</a>
+      </li>
+      <li class="sidebar-menu__item sidebar-menu__item--has-submenu">
+        <a href="" class="sidebar-menu__link">Кузов</a>
+        <ul class="sidebar-menu__catalog-submenu catalog-submenu list--clear">
+          <li class="catalog-submenu__item">
+            <a href="" class="catalog-submenu__link">Оперение</a>
+          </li>
+          <li class="catalog-submenu__item">
+            <a href="" class="catalog-submenu__link catalog-submenu__link--active">Основание (пол)</a>
+          </li>
+          <li class="catalog-submenu__item">
+            <a href="" class="catalog-submenu__link">Окно ветровое</a>
+          </li>
+          <li class="catalog-submenu__item">
+            <a href="" class="catalog-submenu__link">Передовик</a>
+          </li>
+          <li class="catalog-submenu__item">
+            <a href="" class="catalog-submenu__link">Боковина</a>
+          </li>
+          <li class="catalog-submenu__item">
+            <a href="" class="catalog-submenu__link">Задок</a>
+          </li>
+          <li class="catalog-submenu__item">
+            <a href="" class="catalog-submenu__link">Крыша</a>
+          </li>
+          <li class="catalog-submenu__item">
+            <a href="" class="catalog-submenu__link">Двери</a>
+          </li>
+          <li class="catalog-submenu__item">
+            <a href="" class="catalog-submenu__link">Сиденья</a>
+          </li>
+          <li class="catalog-submenu__item">
+            <a href="" class="catalog-submenu__link">Перегородки</a>
+          </li>
+          <li class="catalog-submenu__item">
+            <a href="" class="catalog-submenu__link">Оборудование</a>
+          </li>
+        </ul>
+      </li>
+      <li class="sidebar-menu__item">
+        <a href="" class="sidebar-menu__link">Электро оборудование</a>
+      </li>
+      <li class="sidebar-menu__item">
+        <a href="" class="sidebar-menu__link">Платформа</a>
+      </li>
+      <li class="sidebar-menu__item">
+        <a href="" class="sidebar-menu__link">Дополнительное оборудование</a>
+      </li>
+
+    </ul>
+  </nav>
+</aside>
+
+  <div class="container__inner">
+
+    <ul class="breadcrumbs list--clear" itemscope itemtype="http://schema.org/BreadcrumbList">
+  <li class="breadcrumbs__item" itemprop="itemListElement" itemscope
+      itemtype="http://schema.org/ListItem">
+    <a href="" class="breadcrumbs__link" itemprop="item">
+      <span itemprop="name">Главная</span>
+    </a><span class="breadcrumbs__delimiter">></span>
+    <meta itemprop="position" content="1"/>
+  </li>
+  <li class="breadcrumbs__item" itemprop="itemListElement" itemscope
+      itemtype="http://schema.org/ListItem">
+    <a href="" class="breadcrumbs__link" itemprop="item">
+      <span itemprop="name">Запасные части</span>
+    </a><span class="breadcrumbs__delimiter">> </span>
+    <meta itemprop="position" content="2"/>
+  </li>
+  <li class="breadcrumbs__item" itemprop="itemListElement" itemscope
+      itemtype="http://schema.org/ListItem">
+    <a href="" class="breadcrumbs__link" itemprop="item">
+      <span itemprop="name">Кузов</span>
+    </a>
+    <meta itemprop="position" content="3"/>
+  </li>
+</ul>
+
+    <h1 class="page-content__title">Колесо дисковое 533-310</h1>
+
+    <div class="page-content__product product ">
+
+      <div class="product__inner">
+
+      </div>
+
+    </div>
+  </div>
+
+
+</div>
+
+<!--</div>  вынести из страниц в header  и footer  -->
+
+<!-- /.page-content -->
+
+</div> <!-- end .page -->
+<footer class="page__footer footer">
+  <div class="container">
+    <div class="footer__top">
+
+      <div class="footer__block footer__block--1">
+        <a href="index.html"
+           class="footer__logo logo">
+          <svg
+            width="130"
+            height="27"
+            class="logo__image">
+            <use xlink:href="img/spritemap.svg#sprite-footer-logo"></use>
+          </svg>
+        </a>
+        <div class="footer__phones phones-block-v1">
+          <a href=""
+             class="phones-block-v1__item"> 8 (3513) 55 53 11</a>
+          <a href=""
+             class="phones-block-v1__item"> 8 (3513) 55 53 77</a>
+        </div>
+
+        <a href=""
+           class="footer__promo">
+          Официальный сервисный центр АО «АЗ «УРАЛ»
+        </a>
+      </div>
+
+
+      <div class="footer__menus">
+        <nav class="footer__nav">
+          <ul class="footer__catalog bottom-catalog list--clear">
+            <li class="bottom-catalog__item">
+              <a href=""
+                 class="bottom-catalog__link">Запасные части Урал</a>
+            </li>
+            <li class="bottom-catalog__item">
+              <a href=""
+                 class="bottom-catalog__link">Запасные части для ТО</a>
+            </li>
+            <li class="bottom-catalog__item">
+              <a href=""
+                 class="bottom-catalog__link">Сувенирная продукция</a>
+            </li>
+          </ul>
+          <ul class="footer__main-menu bottom-menu list--clear">
+            <li class="bottom-menu__item">
+              <a href=""
+                 class="bottom-menu__link">Главная</a></li>
+            <li class="bottom-menu__item">
+              <a href=""
+                 class="bottom-menu__link">Цены и скидки</a></li>
+            <li class="bottom-menu__item">
+              <a href=""
+                 class="bottom-menu__link">Оплата</a></li>
+            <li class="bottom-menu__item">
+              <a href=""
+                 class="bottom-menu__link">Доставка</a></li>
+            <li class="bottom-menu__item">
+              <a href=""
+                 class="bottom-menu__link">О компании</a></li>
+            <li class="bottom-menu__item">
+              <a href=""
+                 class="bottom-menu__link">Контакты</a></li>
+          </ul>
+
+        </nav>
+      </div>
+    </div>
+
+    <div class="footer__middle">
+      <div class="footer__company">
+        ООО "Объединённая Машиностроительная Группа"
+      </div>
+      <div class="footer__socials socials-block">
+        <a href=""
+           class="socials-block__item socials-block__item--fb">
+          <svg
+            width="31"
+            height="31"
+            class="logo__image">
+            <use xlink:href="img/spritemap.svg#sprite-social-fb"></use>
+          </svg>
+        </a>
+        <a href=""
+           class="socials-block__item socials-block__item--vk">
+          <svg
+            width="31"
+            height="31"
+            class="logo__image">
+            <use xlink:href="img/spritemap.svg#sprite-social-vk"></use>
+          </svg>
+        </a>
+        <a href=""
+           class="socials-block__item socials-block__item--in">
+          <svg
+            width="31"
+            height="31"
+            class="logo__image">
+            <use xlink:href="img/spritemap.svg#sprite-social-in"></use>
+          </svg>
+        </a>
+      </div>
+    </div>
+
+    <div class="footer__bottom">
+      <div class="footer__law law-block">
+        <a href=""
+           class="law-block__item">Пользовательское соглашение</a>
+        <a href=""
+           class="law-block__item">Политика в обработке персональных данных</a>
+      </div>
+      <div class="footer__copyright">Разработка сайта <a target="_blank" rel="noopener noreferrer" href="https://itorum.ru">Иторум</a></div>
+      <div class="footer__year">
+        &copy;2020
+      </div>
+    </div>
+  </div>
+
+</footer>
+
+<div class="modal-form"
+     id="modal-form"
+     style="display: none;">
+  <div class="modal-form__inner">
+    <div class="modal-form__title">Напишите нам</div>
+
+    <form class="form form--modal"
+          action="">
+      <div class="form__inner">
+        <div class="form__content">
+
+
+          <div class="form__item item-form">
+            <label class="item-form__label item-form__label--text">
+              <input type="text"
+                     class="item-form__field item-form__field--text">
+              <span class="item-form__name  item-form__name--text">Ваше имя</span>
+            </label>
+          </div>
+
+
+          <div class="form__item item-form item-form--error">
+            <label class="item-form__label item-form__label--text">
+              <input type="text"
+                     class="item-form__field item-form__field--text">
+              <span class="item-form__name  item-form__name--text">E-mail *</span>
+            </label>
+            <div class="item-form__error item-form__error--bottom">
+              Обязательное поле
+            </div>
+          </div>
+
+          <div class="form__item item-form">
+            <label class="item-form__label item-form__label--text">
+
+              <textarea
+                rows="3"
+                class="item-form__field item-form__field--text item-form__field--textarea"
+              ></textarea>
+              <span class="item-form__name  item-form__name--text">Ваш вопрос</span>
+            </label>
+          </div>
+        </div>
+        <footer class="form__footer form__footer--modal">
+          <div class="form__actions">
+            <button class="form__btn btn btn--orange btn--fill"
+                    type="submit">Отправить
+            </button>
+          </div>
+        </footer>
+      </div>
+    </form>
+
+
+  </div>
+</div>
+
+<div class="">
+  <button type="button"
+          class="write-us-btn">
+    <svg
+      class="write-us-btn__icon"
+      width="18"
+      height="12">
+      <use xlink:href="img/spritemap.svg#sprite-letter"></use>
+    </svg>
+    Написать нам
+  </button>
+
+  <div class="warranty-block"
+       id="warranty-block">
+    <div class="warranty-block__title">
+      Гарантия на запасные части
+    </div>
+    <div class="warranty-block__inner">
+      <p>
+        Гарантийный срок, предоставляемый на запасные части, устанавливается с момента продажи запасных частей
+        покупателю
+        и составляет <strong>12 месяцев</strong>, при условии, что наработка (пробег) не превысили 30 000 км, и их
+        установка на
+        автомобиль
+        производилась в аттестованном сервисном центре фирменной сети Урал.
+      </p>
+      <p>
+        Для запасных частей, установленных на автомобиль покупателем самостоятельно, общий срок эксплуатации и хранения
+        установлен <strong>6 месяцев</strong>.
+      </p>
+    </div>
+  </div>
+
+</div>
+
 
 <script type="text/javascript" src="./js/1.bundle.js"></script><script type="text/javascript" src="./js/bundle.js"></script></body>
+
 </html>
+

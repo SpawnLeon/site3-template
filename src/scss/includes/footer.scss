@@ -38,7 +38,7 @@
     display : flex;
 
     @media screen and (max-width : 1600px) {
-      flex-wrap : wrap;
+
     }
 
   }
@@ -161,6 +161,10 @@
     width           : 197px;
     height          : 83px;
 
+    @media screen and (max-width : 1340px) {
+      margin-left : -30px;
+    }
+
 
   }
 }
@@ -221,15 +225,17 @@
       flex : 0 0 220px;
 
       @media screen and (max-width : 1600px) {
-        flex : 0 0 160px;
+        flex : 0 0 142px;
       }
     }
 
     &:nth-child(even) {
       flex : 0 0 190px;
+
       @media screen and (max-width : 1600px) {
-        flex : 0 0 160px;
+        flex : 0 0 142px;
       }
+
     }
   }
 
@@ -245,8 +251,8 @@
     &:active,
     &:focus,
     &:hover {
-      color : #fff;
       text-decoration : underline;
+      color           : #fff;
     }
 
   }
@@ -274,8 +280,8 @@
     &:active,
     &:focus,
     &:hover {
-      color : #fff;
       text-decoration : underline;
+      color           : #fff;
     }
 
   }

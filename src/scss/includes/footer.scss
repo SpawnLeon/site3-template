@@ -13,12 +13,26 @@
   // .footer__menus
   &__menus {
     margin-left : auto;
+
+    @media screen and (max-width : 1023px) {
+      margin-left : 0;
+
+    }
   }
 
   // .footer__nav
   &__nav {
     display    : flex;
     margin-top : 19px;
+
+    @media screen and (max-width : 1023px) {
+      margin-top : 37px;
+    }
+
+    @media screen and (max-width : 767px) {
+      flex-direction : column;
+      margin-top     : 20px;
+    }
   }
 
   // .footer__catalog
@@ -40,6 +54,9 @@
     @media screen and (max-width : 1600px) {
 
     }
+    @media screen and (max-width : 1023px) {
+      flex-wrap : wrap;
+    }
 
   }
 
@@ -50,6 +67,11 @@
     justify-content : space-between;
     margin-top      : 70px;
     color           : #808285;
+
+    @media screen and (max-width : 767px) {
+      flex-direction : column;
+      margin-top     : 30px;
+    }
   }
 
   // .footer__block
@@ -79,9 +101,16 @@
     text-decoration-line : underline;
 
     @media screen and (max-width : 1023px) {
+      align-self  : flex-start;
       flex        : 0 0 auto;
-      margin-top  : 0;
+      margin-top  : 22px;
       margin-left : auto;
+
+    }
+
+    @media screen and (max-width : 767px) {
+      flex        : 0 0 100%;
+      margin-left : 0;
     }
 
     &:active,
@@ -105,6 +134,11 @@
   &__socials {
     position : relative;
     top      : -15px;
+
+    @media screen and (max-width : 767px) {
+      top        : 0;
+      margin-top : 20px;
+    }
   }
 
   // .footer__bottom
@@ -118,6 +152,13 @@
     padding-top     : 14px;
     padding-bottom  : 35px;
     color           : rgba(255, 255, 255, 0.8);
+
+    @media screen and (max-width : 767px) {
+      flex-wrap      : wrap;
+      margin-top     : 20px;
+      padding-top    : 20px;
+      padding-bottom : 15px;
+    }
 
     &::after {
       content          : '';
@@ -137,20 +178,35 @@
 
   // .footer__law
   &__law {
+
+    @media screen and (max-width : 767px) {
+      flex : 0 0 100%;
+    }
   }
 
   // .footer__copyright
   &__copyright {
     margin-top : 5px;
 
+    @media screen and (max-width : 767px) {
+      margin-top : 25px;
+    }
+
+
     a {
       color : rgba(255, 255, 255, 0.8);
     }
+
+
   }
 
   // .footer__year
   &__year {
     margin-top : 5px;
+
+    @media screen and (max-width : 767px) {
+      margin-top : 25px;
+    }
   }
 
   // .footer__logo
@@ -161,8 +217,24 @@
     width           : 197px;
     height          : 83px;
 
+    @media screen and (max-width : 1600px) {
+      width  : 176px;
+      height : 83px;
+    }
+
     @media screen and (max-width : 1340px) {
       margin-left : -30px;
+    }
+
+    @media screen and (max-width : 1023px) {
+      width       : 167px;
+      height      : 83px;
+      margin-left : -15px;
+    }
+
+    @media screen and (max-width : 767px) {
+      width  : 150px;
+      height : 75px;
     }
 
 
@@ -176,7 +248,14 @@
   // .logo__image
   &__image {
 
-
+    @media screen and (max-width : 1600px) {
+      width  : 124px;
+      height : 25px;
+    }
+    @media screen and (max-width : 767px) {
+      width  : 112px;
+      height : 22px;
+    }
   }
 }
 
@@ -190,6 +269,12 @@
     display     : block;
     white-space : nowrap;
     color       : #fff;
+
+    @media screen and (max-width : 767px) {
+      font-size   : 14px;
+      line-height : 17px;
+    }
+
 
     &:first-child {
       margin-bottom : 8px;
@@ -211,6 +296,12 @@
   flex      : 0 0 410px;
   flex-wrap : wrap;
 
+  @media screen and (max-width : 767px) {
+    flex           : auto;
+    flex-direction : column;
+    margin-top     : 10px;
+  }
+
 
   // .bottom-menu__item
   &__item {
@@ -227,6 +318,10 @@
       @media screen and (max-width : 1600px) {
         flex : 0 0 142px;
       }
+
+      @media screen and (max-width : 767px) {
+        flex : auto;
+      }
     }
 
     &:nth-child(even) {
@@ -235,7 +330,9 @@
       @media screen and (max-width : 1600px) {
         flex : 0 0 142px;
       }
-
+      @media screen and (max-width : 767px) {
+        flex : auto;
+      }
     }
   }
 
@@ -288,13 +385,18 @@
 }
 
 .socials-block {
+  display      : flex;
+  margin-right : -10px;
+  margin-left  : -10px;
+
   // .socials-block__item
   &__item {
     display       : inline-block;
     overflow      : hidden;
     width         : 30px;
     height        : 30px;
-    margin-left   : 35px;
+    margin-right  : 10px;
+    margin-left   : 10px;
     border-radius : 50%;
 
 

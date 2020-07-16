@@ -17,6 +17,16 @@
     <a href="index.html"
        class="header__logo logo">
 
+      <button type="button"
+              class="header__logo-btn logo-btn">
+        <svg
+          class="logo-btn__icon"
+          width="9"
+          height="10">
+          <use xlink:href="img/spritemap.svg#sprite-burger"></use>
+        </svg>
+      </button>
+
 
       <svg
         width="136"
@@ -354,14 +364,298 @@
     <div class="page-content__product product">
       <div class="product__inner">
 
-        <div class="product__slider">
-          SLIDER HERE
+        <div class="product__images images-product-wrapper">
+          <div class="images-product-thumbs">
+            <div class="swiper-container images-product-thumbs__container">
+              <div class="swiper-wrapper images-product-thumbs__wrapper">
+                <div class="swiper-slide images-product-thumbs__slide">
+                  <img src="uploads/product-detail/1.jpg"
+                       alt="">
+                </div>
+                <div class="swiper-slide images-product-thumbs__slide">
+                  <img src="uploads/product-detail/1.jpg"
+                       alt="">
+                </div>
+                <div class="swiper-slide images-product-thumbs__slide">
+                  <img src="uploads/product-detail/1.jpg"
+                       alt="">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="images-product">
+            <div class="swiper-container images-product__container">
+              <div class="swiper-wrapper images-product__wrapper">
+                <div class="swiper-slide images-product__slide">
+                  <img src="uploads/product-detail/1.jpg"
+                       alt="">
+                </div>
+                <div class="swiper-slide images-product__slide">
+                  <img src="uploads/product-detail/1.jpg"
+                       alt="">
+                </div>
+                <div class="swiper-slide images-product__slide">
+                  <img src="uploads/product-detail/1.jpg"
+                       alt="">
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
+
 
         <div class="product__info info-product">
 
+          <div class="info-product__props props-product">
+            <div class="props-product__item item-prop">
+              <span class="item-prop__name">Наименование изделия:</span>
+              <span class="item-prop__value">Колесо дисковое 533-310</span>
+            </div>
+            <div class="props-product__item item-param">
+              <span class="item-prop__name">Обозначение:</span>
+              <span class="item-prop__value">659.3101012-01</span>
+            </div>
+          </div>
+
+
+          <div class="info-product__params params-product">
+            <div class="params-product__item item-param">
+              <span class="item-param__name">Вес:</span>
+              <span class="item-param__value">25 кг</span>
+            </div>
+            <div class="params-product__item item-param">
+              <span class="item-param__name">Габаритные размеры:</span>
+              <span class="item-param__value">25*25*25 см</span>
+            </div>
+          </div>
+
+          <div class="info-product__links">
+            <a href=""
+               class="info-product__guarantee">
+              <svg
+                class=""
+                width="28"
+                height="32">
+                <use xlink:href="img/spritemap.svg#sprite-warranty"></use>
+              </svg>
+
+              Гарантийные обязательства
+            </a>
+            <a href=""
+               class="info-product__call-manager">
+              <svg
+                class=""
+                width="33"
+                height="22">
+                <use xlink:href="img/spritemap.svg#sprite-letter-orange"></use>
+              </svg>
+              Связаться с менеджером
+            </a>
+          </div>
+
+          <div class="info-product__stock-availability stock-availability">
+            Наличие на складе: <span class="stock-availability__qty stock-availability__qty--many">много</span>
+          </div>
+
+          <div class="info-product__prices prices-product">
+            <div class="prices-product__title">Цена по прайсу:</div>
+            <div class="prices-product__price price-product">
+              11 780, 20 руб.
+            </div>
+          </div>
+          <div class="info-product__actions">
+            <button class="info-product__add-to-cart btn btn--fill btn--orange">Купить</button>
+            <button class="info-product__add-to-favorite btn--clear">
+              <svg
+                width="32"
+                height="43">
+                <use xlink:href="img/spritemap.svg#sprite-favorite"></use>
+              </svg>
+              В избранное
+            </button>
+          </div>
+
         </div>
 
+      </div>
+
+      <div class="product__footer">
+        <div class="product__viewed-products viewed-products">
+          <div class="viewed-products__title">Просмотренные товары</div>
+          <div class="viewed-products__inner">
+
+
+            <div class="viewed-products__list product-list">
+              <div class="product-list__item item-product">
+                <a href="product.html"
+                   title=""
+                   class="item-product__image">
+                  <img
+                    src="uploads/category/1.png"
+                    alt="">
+                </a>
+                <div class="item-product__info">
+                  <a
+                    href="product.html"
+                    class="item-product__name">
+                    Колесо дисковое 533-310
+                  </a>
+                  <div class="item-product__props props-item-product">
+
+                    <div class="props-item-product__item prop-item-product">
+                      <span class="prop-item-product__name">Вес:</span>
+                      <span class="prop-item-product__value">25 кг</span>
+                    </div>
+                    <div class="props-item-product__item prop-item-product">
+                      <span class="prop-item-product__name">Материал:</span>
+                      <span class="prop-item-product__value">Алюминий</span>
+                    </div>
+                    <div class="props-item-product__item prop-item-product">
+                      <span class="prop-item-product__name">Габаритные размеры:</span>
+                      <span class="prop-item-product__value">25*25*25 см</span>
+                    </div>
+
+                  </div>
+                </div>
+                <div class="item-product__prices prices-item-product">
+                  <div class="prices-item-product__price">
+                    11 000,25 руб.
+                  </div>
+                </div>
+                <div class="item-product__footer">
+                  <button
+                    type="button"
+                    class="item-product__add-to-cart btn btn--fill btn--orange">
+                    Купить
+                  </button>
+                  <button
+                    type="button"
+                    class="item-product__add-to-favorite btn--clear"
+                    aria-label="Добавить в избранное">
+                    <svg
+                      width="21"
+                      height="27">
+                      <use xlink:href="img/spritemap.svg#sprite-favorite"></use>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+              <div class="product-list__item item-product">
+                <a href="product.html"
+                   title=""
+                   class="item-product__image">
+                  <img
+                    src="uploads/category/1.png"
+                    alt="">
+                </a>
+                <div class="item-product__info">
+                  <a
+                    href="product.html"
+                    class="item-product__name">
+                    Колесо дисковое 533-310
+                  </a>
+                  <div class="item-product__props props-item-product">
+
+                    <div class="props-item-product__item prop-item-product">
+                      <span class="prop-item-product__name">Вес:</span>
+                      <span class="prop-item-product__value">25 кг</span>
+                    </div>
+                    <div class="props-item-product__item prop-item-product">
+                      <span class="prop-item-product__name">Материал:</span>
+                      <span class="prop-item-product__value">Алюминий</span>
+                    </div>
+                    <div class="props-item-product__item prop-item-product">
+                      <span class="prop-item-product__name">Габаритные размеры:</span>
+                      <span class="prop-item-product__value">25*25*25 см</span>
+                    </div>
+
+                  </div>
+                </div>
+                <div class="item-product__prices prices-item-product">
+                  <div class="prices-item-product__price">
+                    11 000,25 руб.
+                  </div>
+                </div>
+                <div class="item-product__footer">
+                  <button
+                    type="button"
+                    class="item-product__add-to-cart btn btn--fill btn--orange">
+                    Купить
+                  </button>
+                  <button
+                    type="button"
+                    class="item-product__add-to-favorite btn--clear"
+                    aria-label="Добавить в избранное">
+                    <svg
+                      width="21"
+                      height="27">
+                      <use xlink:href="img/spritemap.svg#sprite-favorite"></use>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+              <div class="product-list__item item-product">
+                <a href="product.html"
+                   title=""
+                   class="item-product__image">
+                  <img
+                    src="uploads/category/1.png"
+                    alt="">
+                </a>
+                <div class="item-product__info">
+                  <a
+                    href="product.html"
+                    class="item-product__name">
+                    Колесо дисковое 533-310
+                  </a>
+                  <div class="item-product__props props-item-product">
+
+                    <div class="props-item-product__item prop-item-product">
+                      <span class="prop-item-product__name">Вес:</span>
+                      <span class="prop-item-product__value">25 кг</span>
+                    </div>
+                    <div class="props-item-product__item prop-item-product">
+                      <span class="prop-item-product__name">Материал:</span>
+                      <span class="prop-item-product__value">Алюминий</span>
+                    </div>
+                    <div class="props-item-product__item prop-item-product">
+                      <span class="prop-item-product__name">Габаритные размеры:</span>
+                      <span class="prop-item-product__value">25*25*25 см</span>
+                    </div>
+
+                  </div>
+                </div>
+                <div class="item-product__prices prices-item-product">
+                  <div class="prices-item-product__price">
+                    11 000,25 руб.
+                  </div>
+                </div>
+                <div class="item-product__footer">
+                  <button
+                    type="button"
+                    class="item-product__add-to-cart btn btn--fill btn--orange">
+                    Купить
+                  </button>
+                  <button
+                    type="button"
+                    class="item-product__add-to-favorite btn--clear"
+                    aria-label="Добавить в избранное">
+                    <svg
+                      width="21"
+                      height="27">
+                      <use xlink:href="img/spritemap.svg#sprite-favorite"></use>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+
+
+            </div>
+
+
+          </div>
+
+        </div>
       </div>
 
 
@@ -458,7 +752,7 @@
           <svg
             width="31"
             height="31"
-            class="logo__image">
+            class="">
             <use xlink:href="img/spritemap.svg#sprite-social-fb"></use>
           </svg>
         </a>
@@ -467,7 +761,7 @@
           <svg
             width="31"
             height="31"
-            class="logo__image">
+            class="">
             <use xlink:href="img/spritemap.svg#sprite-social-vk"></use>
           </svg>
         </a>
@@ -476,7 +770,7 @@
           <svg
             width="31"
             height="31"
-            class="logo__image">
+            class="">
             <use xlink:href="img/spritemap.svg#sprite-social-in"></use>
           </svg>
         </a>

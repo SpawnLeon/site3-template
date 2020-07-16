@@ -61,7 +61,10 @@
       background-color : #EC621F;
     }
     a {
-      color : #fff;
+      @media screen and (max-width : 767px) {
+        color : #fff;
+      }
+
     }
   }
 

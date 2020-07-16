@@ -11,7 +11,6 @@
   },
   "dependencies": {
     "@fancyapps/fancybox": "^3.5.7",
-    "animate.css": "^4.1.0",
     "jquery": "^3.5.1",
     "swiper": "^5.4.5"
   },

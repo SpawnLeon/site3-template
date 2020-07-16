@@ -8,6 +8,11 @@
   &__phones {
     margin-top  : 7px;
     margin-left : 21px;
+
+    @media screen and (max-width : 767px) {
+      margin-left : 10px;
+      letter-spacing: -0.5px;
+    }
   }
 
   // .footer__menus

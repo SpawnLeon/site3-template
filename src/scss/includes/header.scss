@@ -4,6 +4,10 @@
 .header {
   display : flex;
 
+  @media screen and (max-width : 767px) {
+    flex-wrap : wrap;
+  }
+
   // .header__right
   &__right {
     display        : flex;
@@ -18,6 +22,12 @@
     @media screen and (max-width : 1023px) {
       height : 142px;
     }
+
+    @media screen and (max-width : 767px) {
+      flex   : 0 0 100%;
+      height : auto;
+    }
+
   }
 
   // .header__inner
@@ -46,6 +56,10 @@
         justify-content : space-between;
         padding         : 13px 10px 0 15px;
       }
+
+      @media screen and (max-width : 767px) {
+
+      }
     }
 
     // .header__inner--nav
@@ -68,6 +82,10 @@
       @media screen and (max-width : 1023px) {
         padding-left : 15px;
 
+      }
+
+      @media screen and (max-width : 767px) {
+        display : none;
       }
 
 
@@ -95,15 +113,12 @@
     }
 
     @media screen and (max-width : 767px) {
-      flex-basis : 166px;
-      height     : 51px;
+      flex-basis     : 166px;
+      flex-direction : row;
+      height         : 51px;
     }
 
-    svg {
-      @media screen and (max-width : 767px) {
-        max-width : 79px
-      }
-    }
+
   }
 
   // .header__block
@@ -145,6 +160,12 @@
         max-width    : 310px;
         margin-top   : 22px;
         margin-right : 0;
+      }
+
+      @media screen and (max-width : 767px) {
+        flex       : 1 1 100%;
+        max-width  : none;
+        margin-top : 9px;
       }
 
     }
@@ -191,12 +212,15 @@
     white-space : nowrap;
 
     @media screen and (max-width : 1023px) {
+      font-size   : 13px;
       max-width   : 245px;
       white-space : normal;
     }
 
     @media screen and (max-width : 767px) {
-      display : none;
+      font-size   : 10px;
+      line-height : 12px;
+      max-width   : 205px;
     }
   }
 
@@ -266,8 +290,13 @@
 .logo {
   background-color : $accentColor;
 
+
   // .logo__image
   &__image {
+
+    @media screen and (max-width : 767px) {
+      max-width : 79px
+    }
   }
 
   // .logo__text
@@ -590,5 +619,19 @@
       color            : #fff;
       background-color : #3a475d;
     }
+  }
+}
+
+
+.logo-btn {
+  display : none;
+
+  @media screen and (max-width : 767px) {
+    display : block;
+  }
+
+  // .logo-btn__icon
+  &__icon {
+    margin-right : 30px;
   }
 }

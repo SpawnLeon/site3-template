@@ -1,9 +1,9 @@
 .sidebar {
-  background: rgba(196, 211, 230, 0.5);
-  margin-right: 20px;
-  padding: 20px 0;
-  margin-bottom: -50px;
-  max-width : $sidebarWidth;
+  max-width     : $sidebarWidth;
+  margin-right  : 20px;
+  margin-bottom : -50px;
+  padding       : 20px 0;
+  background    : rgba(196, 211, 230, 0.5);
 
   // .sidebar__nav
   &__nav {
@@ -17,6 +17,9 @@
 .sidebar-menu {
   // .sidebar-menu__item
   &__item {
+    margin-bottom : 10px;
+
+
     // .sidebar-menu__item--has-submenu
     &--has-submenu {
     }
@@ -24,24 +27,26 @@
 
   // .sidebar-menu__link
   &__link {
-    font-size: 16px;
-    line-height: 19px;
-    color: #000000;
-    padding: 5px 20px;
-    display: block;
+    font-size   : 16px;
+    line-height : 19px;
+    display     : block;
+    padding     : 5px 20px;
+    color       : #000;
 
     &--active,
     &:active,
     &:focus,
     &:hover {
-      background-color: #526584;
-      text-decoration: none;
-      color: #fff;
+      text-decoration  : none;
+      color            : #fff;
+      background-color : #526584;
     }
   }
 
   // .sidebar-menu__catalog-submenu
   &__catalog-submenu {
+    padding-left : 35px;
+    padding-top: 3px;
   }
 }
 
@@ -52,11 +57,9 @@
 
   // .catalog-submenu__link
   &__link {
-    font-size: 13px;
-    line-height: 30px;
-
-    padding: 5px 20px;
-    display: block;
+    font-size : 13px;
+    display   : block;
+    padding   : 8px 20px 8px 9px;
 
 
     // .catalog-submenu__link--active
@@ -64,9 +67,9 @@
     &:active,
     &:focus,
     &:hover {
-      background-color: #526584;
-      text-decoration: none;
-      color: #fff;
+      text-decoration  : none;
+      color            : #fff;
+      background-color : #526584;
     }
 
 

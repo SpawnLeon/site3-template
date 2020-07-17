@@ -124,7 +124,12 @@ section,
 
   // .page-content__title
   &__title {
-    margin : 5px 0 30px;
+    font-size : 30px;
+    margin    : 10px 0 20px;
+
+    @media screen and (max-width : 767px) {
+      font-size: 24px;
+    }
   }
 }
 

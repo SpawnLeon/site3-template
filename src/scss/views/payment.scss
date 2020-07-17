@@ -1,0 +1,137 @@
+.page-content {
+
+  // .page-content__payment
+  &__payment {
+    margin-top : 45px;
+
+    @media screen and (max-width : 1023px) {
+      margin-top : 20px;
+    }
+    @media screen and (max-width : 767px) {
+      margin-top : 30px;
+    }
+  }
+}
+
+.payment-page {
+  // .payment-page__methods
+  &__methods {
+  }
+}
+
+.page-payment-methods {
+  font-size     : 14px;
+  line-height   : 20px;
+  counter-reset : payment-item;
+
+  @media screen and (max-width : 767px) {
+    font-size   : 12px;
+    line-height : 14px;
+  }
+
+  // .page-payment-methods__title
+  &__title {
+  }
+
+  // .page-payment-methods__inner
+  &__inner {
+  }
+
+  // .page-payment-methods__item
+  &__item {
+  }
+}
+
+.item-payment-method {
+  display       : flex;
+  margin-bottom : 35px;
+
+  @media screen and (max-width : 767px) {
+    flex-direction : column;
+  }
+
+
+  // .item-payment-method__image
+  &__image {
+    flex-shrink  : 0;
+    width        : 190px;
+    margin-right : 25px;
+    text-align   : center;
+
+    @media screen and (max-width : 1023px) {
+      width        : 160px;
+      margin-right : 20px;
+    }
+
+    @media screen and (max-width : 767px) {
+      align-self    : center;
+      margin-right  : 0;
+      margin-bottom : 20px;
+    }
+
+    & > img {
+      display : inline-block;
+    }
+  }
+
+  // .item-payment-method__text
+  &__text {
+    position     : relative;
+    padding-left : 20px;
+
+    &::before {
+      content           : counter(payment-item);
+      font-size         : 15px;
+      font-weight       : bold;
+      line-height       : 16px;
+      position          : absolute;
+      left              : 0;
+      counter-increment : payment-item;
+      color             : #ec621f;
+    }
+  }
+
+  ul {
+    @media screen and (max-width : 1023px) {
+      padding-left : 0;
+    }
+    @media screen and (max-width : 767px) {
+      margin-top : 30px;
+    }
+
+  }
+
+  li {
+    position      : relative;
+    margin-bottom : 20px;
+    padding-left  : 15px;
+    list-style    : none;
+
+    @media screen and (max-width : 1023px) {
+      padding-left : 10px;
+    }
+
+    &::before {
+      content          : '';
+      position         : absolute;
+      top              : 0.6em;
+      left             : 0;
+      display          : block;
+      width            : 6px;
+      height           : 6px;
+      border-radius    : 50%;
+      background-color : rgb(236, 98, 31);
+
+      @media screen and (max-width : 1023px) {
+        padding-left : 0.25em;
+      }
+
+    }
+
+  }
+
+  // .item-payment-method__title
+  &__title {
+    font-weight : bold;
+  }
+}

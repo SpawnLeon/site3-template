@@ -92,7 +92,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
   //write-us form
-  document.querySelectorAll('.write-us-btn').forEach((el, i) => {
+  document.querySelectorAll('.write-us-btn, .info-product__call-manager').forEach((el, i) => {
 
     el.addEventListener('click', function(event) {
       event.preventDefault();
@@ -106,7 +106,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
   //warranty-block
-  document.querySelectorAll('.icon-slide--warranty').forEach((el, i) => {
+  document.querySelectorAll('.icon-slide--warranty, .info-product__guarantee').forEach((el, i) => {
 
     el.addEventListener('click', function(event) {
       event.preventDefault();
@@ -119,11 +119,10 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
 
-
   // product slider
   const galleryThumbs = new Swiper('.images-product-thumbs__container', {
     spaceBetween: 10,
-    slidesPerView: 4,
+    slidesPerView: 3,
     freeMode: true,
     watchSlidesVisibility: true,
     watchSlidesProgress: true,

@@ -1,0 +1,159 @@
+.page-content {
+  // .page-content__title
+  &__title {
+  }
+
+  // .page-content__contacts
+  &__contacts {
+  }
+}
+
+.contacts-page {
+  // .contacts-page__inner
+  &__inner {
+    display : flex;
+    margin  : 0 -70px;
+    padding-top : 30px;
+
+    @media screen and (max-width : 1023px) {
+      flex-direction : column;
+    }
+
+  }
+
+  // .contacts-page__panel
+  &__panel {
+    flex   : 0 0 calc(50% - 140px);
+    margin : 0 70px;
+  }
+
+  // .contacts-page__block
+  &__block {
+    margin-bottom : 60px;
+  }
+
+  // .contacts-page__ural
+  &__ural {
+  }
+
+  // .contacts-page__form
+  &__form {
+    margin-top : 70px;
+  }
+}
+
+.panel-contacts {
+  // .panel-contacts--left
+  &--left {
+  }
+
+  // .panel-contacts--right
+  &--right {
+  }
+
+  // .panel-contacts__title
+  &__title {
+    font-size     : 18px;
+    font-weight   : bold;
+    line-height   : 1.11;
+    margin-bottom : 25px;
+
+  }
+
+  // .panel-contacts__inner
+  &__inner {
+  }
+}
+
+.contacts-block {
+  // .contacts-block__title
+  &__title {
+    font-size     : 16px;
+    font-weight   : bold;
+    line-height   : 1.25;
+    margin-bottom : 12px;
+
+  }
+
+  // .contacts-block__inner
+  &__inner {
+    display   : flex;
+    flex-wrap : wrap;
+    flex-wrap : wrap;
+    margin    : 0 -10px;
+  }
+
+  // .contacts-block__item
+  &__item {
+    flex   : 1 1 calc(100% / 2 - 20px);
+    margin : 0 10px 40px;
+    min-width : 260px;
+  }
+
+  // .contacts-block__text
+  &__text {
+    line-height : 20px;
+  }
+
+  // .contacts-block__post
+  &__post {
+
+  }
+}
+
+.contact-item {
+  display : flex;
+
+  // .contact-item__inner
+  &__inner {
+
+
+  }
+
+  // .contact-item__image
+  &__image {
+    flex         : 0 0 90px;
+    width        : 100%;
+    max-width    : 90px;
+    max-height   : 90px;
+    margin-right : 20px;
+  }
+
+  // .contact-item__title
+  &__title {
+    font-weight : bold;
+  }
+}
+
+.ural-contact {
+  // .ural-contact__link
+  &__link {
+    font-weight : bold;
+  }
+
+  // .ural-contact__item
+  &__item {
+    margin-top : 15px;
+    max-width: 260px;
+  }
+}
+
+.form-contacts {
+
+  //.form-contacts__title
+  &__title {
+    font-size   : 16px;
+    font-weight : bold;
+    line-height : 1.87;
+  }
+}
+
+
+@media screen and (max-width : 767px) {
+  .form-contacts .form__row > .form__col--6 {
+    flex: 0 0 100%;
+  }
+  .form-contacts .form__row {
+    flex-wrap: wrap;
+  }
+}

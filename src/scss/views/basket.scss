@@ -26,12 +26,17 @@
     max-width   : 350px;
     margin-top  : 30px;
     margin-left : auto;
+
+    @media screen and (max-width : 1023px) {
+      margin : 35px auto 0;
+    }
   }
 
   // .basket-list__btn
   &__btn {
-    display     : block;
-    margin-left : auto;
+    display      : block;
+    margin-right : auto;
+    margin-left  : auto;
   }
 }
 
@@ -46,24 +51,62 @@
   border           : 1px solid rgb(196, 196, 196);
   background-color : rgb(255, 255, 255);
 
+  @media screen and (max-width : 767px) {
+    padding   : 10px 10px 15px 10px;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+
+  // .item-basket-list__wrapper
+  &__wrapper {
+    display : flex;
+    align-items : center;
+
+    max-width    : 500px;
+    margin-right : auto;
+
+    @media screen and (max-width : 1023px) {
+      flex : 0 0 250px;
+    }
+
+    @media screen and (max-width : 767px) {
+      flex-basis : 100%;
+    }
+  }
+
 
   // .item-basket-list__image
   &__image {
-    width        : 60px;
-    height       : 60px;
+    flex         : 0 0 70px;
+    width        : 70px;
+    height       : 70px;
     margin-right : 25px;
+
+    @media screen and (max-width : 1023px) {
+      flex         : 0 0 60px;
+      width        : 60px;
+      height       : 60px;
+      margin-right : 20px;
+    }
+
   }
 
   // .item-basket-list__info
   &__info {
-    max-width    : 500px;
-    margin-right : auto;
+
+
   }
 
   // .item-basket-list__name
   &__name {
     font-size   : 15px;
     font-weight : bold;
+
+    @media screen and (max-width : 1023px) {
+      font-size : 14px;
+    }
+
 
   }
 
@@ -76,7 +119,12 @@
     font-size   : 15px;
     font-weight : bold;
     margin-left : 60px;
+    white-space : nowrap;
     color       : #54585d;
+
+    @media screen and (max-width : 1023px) {
+      display : none;
+    }
   }
 
   // .item-basket-list__price-total
@@ -84,27 +132,57 @@
     font-size   : 15px;
     font-weight : bold;
     margin-left : 90px;
+    white-space : nowrap;
     color       : #54585d;
+
+
+    @media screen and (max-width : 1023px) {
+      margin : 0 auto;
+    }
+    @media screen and (max-width : 767px) {
+      margin: 20px 0 0 80px;
+    }
   }
 
   // .item-basket-list__footer
   &__footer {
+    flex        : 0 0 auto;
     margin-left : 60px;
+
+    @media screen and (max-width : 1023px) {
+      margin-left : auto;
+    }
+
+    @media screen and (max-width : 767px) {
+      position: absolute;
+      bottom: 15px;
+      right: 15px;
+    }
   }
 
   // .item-basket-list__delete
   &__delete {
+    flex : 0 0 19px;
   }
 
   // .item-basket-list__qty
   &__qty {
     margin-left : 30px;
+
+    @media screen and (max-width : 1023px) {
+      margin : 0 auto;
+    }
+
+    @media screen and (max-width : 767px) {
+      margin: 20px 0 0 80px;
+    }
   }
+
 }
 
 .item-basket-list:first-child {
 
-  & > *::before {
+  @mixin basket-table-headers {
     font-size   : 13px;
     font-weight : normal;
     font-style  : normal;
@@ -113,46 +191,55 @@
     top         : -30px;
     display     : block;
     color       : #54585d;
-
+    @media screen and (max-width : 1023px) {
+      display : none;
+    }
   }
+
 
   // .item-basket-list__image
   .item-basket-list__image {
     &::before {
       content : 'Фото';
+      @include basket-table-headers;
 
     }
   }
 
   // .item-basket-list__info
   .item-basket-list__info {
+
     &::before {
       content : 'Наименование';
-
+      @include basket-table-headers;
     }
   }
 
   // .item-basket-list__qty
   .item-basket-list__qty {
+
     &::before {
       content : 'Количество';
-
+      @include basket-table-headers;
     }
   }
 
   // .item-basket-list__price
   .item-basket-list__price {
+
     &::before {
       content : 'Цена';
-
+      @include basket-table-headers;
     }
+
   }
 
   // .item-basket-list__price-total
   .item-basket-list__price-total {
+
     &::before {
       content : 'Стоимость';
-
+      @include basket-table-headers;
     }
   }
 

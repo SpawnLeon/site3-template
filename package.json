@@ -36,13 +36,11 @@
   "browserslist": {
     "production": [
       ">0.02%",
-      "ie > 5",
-      "not op_mini all"
+      "ie >= 11"
     ],
     "development": [
       ">0.02%",
-      "ie > 5",
-      "not op_mini all"
+      "ie >= 11"
     ]
   }
 }

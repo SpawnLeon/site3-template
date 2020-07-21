@@ -105,6 +105,11 @@
     @media screen and (max-width : 1023px) {
       flex  : 0 0 calc(100% / 3 - 14px);
     }
+
+    @media screen and (max-width : 767px) {
+      flex  : 1 1 calc(100% / 2 - 14px);
+      min-width : 290px;
+    }
   }
 
   // .product-list__item--list

@@ -125,10 +125,11 @@ section,
   // .page-content__title
   &__title {
     font-size : 30px;
-    margin    : 10px 0 20px;
+    margin    : 5px 0 20px;
 
     @media screen and (max-width : 767px) {
       font-size: 24px;
+      margin-bottom : 5px;
     }
   }
 }
@@ -144,4 +145,5 @@ section,
 
 .sidebar + .container__inner {
   flex-basis : calc(100% - #{$sidebarWidth});
+  max-width : 100%;
 }

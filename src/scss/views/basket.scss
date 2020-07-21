@@ -2,6 +2,11 @@
   // .page-content__basket
   &__basket {
     margin-top : 60px;
+
+    @media screen and (max-width : 1023px) {
+      margin-top : 20px;
+    }
+
   }
 }
 
@@ -24,7 +29,7 @@
   // .basket-list__footer
   &__footer {
     max-width   : 350px;
-    margin-top  : 30px;
+    margin-top  : 25px;
     margin-left : auto;
 
     @media screen and (max-width : 1023px) {
@@ -35,8 +40,14 @@
   // .basket-list__btn
   &__btn {
     display      : block;
-    margin-right : auto;
-    margin-left  : auto;
+    margin-top   : 30px;
+    margin-left : auto;
+
+
+    @media screen and (max-width : 1023px) {
+
+      margin-right : auto;
+    }
   }
 }
 
@@ -47,27 +58,32 @@
   align-items      : center;
   justify-content  : space-between;
   box-sizing       : border-box;
-  padding          : 15px 20px;
+  padding          : 12px 32px 12px 20px;
   border           : 1px solid rgb(196, 196, 196);
   background-color : rgb(255, 255, 255);
 
+  @media screen and (max-width : 1023px) {
+    padding : 20px 25px 20px 10px;
+  }
+
   @media screen and (max-width : 767px) {
-    padding   : 10px 10px 15px 10px;
-    flex-direction: column;
-    align-items: flex-start;
+    align-items    : flex-start;
+    flex-direction : column;
+    padding        : 10px 10px 15px 10px;
   }
 
 
   // .item-basket-list__wrapper
   &__wrapper {
-    display : flex;
-    align-items : center;
-
-    max-width    : 500px;
+    display      : flex;
+    align-items  : center;
     margin-right : auto;
+    min-width : 380px;
+    padding-right : 15px;
 
     @media screen and (max-width : 1023px) {
-      flex : 0 0 250px;
+      flex : 1 1 250px;
+      min-width : 0;
     }
 
     @media screen and (max-width : 767px) {
@@ -78,12 +94,13 @@
 
   // .item-basket-list__image
   &__image {
-    flex         : 0 0 70px;
-    width        : 70px;
-    height       : 70px;
-    margin-right : 25px;
+    flex         : 0 0 72px;
+    width        : 72px;
+    max-height   : 72px;
+    margin-right : 35px;
 
     @media screen and (max-width : 1023px) {
+      align-self   : flex-start;
       flex         : 0 0 60px;
       width        : 60px;
       height       : 60px;
@@ -112,15 +129,17 @@
 
   // .item-basket-list__props
   &__props {
+    margin-top : 3px;
   }
 
   // .item-basket-list__price
   &__price {
     font-size   : 15px;
     font-weight : bold;
-    margin-left : 60px;
     white-space : nowrap;
     color       : #54585d;
+    margin : 0 auto;
+    padding : 0 15px;
 
     @media screen and (max-width : 1023px) {
       display : none;
@@ -131,32 +150,34 @@
   &__price-total {
     font-size   : 15px;
     font-weight : bold;
-    margin-left : 90px;
+    margin : 0 auto;
     white-space : nowrap;
     color       : #54585d;
+    padding : 0 15px;
 
 
     @media screen and (max-width : 1023px) {
-      margin : 0 auto;
+
     }
     @media screen and (max-width : 767px) {
-      margin: 20px 0 0 80px;
+      margin : 20px 0 0 80px;
     }
   }
 
   // .item-basket-list__footer
   &__footer {
     flex        : 0 0 auto;
-    margin-left : 60px;
+    margin-left : auto;
+    padding-left: 15px;
 
     @media screen and (max-width : 1023px) {
-      margin-left : auto;
+
     }
 
     @media screen and (max-width : 767px) {
-      position: absolute;
-      bottom: 15px;
-      right: 15px;
+      position : absolute;
+      right    : 15px;
+      bottom   : 15px;
     }
   }
 
@@ -167,14 +188,15 @@
 
   // .item-basket-list__qty
   &__qty {
-    margin-left : 30px;
+    margin : 0 auto;
+    padding : 0 15px;
 
     @media screen and (max-width : 1023px) {
-      margin : 0 auto;
+
     }
 
     @media screen and (max-width : 767px) {
-      margin: 20px 0 0 80px;
+      margin : 20px 0 0 80px;
     }
   }
 
@@ -188,7 +210,7 @@
     font-style  : normal;
     line-height : 16px;
     position    : absolute;
-    top         : -30px;
+    top         : -25px;
     display     : block;
     color       : #54585d;
     @media screen and (max-width : 1023px) {

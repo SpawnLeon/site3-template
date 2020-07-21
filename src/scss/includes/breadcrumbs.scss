@@ -1,8 +1,14 @@
 .breadcrumbs {
   font-size : 12px;
   display   : flex;
-  margin    : 25px 0 10px 0;
+  flex-wrap : wrap;
+  margin    : 15px 0 5px 0;
   padding   : 0;
+
+  @media screen and (max-width : 767px) {
+    margin-top : 5px;
+    margin-bottom : 5px;
+  }
 
   // .breadcrumbs__item
   &__item {
@@ -13,12 +19,14 @@
 
   // .breadcrumbs__link
   &__link {
-    font-size : 12px;
+    font-size   : 11px;
+    line-height : 30px;
+    white-space : nowrap;
   }
 
   // .breadcrumbs__delimiter
   &__delimiter {
     display : inline-block;
-    margin  : 0 5px;
+    margin  : 0 10px 0 15px;
   }
 }

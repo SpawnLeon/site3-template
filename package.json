@@ -39,8 +39,9 @@
       "ie >= 11"
     ],
     "development": [
-      ">0.02%",
-      "ie >= 11"
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
     ]
   }
 }

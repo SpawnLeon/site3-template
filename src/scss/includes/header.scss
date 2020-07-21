@@ -58,7 +58,8 @@
       }
 
       @media screen and (max-width : 767px) {
-
+        padding-right   : 15px;
+        padding-left    : 15px;
       }
     }
 
@@ -165,7 +166,7 @@
       @media screen and (max-width : 767px) {
         flex       : 1 1 100%;
         max-width  : none;
-        margin-top : 9px;
+        margin-top : 20px;
       }
 
     }

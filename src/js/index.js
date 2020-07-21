@@ -127,6 +127,7 @@ document.addEventListener('DOMContentLoaded', () => {
     watchSlidesVisibility: true,
     watchSlidesProgress: true,
     direction: 'vertical',
+    slidesPerColumnFill: 'column',
   });
   const galleryTop = new Swiper('.images-product__container', {
     spaceBetween: 10,

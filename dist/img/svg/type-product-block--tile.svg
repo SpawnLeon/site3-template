@@ -1,6 +1,7 @@
-<svg width="17" height="13" viewBox="0 0 17 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-<rect x="0.660156" y="0.523438" width="7.59061" height="5.51795" fill="#526584"/>
-<rect x="0.65918" y="7.00586" width="7.59061" height="5.51795" fill="#526584"/>
-<rect x="9.06836" y="0.523438" width="7.59061" height="5.51795" fill="#526584"/>
-<rect x="9.06836" y="7.00586" width="7.59061" height="5.51795" fill="#526584"/>
+<svg width="17" height="12" viewBox="0 0 17 12"
+    xmlns="http://www.w3.org/2000/svg">
+    <rect x="0.6604" width="7.59075" height="5.51795" />
+    <rect x="0.65918" y="6.48242" width="7.59075" height="5.51795"/>
+    <rect x="9.06836" width="7.59075" height="5.51795"/>
+    <rect x="9.06836" y="6.48242" width="7.59075" height="5.51795" />
 </svg>

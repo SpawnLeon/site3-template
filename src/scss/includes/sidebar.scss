@@ -5,6 +5,11 @@
   padding       : 20px 0;
   background    : rgba(196, 211, 230, 0.5);
 
+  @media screen and (max-width : 1023px) {
+    display : none;
+  }
+
+
   // .sidebar__nav
   &__nav {
   }

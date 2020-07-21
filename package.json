@@ -35,13 +35,13 @@
   },
   "browserslist": {
     "production": [
-      ">0.2%",
-      "not dead",
+      ">0.02%",
+      "ie > 5",
       "not op_mini all"
     ],
     "development": [
-      ">0.2%",
-      "not dead",
+      ">0.02%",
+      "ie > 5",
       "not op_mini all"
     ]
   }

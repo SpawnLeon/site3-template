@@ -77,8 +77,16 @@
   &__item {
     margin-left : 10px;
 
+    svg * {
+      fill: #C4D3E6;
+    }
+
     // .type-product-block__item--active
     &--active {
+      svg * {
+        fill: #526584;
+      }
+
     }
   }
 }
@@ -91,13 +99,17 @@
 
   // .product-list__item
   &__item {
-    width  : calc(100% / 4 - 14px);
+    flex  : 0 0 calc(100% / 4 - 14px);
     margin : 0 7px 14px;
+
+    @media screen and (max-width : 1023px) {
+      flex  : 0 0 calc(100% / 3 - 14px);
+    }
   }
 
   // .product-list__item--list
   &__item--list {
-    width : 100%;
+    flex  : 0 0 100%;
   }
 }
 

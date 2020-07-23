@@ -70,7 +70,7 @@
     font-size       : 14px;
     display         : flex;
     justify-content : space-between;
-    margin-top      : 70px;
+    margin-top      : 75px;
     color           : #808285;
 
     @media screen and (max-width : 767px) {
@@ -274,6 +274,7 @@
     display     : block;
     white-space : nowrap;
     color       : #fff;
+    text-decoration : none;
 
     @media screen and (max-width : 767px) {
       font-size   : 14px;
@@ -310,7 +311,7 @@
 
   // .bottom-menu__item
   &__item {
-
+    margin : 0;
     padding : 0 15px 0 0;
 
     &:not(:last-child) {
@@ -347,6 +348,7 @@
     line-height : 16px;
     display     : inline-block;
     color       : #fff;
+    text-decoration : none;
 
     // .bottom-menu__link--active
     &--active,
@@ -363,6 +365,7 @@
 .bottom-catalog {
   // .bottom-catalog__item
   &__item {
+    margin : 0;
 
     &:not(:last-child) {
       margin-bottom : 6px;
@@ -376,6 +379,7 @@
     line-height : 16px;
     white-space : nowrap;
     color       : #fff;
+    text-decoration : none;
 
     // .bottom-catalog__link--active
     &--active,

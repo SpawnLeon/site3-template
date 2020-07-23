@@ -17,6 +17,10 @@
   display : flex;
   margin: 0 -10px;
 
+  @media screen and (max-width : 767px) {
+    flex-direction : column;
+  }
+
   // .payments-block__item
   &__item {
     margin: 0 10px 20px;
@@ -40,3 +44,12 @@
   }
 }
 
+.online-payment {
+  background-image : none ;
+
+   & > label {
+     display : block;
+     margin : 15px 0!important;
+   }
+
+}

@@ -44,6 +44,8 @@
     line-height : 19px;
     display     : block;
     padding     : 5px 5px 5px 20px;
+    color : $mainFontColor;
+    text-decoration : none;
 
     // .sidebar-personal-menu__link--active
     &--active,

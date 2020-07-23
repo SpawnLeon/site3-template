@@ -47,9 +47,11 @@ title: "Заголовок | Проект",
       </div>
 
     </div>
-    <form class="form form--register"
-          data-tab="private-person"
-          action="">
+    <form
+      onsubmit="event.preventDefault();document.location.href = 'personal.html'"
+      class="form form--register"
+      data-tab="private-person"
+      action="">
 
       <div class="form__inner">
 
@@ -136,8 +138,10 @@ title: "Заголовок | Проект",
 
         <footer class="form__footer">
           <div class="form__actions">
-            <button class="form__btn btn btn--orange btn--fill"
-                    type="submit">Зарегистрироваться
+            <button
+
+              class="form__btn btn btn--orange btn--fill"
+              type="submit">Зарегистрироваться
             </button>
           </div>
         </footer>
@@ -145,13 +149,12 @@ title: "Заголовок | Проект",
     </form>
 
 
-    <form class="form form--register"
-          data-tab="legal-entity"
-          hidden
-          action="">
-
-
-
+    <form
+      onsubmit="event.preventDefault();document.location.href = 'personal.html'"
+      class="form form--register"
+      data-tab="legal-entity"
+      hidden
+      action="">
 
 
       <div class="form__inner">
@@ -315,8 +318,10 @@ title: "Заголовок | Проект",
 
         <footer class="form__footer">
           <div class="form__actions">
-            <button class="form__btn btn btn--orange btn--fill"
-                    type="submit">Зарегистрироваться
+            <button
+
+              class="form__btn btn btn--orange btn--fill"
+              type="submit">Зарегистрироваться
             </button>
           </div>
         </footer>

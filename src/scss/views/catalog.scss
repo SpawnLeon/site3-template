@@ -118,6 +118,8 @@
     margin-bottom : 5px;
     padding-right : 15px;
     padding-left  : 10px;
+    color : $mainFontColor;
+    text-decoration : none;
 
     @media screen and (max-width : 1023px) {
       font-size   : 14px;
@@ -139,6 +141,7 @@
 
     // .list-item-catalog__list li
     li {
+      margin : 0;
 
       // .list-item-catalog__list li a
       a {
@@ -149,6 +152,8 @@
         display     : inline-block;
         width       : 100%;
         padding     : 4px 5px 5px 11px;
+        color : $mainFontColor;
+        text-decoration : none;
 
         @media screen and (max-width : 1023px) {
           font-size: 12px;

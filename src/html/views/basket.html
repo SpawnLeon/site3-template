@@ -253,7 +253,9 @@ title: "Заголовок | Проект",
 
       <div class="basket-list__footer">
         <%= _.template(require('./../includes/total-block.html').default)(data) %>
-        <button class="basket-list__btn form__btn btn btn--orange btn--fill"
+        <button
+          onclick="document.location.href = 'checkout.html'"
+          class="basket-list__btn form__btn btn btn--orange btn--fill"
                 type="submit">Оформить заказ
         </button>
       </div>

@@ -31,13 +31,14 @@ body {
   -moz-osx-font-smoothing : grayscale;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  margin : 0;
+ul,
+ol,
+li,
+p {
+  font-size     : 14px;
+  line-height   : 1.4285;
+  margin-top    : 1em;
+  margin-bottom : 1em;
 }
 
 
@@ -46,14 +47,14 @@ button {
 }
 
 a {
-  text-decoration          : none;
-  color                    : $mainFontColor;
+  text-decoration          : underline;
+  color                    : $accentColor;
   text-decoration-skip-ink : none;
 
   &:active,
   &:focus,
   &:hover {
-    color : $mainFontColor;
+    color : $accentColor;
   }
 }
 
@@ -128,7 +129,7 @@ section,
     margin    : 5px 0 20px;
 
     @media screen and (max-width : 767px) {
-      font-size: 24px;
+      font-size     : 24px;
       margin-bottom : 5px;
     }
   }
@@ -145,5 +146,5 @@ section,
 
 .sidebar + .container__inner {
   flex-basis : calc(100% - #{$sidebarWidth});
-  max-width : 100%;
+  max-width  : 100%;
 }

@@ -18,29 +18,25 @@ title: "Заголовок | Проект",
             <div class="swiper-container images-product-thumbs__container">
               <div class="swiper-wrapper images-product-thumbs__wrapper">
                 <div class="swiper-slide images-product-thumbs__slide">
-                  <img src="uploads/product-detail/1.jpg"
+                  <a href=""
+                     class="images-product-thumbs__slide-3d">3D</a>
+                  <img src="uploads/product/1.png"
                        alt="">
                 </div>
                 <div class="swiper-slide images-product-thumbs__slide">
-                  <img src="uploads/product-detail/1.jpg"
+                  <img src="uploads/product/2.png"
                        alt="">
                 </div>
                 <div class="swiper-slide images-product-thumbs__slide">
-                  <img src="uploads/product-detail/1.jpg"
+                  <img src="uploads/product/3.png"
                        alt="">
                 </div>
                 <div class="swiper-slide images-product-thumbs__slide">
-                  <img src="uploads/product-detail/1.jpg"
+                  <img src="uploads/product/4.png"
                        alt="">
                 </div>
-                <div class="swiper-slide images-product-thumbs__slide">
-                  <img src="uploads/product-detail/1.jpg"
-                       alt="">
-                </div>
-                <div class="swiper-slide images-product-thumbs__slide">
-                  <img src="uploads/product-detail/1.jpg"
-                       alt="">
-                </div>
+
+
               </div>
             </div>
             <button class="swiper-button-prev images-product-thumbs__btn btn--clear images-product-thumbs__btn--prev">
@@ -66,19 +62,25 @@ title: "Заголовок | Проект",
                 <a href="uploads/product-detail/1.jpg"
                    class="swiper-slide images-product__slide"
                    data-fancybox>
-                  <img src="uploads/product-detail/1.jpg"
+                  <img src="uploads/product/1.png"
                        alt="">
                 </a>
                 <a href="uploads/product-detail/1.jpg"
                    class="swiper-slide images-product__slide"
                    data-fancybox>
-                  <img src="uploads/product-detail/1.jpg"
+                  <img src="uploads/product/2.png"
                        alt="">
                 </a>
                 <a href="uploads/product-detail/1.jpg"
                    class="swiper-slide images-product__slide"
                    data-fancybox>
-                  <img src="uploads/product-detail/1.jpg"
+                  <img src="uploads/product/3.png "
+                       alt="">
+                </a>
+                <a href="uploads/product-detail/1.jpg"
+                   class="swiper-slide images-product__slide"
+                   data-fancybox>
+                  <img src="uploads/product/4.png "
                        alt="">
                 </a>
               </div>
@@ -146,7 +148,9 @@ title: "Заголовок | Проект",
             </div>
           </div>
           <div class="info-product__actions">
-            <button class="info-product__add-to-cart btn btn--fill btn--orange">Купить</button>
+            <button
+              onclick="document.location.href = 'basket.html'"
+              class="info-product__add-to-cart btn btn--fill btn--orange">Купить</button>
             <button class="info-product__add-to-favorite btn--clear">
               <svg
                 width="32"

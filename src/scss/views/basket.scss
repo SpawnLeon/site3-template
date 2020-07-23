@@ -119,6 +119,8 @@
   &__name {
     font-size   : 15px;
     font-weight : bold;
+    color : $mainFontColor;
+    text-decoration : none;
 
     @media screen and (max-width : 1023px) {
       font-size : 14px;

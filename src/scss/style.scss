@@ -16,7 +16,7 @@
 @import 'includes/pagination';
 @import 'includes/total-block';
 @import 'includes/qty-block';
-@import 'includes/warranty';
+@import 'includes/warranty-block';
 
 //pages
 @import 'views/index';
@@ -34,5 +34,6 @@
 @import 'views/personal';
 @import 'views/personal-orders';
 @import 'views/order';
+@import 'views/purchase-returns';
 
 

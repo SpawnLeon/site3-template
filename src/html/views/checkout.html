@@ -30,7 +30,7 @@ title: "Заголовок | Проект",
                     <input
                       checked
                       type="radio"
-                      name="person-type"
+                      name="delivery-type"
                       value="delivery"
                       data-tab-target="delivery"
                       class="item-form__field item-form__field--radio">
@@ -39,9 +39,8 @@ title: "Заголовок | Проект",
                   </label>
                   <label class="item-form__label item-form__label--radio item-form__label--radio-group">
                     <input
-
                       type="radio"
-                      name="person-type"
+                      name="delivery-type"
                       value="pickup"
                       data-tab-target="pickup"
                       class="item-form__field item-form__field--radio">
@@ -265,7 +264,8 @@ title: "Заголовок | Проект",
 
             <div class=""
                  data-tab="bill"></div>
-            <div hidden class=""
+            <div hidden
+                 class=""
                  data-tab="online-payment-system">
               <div class="payments-block">
                 <div class="payments-block__item item-payment">
@@ -276,7 +276,42 @@ title: "Заголовок | Проект",
                 </div>
                 <div class="payments-block__item item-payment">
                   <div class="item-payment__title">Электронный кошелек</div>
-                  <div class="item-payment__inner">
+                  <div class="item-payment__inner online-payment">
+
+
+                    <label class="item-form__label item-form__label--radio item-form__label--radio-group">
+                      <input
+                        type="radio"
+                        name="online-payment"
+                        value="pickup"
+                        data-tab-target="pickup"
+                        class="item-form__field item-form__field--radio">
+                      <span></span>
+                      <span class="item-form__name item-form__name--radio">Яндеск Деньги</span>
+                    </label>
+
+                    <label class="item-form__label item-form__label--radio item-form__label--radio-group">
+                      <input
+                        type="radio"
+                        name="online-payment"
+                        value="pickup"
+                        data-tab-target="pickup"
+                        class="item-form__field item-form__field--radio">
+                      <span></span>
+                      <span class="item-form__name item-form__name--radio">Google Pay</span>
+                    </label>
+
+                    <label class="item-form__label item-form__label--radio item-form__label--radio-group">
+                      <input
+                        type="radio"
+                        name="online-payment"
+                        value="pickup"
+                        data-tab-target="pickup"
+                        class="item-form__field item-form__field--radio">
+                      <span></span>
+                      <span class="item-form__name item-form__name--radio">Apple Pay</span>
+                    </label>
+
 
                   </div>
                 </div>

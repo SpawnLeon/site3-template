@@ -5,6 +5,10 @@
   padding       : 20px 0;
   background    : rgba(196, 211, 230, 0.5);
 
+  @media screen and (max-width : 1340px) {
+    margin-left : -30px ;
+  }
+
   @media screen and (max-width : 1023px) {
     display : none;
   }
@@ -37,6 +41,7 @@
     display     : block;
     padding     : 5px 20px;
     color       : #000;
+    text-decoration : none;
 
     &--active,
     &:active,
@@ -58,6 +63,7 @@
 .catalog-submenu {
   // .catalog-submenu__item
   &__item {
+    margin : 0;
   }
 
   // .catalog-submenu__link
@@ -65,6 +71,8 @@
     font-size : 13px;
     display   : block;
     padding   : 8px 20px 8px 9px;
+    color : $mainFontColor;
+    text-decoration : none;
 
 
     // .catalog-submenu__link--active

@@ -101,6 +101,8 @@
   &__name {
     font-size   : 15px;
     font-weight : bold;
+    color : $mainFontColor;
+    text-decoration : none;
   }
 
   // .item-order-product-list__props

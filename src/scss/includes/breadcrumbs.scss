@@ -12,6 +12,7 @@
 
   // .breadcrumbs__item
   &__item {
+    margin : 0;
     &:not(:last-child) a {
       text-decoration : underline;
     }
@@ -22,6 +23,8 @@
     font-size   : 11px;
     line-height : 30px;
     white-space : nowrap;
+    color : $mainFontColor;
+    text-decoration : none;
   }
 
   // .breadcrumbs__delimiter

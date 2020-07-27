@@ -105,19 +105,6 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
 
-  //warranty-block
-  document.querySelectorAll('.icon-slide--warranty, .info-product__guarantee').forEach((el, i) => {
-
-    el.addEventListener('click', function(event) {
-      event.preventDefault();
-
-      $.fancybox.open({
-        src: '#warranty-block',
-        type: 'inline',
-      });
-    });
-  });
-
 
   // product slider
   const galleryThumbs = new Swiper('.images-product-thumbs__container', {

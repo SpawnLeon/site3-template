@@ -4,17 +4,96 @@ title: "Заголовок | Проект",
 <%= _.template(require('./../includes/header.html').default)(data) %>
 
 
+<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=adcbc647-465e-457a-883c-86b24d6f99d0"
+        type="text/javascript"></script>
 <div class="container">
-    <div class="container__inner">
+  <div class="container__inner">
 
-        <%= _.template(require('./../includes/breadcrumbs.html').default)(data) %>
-        <h1 class="page-content__title">О компании</h1>
+    <%= _.template(require('./../includes/breadcrumbs.html').default)(data) %>
+    <h1 class="page-content__title">О компании</h1>
 
-        <div class="page-content__about about-page">
+    <div class="page-content__about about-page">
 
+      <div class="about-page__inner">
+        <div class="about-page__panel panel-about panel-about--left">
+          <div class="about-page__image about-image">
+            <img src="uploads/about/1.jpg"
+                 alt="">
+          </div>
+          <div class="about-page__map about-map"
+               id="about-map"
+               style=" height   : 570px;">
+
+
+            <script>
+              //delivery map
+              ymaps.ready(function() {
+                const myMap = new ymaps.Map('about-map', {
+                    center: [55.0640345696626, 60.10216149999999],
+                    zoom: 17,
+                  }, {
+                    searchControlProvider: 'yandex#search',
+                  }),
+
+
+                  MyIconContentLayout = ymaps.templateLayoutFactory.createClass(
+                    '<div style="color: #fff; font-weight: bold;">$[properties.iconContent]</div>',
+                  ),
+
+
+                  myPlacemarkWithContent = new ymaps.Placemark([55.0640345696626, 60.10216149999999], {}, {
+
+                    iconLayout: 'default#imageWithContent',
+                    iconImageHref: 'img/svg/map.svg',
+                    iconImageSize: [60, 68],
+                    iconImageOffset: [-30, -66],
+                    iconContentLayout: MyIconContentLayout,
+                  });
+
+                myMap.geoObjects
+                  .add(myPlacemarkWithContent);
+              });
+            </script>
+          </div>
+        </div>
+
+        <div class="about-page__panel panel-about panel-about--right">
+          <div class="about-page__text about-text">
+            <p>ООО “ОМГ-Сервис” – единственный эксклюзивный дистрибьютор АО “АЗ “УРАЛ” по продаже запасных частей к
+              автомобилям марки УРАЛ, имеет права по формированию и аттестации товаропроводящей сети на территории РФ и
+              стран СНГ. </p>
+            <p>Основное направление деятельности ООО “ОМГ-Сервис” – техническое обслуживание и ремонт автомобилей УРАЛ,
+              а также своевременное обеспечение потребителей техники УРАЛ оригинальными запасными частями и
+              предоставление качественных сервисных услуг.
+            </p>
+          </div>
+
+          <div class="about-page__mission about-mission">
+            <img src="uploads/about/2.jpg"
+                 alt="">
+          </div>
+
+          <div class="about-page__contacts about-contacts">
+            <p>
+              По вопросам приобретения запасных частей и другим вопросам: <br>
+              Тел. 8 (3513) 55-53-11, 55-53-77 <br>
+              Пн-Пт (10:00-18:00)
+            </p>
+            <p>
+              E-mail: <a href="mailto:sales@umg.ru">sales@umg.ru </a>
+            </p>
+            <p>
+              По вопросам и замечаниям на качество обращайтесь в Службу клиентской поддержки:
+              <a href="mailto:support@umg.ru">support@umg.ru</a>
+
+            </p>
+          </div>
 
         </div>
+      </div>
     </div>
+
+  </div>
 
 
 </div>

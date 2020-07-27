@@ -1,0 +1,158 @@
+<% var data = {
+title: "Заголовок | Проект",
+
+}; %>
+<%= _.template(require('./../includes/header.html').default)(data) %>
+
+
+<div class="container">
+  <%= _.template(require('./../includes/breadcrumbs.html').default)(data) %>
+  <h1 class="page-content__title">Поиск запасных частей</h1>
+  <div class="forms-page">
+
+
+    <form class="form form--search-part"
+          action="">
+      <div class="form__inner">
+        <div class="form__content">
+
+          <div class="form__group group-form">
+
+
+
+
+            <div class="form__item item-form">
+              <label class="item-form__label item-form__label--text">
+                <input
+                  type="text"
+                  class="item-form__field item-form__field--text">
+                <span class="item-form__name  item-form__name--text">Модель эксплуатируемого автомобиля *</span>
+              </label>
+            </div>
+
+            <div class="form__item item-form">
+              <label class="item-form__label item-form__label--text">
+                <input
+                  type="text"
+                  class="item-form__field item-form__field--text">
+                <span class="item-form__name  item-form__name--text">Год выпуска *</span>
+              </label>
+            </div>
+
+            <div class="form__item item-form">
+              <label class="item-form__label item-form__label--text">
+                <input
+                  type="text"
+                  class="item-form__field item-form__field--text">
+                <span class="item-form__name  item-form__name--text">ВИН автомобиля *</span>
+              </label>
+            </div>
+
+            <div class="form__item item-form">
+              <label class="item-form__label item-form__label--text">
+                <input
+                  type="text"
+                  class="item-form__field item-form__field--text">
+                <span class="item-form__name  item-form__name--text">Наименование детали (по возможности)</span>
+              </label>
+            </div>
+
+            <div class="form__item item-form">
+              <label class="item-form__label item-form__label--text">
+                <input
+                  type="text"
+                  class="item-form__field item-form__field--text">
+                <span class="item-form__name  item-form__name--text">Артикул (по возможности)</span>
+              </label>
+            </div>
+
+            <div class="form__item item-form">
+              <label class="item-form__label item-form__label--text">
+                <input
+                  type="text"
+                  class="item-form__field item-form__field--text">
+                <span class="item-form__name  item-form__name--text">Город (населенный пункт)</span>
+              </label>
+            </div>
+
+            <div class="form__item item-form">
+              <label class="item-form__label item-form__label--text">
+                <input
+                  type="text"
+                  class="item-form__field item-form__field--text">
+                <span class="item-form__name  item-form__name--text">Субъект РФ *</span>
+              </label>
+            </div>
+
+            <div class="form__item item-form">
+              <label class="item-form__label item-form__label--text">
+                <input
+                  type="text"
+                  class="item-form__field item-form__field--text">
+                <span class="item-form__name  item-form__name--text">Город покупки запасной части *</span>
+              </label>
+            </div>
+
+            <div class="form__item item-form">
+              <label class="item-form__label item-form__label--text">
+                <input
+                  type="text"
+                  class="item-form__field item-form__field--text">
+                <span class="item-form__name  item-form__name--text">ФИО *</span>
+              </label>
+            </div>
+
+            <div class="form__item item-form">
+              <label class="item-form__label item-form__label--text">
+                <input
+                  type="text"
+                  class="item-form__field item-form__field--text">
+                <span class="item-form__name  item-form__name--text">Контактный телефон *</span>
+              </label>
+            </div>
+
+            <div class="form__item item-form">
+              <label class="item-form__label item-form__label--text">
+                <input
+                  type="text"
+                  class="item-form__field item-form__field--text">
+                <span class="item-form__name  item-form__name--text">Email</span>
+              </label>
+            </div>
+
+            <div class="form__item item-form">
+              <label class="item-form__label item-form__label--text">
+
+                <textarea rows="3" class="item-form__field item-form__field--text item-form__field--textarea"></textarea>
+                <span class="item-form__name item-form__name--text">Пожелания</span>
+              </label>
+            </div>
+
+            <div class="form__item item-form">
+              <label class="item-form__label item-form__label--text">
+
+                <textarea rows="3" class="item-form__field item-form__field--text item-form__field--textarea"></textarea>
+                <span class="item-form__name item-form__name--text">Адреса посещаемых магазинов «Детали машин ГАЗ»</span>
+              </label>
+            </div>
+
+
+
+          </div>
+        </div>
+
+        <footer class="form__footer">
+          <div class="form__actions">
+            <button class="form__btn btn btn--orange btn--fill"
+                    type="submit">Отправить
+            </button>
+          </div>
+        </footer>
+      </div>
+    </form>
+
+
+  </div>
+</div>
+
+<%= _.template(require('./../includes/footer.html').default)(data) %>

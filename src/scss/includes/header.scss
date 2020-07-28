@@ -119,8 +119,16 @@
 
   }
 
+  // .header__vin
+  &__vin {
+    margin-top: 6px;
+    display : block;
+  }
+
   // .header__block
   &__block {
+
+
 
 
     // .header__block--1
@@ -156,7 +164,7 @@
 
       @media screen and (max-width : 1023px) {
         max-width    : 310px;
-        margin-top   : 22px;
+        margin-top   : 10px;
         margin-right : 0;
       }
 
@@ -660,4 +668,9 @@
   &__icon {
     margin-right : 30px;
   }
+}
+
+.header__vin {
+  font-weight: 700;
+  text-decoration: none;
 }

@@ -10,7 +10,7 @@ const TerserPlugin = require('terser-webpack-plugin');
 
 const SVGSpritemapPlugin = require('svg-spritemap-webpack-plugin');
 
-function generateHtmlPlugins (templateDir) {
+function generateHtmlPlugins(templateDir) {
   const templateFiles = fs.readdirSync(path.resolve(__dirname, templateDir));
   return templateFiles.map((item) => {
     const parts = item.split('.');
@@ -40,7 +40,10 @@ const config = {
         extractComments: true,
       }),
     ],
-
+    // splitChunks: {
+    //   // include all types of chunks
+    //   chunks: 'all',
+    // },
   },
 
   module: {
@@ -118,10 +121,10 @@ const config = {
       'src/img/svg/**/*.svg',
       {
         output: {
-          filename: 'img/spritemap.svg'
-        }
+          filename: 'img/spritemap.svg',
+        },
 
-      }
+      },
     ),
     new webpack.ProvidePlugin({
       $: 'jquery',

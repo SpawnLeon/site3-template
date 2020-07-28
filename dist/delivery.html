@@ -10,7 +10,7 @@
 
   <title>Document</title>
 
-<link href="./css/1.style.bundle.css" rel="stylesheet"><link href="./css/style.bundle.css" rel="stylesheet"></head>
+<link href="./css/style.bundle.css" rel="stylesheet"></head>
 <body>
 <div class="page">
   <header class="header">
@@ -341,36 +341,6 @@
             <div id="delivery-page__map"
                  class="delivery-page__map"></div>
 
-            <script>
-                //delivery map
-                ymaps.ready(function () {
-                    const myMap = new ymaps.Map('delivery-page__map', {
-                            center: [55.0640345696626, 60.10216149999999],
-                            zoom: 17
-                        }, {
-                            searchControlProvider: 'yandex#search'
-                        }),
-
-
-                        MyIconContentLayout = ymaps.templateLayoutFactory.createClass(
-                            '<div style="color: #fff; font-weight: bold;">$[properties.iconContent]</div>'
-                        ),
-
-
-                        myPlacemarkWithContent = new ymaps.Placemark([55.0640345696626, 60.10216149999999], {}, {
-
-                            iconLayout: 'default#imageWithContent',
-                            iconImageHref: 'img/svg/map.svg',
-                            iconImageSize: [60, 68],
-                            iconImageOffset: [-30, -66],
-                            iconContentLayout: MyIconContentLayout
-                        });
-
-                    myMap.geoObjects
-                        .add(myPlacemarkWithContent);
-                });
-            </script>
-
             <div class="delivery-page__item">
                 <b> Отправка запасных частей через транспортные компании:</b>
                 После оформления и оплаты заказа наш специалист сообщит Вам о готовности заказа к выдаче, после чего Вы
@@ -681,7 +651,7 @@
 </div>
 
 
-<script type="text/javascript" src="./js/1.bundle.js"></script><script type="text/javascript" src="./js/bundle.js"></script></body>
+<script type="text/javascript" src="./js/bundle.js"></script></body>
 
 </html>
 

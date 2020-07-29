@@ -1,0 +1,25 @@
+.multi-ordered-list {
+  ul, ol {
+    padding       : 0;
+    list-style    : none;
+    counter-reset : item;
+
+    li {
+      position     : relative;
+      padding-left : 40px;
+    }
+
+
+    li:before {
+      content           : counters(item, ".") " ";
+      position          : absolute;
+      top               : 0;
+      left              : 0;
+      counter-increment : item;
+      width: 30px;
+      text-align : right;
+
+
+    }
+  }
+}

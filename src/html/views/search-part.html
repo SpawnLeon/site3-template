@@ -7,7 +7,7 @@ title: "Заголовок | Проект",
 
 <div class="container">
   <%= _.template(require('./../includes/breadcrumbs.html').default)(data) %>
-  <h1 class="page-content__title">Поиск запасных частей</h1>
+  <h1 class="page-content__title">Запрос на подбор запасных частей по ВИН номеру</h1>
   <div class="forms-page">
 
 
@@ -26,7 +26,7 @@ title: "Заголовок | Проект",
                 <input
                   type="text"
                   class="item-form__field item-form__field--text">
-                <span class="item-form__name  item-form__name--text">Модель эксплуатируемого автомобиля *</span>
+                <span class="item-form__name  item-form__name--text">Модель автомобиля *</span>
               </label>
             </div>
 
@@ -53,7 +53,7 @@ title: "Заголовок | Проект",
                 <input
                   type="text"
                   class="item-form__field item-form__field--text">
-                <span class="item-form__name  item-form__name--text">Наименование детали (по возможности)</span>
+                <span class="item-form__name  item-form__name--text">Наименование</span>
               </label>
             </div>
 
@@ -62,7 +62,7 @@ title: "Заголовок | Проект",
                 <input
                   type="text"
                   class="item-form__field item-form__field--text">
-                <span class="item-form__name  item-form__name--text">Артикул (по возможности)</span>
+                <span class="item-form__name  item-form__name--text">Каталожный номер</span>
               </label>
             </div>
 
@@ -71,7 +71,7 @@ title: "Заголовок | Проект",
                 <input
                   type="text"
                   class="item-form__field item-form__field--text">
-                <span class="item-form__name  item-form__name--text">Город (населенный пункт)</span>
+                <span class="item-form__name  item-form__name--text">Город (населенный пункт) *</span>
               </label>
             </div>
 
@@ -80,7 +80,7 @@ title: "Заголовок | Проект",
                 <input
                   type="text"
                   class="item-form__field item-form__field--text">
-                <span class="item-form__name  item-form__name--text">Субъект РФ *</span>
+                <span class="item-form__name  item-form__name--text">Субъект РФ</span>
               </label>
             </div>
 
@@ -89,16 +89,7 @@ title: "Заголовок | Проект",
                 <input
                   type="text"
                   class="item-form__field item-form__field--text">
-                <span class="item-form__name  item-form__name--text">Город покупки запасной части *</span>
-              </label>
-            </div>
-
-            <div class="form__item item-form">
-              <label class="item-form__label item-form__label--text">
-                <input
-                  type="text"
-                  class="item-form__field item-form__field--text">
-                <span class="item-form__name  item-form__name--text">ФИО *</span>
+                <span class="item-form__name  item-form__name--text">ФИО, Наименование организации *</span>
               </label>
             </div>
 
@@ -116,7 +107,7 @@ title: "Заголовок | Проект",
                 <input
                   type="text"
                   class="item-form__field item-form__field--text">
-                <span class="item-form__name  item-form__name--text">Email</span>
+                <span class="item-form__name  item-form__name--text">E-mail *</span>
               </label>
             </div>
 
@@ -124,15 +115,7 @@ title: "Заголовок | Проект",
               <label class="item-form__label item-form__label--text">
 
                 <textarea rows="3" class="item-form__field item-form__field--text item-form__field--textarea"></textarea>
-                <span class="item-form__name item-form__name--text">Пожелания</span>
-              </label>
-            </div>
-
-            <div class="form__item item-form">
-              <label class="item-form__label item-form__label--text">
-
-                <textarea rows="3" class="item-form__field item-form__field--text item-form__field--textarea"></textarea>
-                <span class="item-form__name item-form__name--text">Адреса посещаемых магазинов «Детали машин ГАЗ»</span>
+                <span class="item-form__name item-form__name--text">Примечания</span>
               </label>
             </div>
 

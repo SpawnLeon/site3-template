@@ -6,12 +6,12 @@
 
   // .footer__phones
   &__phones {
-    margin-top  : 7px;
+    margin-top  : 4px;
     margin-left : 21px;
 
     @media screen and (max-width : 767px) {
-      margin-left : 10px;
-      letter-spacing: -0.5px;
+      margin-left    : 8px;
+      letter-spacing : -0.5px;
     }
   }
 
@@ -268,13 +268,13 @@
 .phones-block-v1 {
   // .phones-block-v1__item
   &__item {
-    font-size   : 16px;
-    font-weight : bold;
-    line-height : 19px;
-    display     : block;
-    white-space : nowrap;
-    color       : #fff;
+    font-size       : 16px;
+    font-weight     : bold;
+    line-height     : 19px;
+    display         : block;
+    white-space     : nowrap;
     text-decoration : none;
+    color           : #fff;
 
     @media screen and (max-width : 767px) {
       font-size   : 14px;
@@ -311,7 +311,7 @@
 
   // .bottom-menu__item
   &__item {
-    margin : 0;
+    margin  : 0;
     padding : 0 15px 0 0;
 
     &:not(:last-child) {
@@ -344,11 +344,11 @@
 
   // .bottom-menu__link
   &__link {
-    font-size   : 13px;
-    line-height : 16px;
-    display     : inline-block;
-    color       : #fff;
+    font-size       : 13px;
+    line-height     : 16px;
+    display         : inline-block;
     text-decoration : none;
+    color           : #fff;
 
     // .bottom-menu__link--active
     &--active,
@@ -374,12 +374,12 @@
 
   // .bottom-catalog__link
   &__link {
-    font-size   : 13px;
-    font-weight : normal;
-    line-height : 16px;
-    white-space : nowrap;
-    color       : #fff;
+    font-size       : 13px;
+    font-weight     : normal;
+    line-height     : 16px;
+    white-space     : nowrap;
     text-decoration : none;
+    color           : #fff;
 
     // .bottom-catalog__link--active
     &--active,
@@ -463,4 +463,34 @@
     margin-right : 12px;
   }
 
+}
+
+
+.phone-item {
+  // .phone-item--footer
+  &--footer {
+    display : block;
+  }
+
+
+  // .phone-item__title
+  &__title {
+    // .phone-item__title--footer
+    &--footer {
+      font-size   : 10px;
+      font-weight : normal;
+      line-height : inherit;
+    }
+  }
+
+  // .phone-item__phone
+  &__phone {
+    // .phone-item__phone--footer
+    &--footer {
+      font-size       : 15px;
+      font-weight     : bold;
+      text-decoration : none;
+      color           : #fff;
+    }
+  }
 }

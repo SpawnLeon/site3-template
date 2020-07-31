@@ -121,14 +121,12 @@
 
   // .header__vin
   &__vin {
-    margin-top: 6px;
-    display : block;
+    display    : block;
+    margin-top : 6px;
   }
 
   // .header__block
   &__block {
-
-
 
 
     // .header__block--1
@@ -153,7 +151,7 @@
 
       @media screen and (max-width : 1600px) {
         max-width    : 367px;
-        margin-top   : 17px;
+        margin-top   : 2px;
         margin-right : 35px;
         margin-left  : 0;
       }
@@ -234,7 +232,7 @@
   &__phones {
     font-size   : 13px;
     line-height : 16px;
-    margin-top  : 9px;
+    margin-top  : 5px;
 
 
     @media screen and (max-width : 1600px) {
@@ -388,14 +386,14 @@
 
   // .personal-block-header__link
   &__link {
-    font-size    : 12px;
-    line-height  : 15px;
-    display      : flex;
-    align-items  : center;
-    margin-right : 60px;
-    white-space  : nowrap;
-    color        : #1c2127;
+    font-size       : 12px;
+    line-height     : 15px;
+    display         : flex;
+    align-items     : center;
+    margin-right    : 60px;
+    white-space     : nowrap;
     text-decoration : none;
+    color           : #1c2127;
 
     @media screen and (max-width : 1600px) {
       margin-right : 35px;
@@ -580,13 +578,13 @@
 
   // .header-catalog-submenu__link
   &__link {
-    font-size   : 14px;
-    line-height : 1.07;
-    display     : block;
-    padding     : 8px 15px;
-    transition  : all 0.1s;
-    color : $mainFontColor;
+    font-size       : 14px;
+    line-height     : 1.07;
+    display         : block;
+    padding         : 8px 15px;
+    transition      : all 0.1s;
     text-decoration : none;
+    color           : $mainFontColor;
 
     // .header-catalog-submenu__link--active
     &--active,
@@ -671,6 +669,27 @@
 }
 
 .header__vin {
-  font-weight: 700;
-  text-decoration: none;
+  font-weight     : 700;
+  text-decoration : none;
+}
+
+
+.phone-item {
+  display : inline-block;
+
+
+  // .phone-item__title
+  &__title {
+    font-size   : 0.8em;
+    font-weight : normal;
+    line-height: 1;
+
+  }
+
+  // .phone-item__phone
+  &__phone {
+    text-decoration : none;
+    color           : $mainFontColor;
+
+  }
 }

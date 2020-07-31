@@ -1,5 +1,10 @@
 <div class="<%= addClass  %>  order-product-list">
   <div class="order-product-list__header">
+
+    <a href="" class="order-product-list__back">
+      К списку заказов
+    </a>
+
     <div class="order-product-list__title">
       Заказ №555/23/25
     </div>
@@ -7,16 +12,30 @@
       Доставлен 25.02.2020
     </div>
 
-    <button
-      type="button"
-      class="order-product-list__repeat-order">
-      <svg
-        width="17"
-        height="20">
-        <use xlink:href="img/spritemap.svg#sprite-copy"></use>
-      </svg>
-      Повторить заказ
-    </button>
+    <div class="order-product-list__actions">
+      <button
+        type="button"
+        class="order-product-list__btn order-product-list__btn--repeat-order">
+        <svg
+          width="17"
+          height="20">
+          <use xlink:href="img/spritemap.svg#sprite-copy"></use>
+        </svg>
+        Повторить заказ
+      </button>
+
+      <button
+        type="button"
+        class="order-product-list__btn order-product-list__btn--download-order">
+        <svg
+          width="17"
+          height="18">
+          <use xlink:href="img/spritemap.svg#sprite-pdf"></use>
+        </svg>
+        Скачать счет
+      </button>
+    </div>
+
   </div>
   <div class="order-product-list__inner">
     <div class="order-product-list__item  item-order-product-list">
@@ -89,7 +108,7 @@
         </div>
       </div>
       <div class="item-order-product-list__qty">
-        1
+        1 <span>шт.</span>
       </div>
 
       <div class="item-order-product-list__price">
@@ -129,7 +148,7 @@
         </div>
       </div>
       <div class="item-order-product-list__qty">
-        1
+        1 <span>шт.</span>
       </div>
 
       <div class="item-order-product-list__price">
@@ -169,7 +188,7 @@
         </div>
       </div>
       <div class="item-order-product-list__qty">
-        1
+        1 <span>шт.</span>
       </div>
 
       <div class="item-order-product-list__price">

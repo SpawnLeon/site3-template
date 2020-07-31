@@ -8,13 +8,18 @@
   // .personal-page__inner
   &__inner {
     display : flex;
+
+    @media screen and (max-width : 1023px) {
+      display : block;
+    }
+
   }
 
   // .personal-page__sidebar
   &__sidebar {
-    max-width: 140px;
-    margin-right: 100px;
-    width : 100%;
+    width        : 100%;
+    max-width    : 140px;
+    margin-right : 40px;
   }
 
   // .personal-page__content
@@ -24,28 +29,42 @@
 }
 
 .sidebar-personal {
+
   // .sidebar-personal__nav
   &__nav {
   }
 
   // .sidebar-personal__sidebar-personal-menu
   &__sidebar-personal-menu {
+
+
   }
 }
 
 .sidebar-personal-menu {
+  @media screen and (max-width : 1023px) {
+    display : flex;
+  }
+
   // .sidebar-personal-menu__item
   &__item {
   }
 
   // .sidebar-personal-menu__link
   &__link {
-    font-size   : 13px;
-    line-height : 19px;
-    display     : block;
-    padding     : 5px 5px 5px 20px;
-    color : $mainFontColor;
+    font-size       : 13px;
+    line-height     : 19px;
+    display         : block;
+    padding         : 5px 5px 5px 20px;
+
     text-decoration : none;
+    color           : $mainFontColor;
+
+    @media screen and (max-width : 1023px) {
+      font-size : 12px;
+      padding   : 6px 7px;
+      white-space     : nowrap;
+    }
 
     // .sidebar-personal-menu__link--active
     &--active,

@@ -31,7 +31,7 @@ title: "Заголовок | Проект",
 
 
       <div class="personal-page__content content-personal">
-         <div class="personal-orders">
+        <div class="personal-orders">
           <table class="personal-orders__table table-orders">
             <tr class="personal-orders__item">
               <th>№</th>
@@ -42,26 +42,26 @@ title: "Заголовок | Проект",
               <th>Доставлен</th>
               <th></th>
             </tr>
-            <tr class="personal-orders__item">
-              <td>555/21/52</td>
-              <td>
+            <tr class="personal-orders__item item-personal-order">
+              <td class="item-personal-order__number">555/21/52</td>
+              <td class="item-personal-order__status">
                 <div class="table-orders__status table-orders__status--process">
                   Новый
                 </div>
               </td>
-              <td>
-                <div class="table-orders__count">
-                  10
-                </div>
+              <td class="item-personal-order__count">
+                <div class="item-personal-order__title">Позиций</div>
+                10
               </td>
-              <td>
-                <div class="table-orders__total">
-                  15 252
-                </div>
+              <td class="item-personal-order__total">
+                <div class="item-personal-order__title">Сумма, руб</div>
+                15 252
               </td>
-              <td></td>
-              <td>10.06.2020</td>
-              <td>
+              <td class="item-personal-order__expected"></td>
+              <td class="item-personal-order__delivered">
+                <div class="item-personal-order__title">Доставлен</div>
+                10.06.2020</td>
+              <td class="item-personal-order__actions">
                 <div class="table-orders__actions">
                   <button
                     type="button"
@@ -87,60 +87,26 @@ title: "Заголовок | Проект",
 
               </td>
             </tr>
-            <tr class="personal-orders__item">
-              <td>555/21/52</td>
-              <td>
-                <div class="table-orders__status">
-                  Доставлен
-                </div>
-              </td>
-              <td>
-                <div class="table-orders__count">
-                  10
-                </div>
-              </td>
-              <td>
-                <div class="table-orders__total">
-                  15 252
-                </div>
-              </td>
-              <td>10.06.2020</td>
-              <td></td>
-              <td>
-                <div class="table-orders__actions">
-                  <button
-                    type="button"
-                    class="personal-orders__copy-orders"
-                  >
-                    <svg
-                      width="17"
-                      height="20">
-                      <use xlink:href="img/spritemap.svg#sprite-copy"></use>
-                    </svg>
-                  </button>
-                </div>
-              </td>
-            </tr>
-            <tr class="personal-orders__item">
-              <td>555/21/52</td>
-              <td>
+            <tr class="personal-orders__item item-personal-order">
+              <td class="item-personal-order__number">555/21/52</td>
+              <td class="item-personal-order__status">
                 <div class="table-orders__status table-orders__status--process">
-                  В работе
+                  Новый
                 </div>
               </td>
-              <td>
-                <div class="table-orders__count">
-                  10
-                </div>
+              <td class="item-personal-order__count">
+                <div class="item-personal-order__title">Позиций</div>
+                10
               </td>
-              <td>
-                <div class="table-orders__total">
-                  15 252
-                </div>
+              <td class="item-personal-order__total">
+                <div class="item-personal-order__title">Сумма, руб</div>
+                15 252
               </td>
-              <td>10.06.2020</td>
-              <td></td>
-              <td>
+              <td class="item-personal-order__expected"></td>
+              <td class="item-personal-order__delivered">
+                <div class="item-personal-order__title">Доставлен</div>
+                10.06.2020</td>
+              <td class="item-personal-order__actions">
                 <div class="table-orders__actions">
                   <button
                     type="button"
@@ -163,6 +129,52 @@ title: "Заголовок | Проект",
                     </svg>
                   </button>
                 </div>
+
+              </td>
+            </tr>
+            <tr class="personal-orders__item item-personal-order">
+              <td class="item-personal-order__number">555/21/52</td>
+              <td class="item-personal-order__status">
+                <div class="table-orders__status table-orders__status--process">
+                  Новый
+                </div>
+              </td>
+              <td class="item-personal-order__count">
+                <div class="item-personal-order__title">Позиций</div>
+                10
+              </td>
+              <td class="item-personal-order__total">
+                <div class="item-personal-order__title">Сумма, руб</div>
+                15 252
+              </td>
+              <td class="item-personal-order__expected"></td>
+              <td class="item-personal-order__delivered">
+                <div class="item-personal-order__title">Доставлен</div>
+                10.06.2020</td>
+              <td class="item-personal-order__actions">
+                <div class="table-orders__actions">
+                  <button
+                    type="button"
+                    class="personal-orders__copy-orders"
+                  >
+                    <svg
+                      width="17"
+                      height="20">
+                      <use xlink:href="img/spritemap.svg#sprite-copy"></use>
+                    </svg>
+                  </button>
+                  <button
+                    type="button"
+                    class="personal-orders__pdf"
+                  >
+                    <svg
+                      width="17"
+                      height="18">
+                      <use xlink:href="img/spritemap.svg#sprite-pdf"></use>
+                    </svg>
+                  </button>
+                </div>
+
               </td>
             </tr>
           </table>
@@ -175,11 +187,12 @@ title: "Заголовок | Проект",
   </div>
 </div>
 
-<div class="personal-orders-order-detail-wrapper" id="personal-orders-order-detail" style="display: none;">
+<div class="personal-orders-order-detail-wrapper"
+     id="personal-orders-order-detail"
+     style="display: none;">
   <% data.addClass = '' %>
   <%= _.template(require('./../includes/order.html').default)(data) %>
 </div>
-
 
 
 <%= _.template(require('./../includes/footer.html').default)(data) %>

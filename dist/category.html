@@ -285,7 +285,7 @@
     <!--    <div class="container">  -->
 
 
-<div class="container container__inner--has-sidebar">
+<div class="container container--has-sidebar">
   <aside class="sidebar">
   <nav class="sidebar__nav">
     <ul class="sidebar__sidebar-menu sidebar-menu list--clear">
@@ -402,65 +402,77 @@
     <div class="page-content__category category">
 
       <div class="category__inner">
+
         <div class="category__filters product-list-filters">
           <div class="product-list-filters__inner">
+            <button class="product-list-filters-btn product-list-filters-btn">
+              Развернуть фильтр
+              <svg
+                width="10"
+                height="7">
+                <use xlink:href="img/spritemap.svg#sprite-triangle-down"></use>
+              </svg>
+            </button>
+
+            <div class="category__filters form-list-filters">
+              <form class="form "
+                    action="">
+
+                <div class="form__inner">
 
 
-            <form class="form form--list-filters"
-                  action="">
-
-              <div class="form__inner">
+                  <div class="form__content">
 
 
-                <div class="form__content">
+                    <div class="form__group group-form">
 
+                      <div class="form__row">
+                        <div class="form__col form__col--3">
+                          <div class="form__item item-form">
+                            <label class="item-form__label item-form__label--text">
+                              <input
 
-                  <div class="form__group group-form">
-
-                    <div class="form__row">
-                      <div class="form__col form__col--3">
-                        <div class="form__item item-form">
-                          <label class="item-form__label item-form__label--text">
-                            <input
-
-                              type="text"
-                              class="item-form__field item-form__field--text">
-                            <span class="item-form__name  item-form__name--text">Производитель</span>
-                          </label>
+                                type="text"
+                                class="item-form__field item-form__field--text">
+                              <span class="item-form__name  item-form__name--text">Производитель</span>
+                            </label>
+                          </div>
                         </div>
-                      </div>
-                      <div class="form__col form__col--3">
-                        <div class="form__item item-form">
-                          <label class="item-form__label item-form__label--text">
-                            <input
+                        <div class="form__col form__col--3">
+                          <div class="form__item item-form">
+                            <label class="item-form__label item-form__label--text">
+                              <input
 
-                              type="text"
-                              class="item-form__field item-form__field--text">
-                            <span class="item-form__name  item-form__name--text">Модель</span>
-                          </label>
+                                type="text"
+                                class="item-form__field item-form__field--text">
+                              <span class="item-form__name  item-form__name--text">Модель</span>
+                            </label>
+                          </div>
                         </div>
-                      </div>
-                      <div class="form__col form__col--3">
-                        <div class="form__item item-form">
-                          <label class="item-form__label item-form__label--text">
-                            <input
+                        <div class="form__col form__col--3">
+                          <div class="form__item item-form">
+                            <label class="item-form__label item-form__label--text">
+                              <input
 
-                              type="text"
-                              class="item-form__field item-form__field--text">
-                            <span class="item-form__name  item-form__name--text">Модификация</span>
-                          </label>
+                                type="text"
+                                class="item-form__field item-form__field--text">
+                              <span class="item-form__name  item-form__name--text">Модификация</span>
+                            </label>
+                          </div>
                         </div>
-                      </div>
-                      <div class="form__col form__col--3">
-                        <div class="form__item item-form">
-                          <label class="item-form__label item-form__label--text">
-                            <input
+                        <div class="form__col form__col--3">
+                          <div class="form__item item-form">
+                            <label class="item-form__label item-form__label--text">
+                              <input
 
-                              type="text"
-                              class="item-form__field item-form__field--text">
-                            <span class="item-form__name  item-form__name--text">VIN-номер</span>
-                          </label>
+                                type="text"
+                                class="item-form__field item-form__field--text">
+                              <span class="item-form__name  item-form__name--text">VIN-номер</span>
+                            </label>
+                          </div>
                         </div>
+
+
                       </div>
 
 
@@ -471,50 +483,85 @@
 
 
                 </div>
+              </form>
+            </div>
 
 
-              </div>
-            </form>
-
+          </div>
+        </div>
+        <div class="category__header">
+          <div class="category__sorting-block product-list-sorting-block">
+            <div class="product-list-sorting-block__inner">
+              <div class="product-list-sorting-block__title">Сортировать по</div>
+              <button class="product-list-sorting-block__item product-list-sorting-block__item--active">
+                Наименованию
+                <svg width="9"
+                     height="9"
+                     viewBox="0 0 8 9"
+                     fill="none"
+                     xmlns="http://www.w3.org/2000/svg">
+                  <path d="M3.64645 8.35355C3.84171 8.54882 4.15829 8.54882 4.35355 8.35355L7.53553 5.17157C7.7308 4.97631 7.7308 4.65973 7.53553 4.46447C7.34027 4.2692 7.02369 4.2692 6.82843 4.46447L4 7.29289L1.17157 4.46447C0.976311 4.2692 0.659728 4.2692 0.464466 4.46447C0.269204 4.65973 0.269204 4.97631 0.464466 5.17157L3.64645 8.35355ZM3.5 2.18557e-08L3.5 8L4.5 8L4.5 -2.18557e-08L3.5 2.18557e-08Z"/>
+                </svg>
+              </button>
+              <button class="product-list-sorting-block__item product-list-sorting-block__item--desc">
+                Цене
+                <svg width="9"
+                     height="9"
+                     viewBox="0 0 8 9"
+                     fill="none"
+                     xmlns="http://www.w3.org/2000/svg">
+                  <path d="M3.64645 8.35355C3.84171 8.54882 4.15829 8.54882 4.35355 8.35355L7.53553 5.17157C7.7308 4.97631 7.7308 4.65973 7.53553 4.46447C7.34027 4.2692 7.02369 4.2692 6.82843 4.46447L4 7.29289L1.17157 4.46447C0.976311 4.2692 0.659728 4.2692 0.464466 4.46447C0.269204 4.65973 0.269204 4.97631 0.464466 5.17157L3.64645 8.35355ZM3.5 2.18557e-08L3.5 8L4.5 8L4.5 -2.18557e-08L3.5 2.18557e-08Z"/>
+                </svg>
+              </button>
+              <button class="product-list-sorting-block__item">
+                Обозначению
+                <svg width="9"
+                     height="9"
+                     viewBox="0 0 8 9"
+                     fill="none"
+                     xmlns="http://www.w3.org/2000/svg">
+                  <path d="M3.64645 8.35355C3.84171 8.54882 4.15829 8.54882 4.35355 8.35355L7.53553 5.17157C7.7308 4.97631 7.7308 4.65973 7.53553 4.46447C7.34027 4.2692 7.02369 4.2692 6.82843 4.46447L4 7.29289L1.17157 4.46447C0.976311 4.2692 0.659728 4.2692 0.464466 4.46447C0.269204 4.65973 0.269204 4.97631 0.464466 5.17157L3.64645 8.35355ZM3.5 2.18557e-08L3.5 8L4.5 8L4.5 -2.18557e-08L3.5 2.18557e-08Z"/>
+                </svg>
+              </button>
+            </div>
+          </div>
+          <div class="category__view product-list-view">
+            <div class="product-list-view__count count-product-block">
+              Показать по
+              <button
+                type="button"
+                class="count-product-block__btn">12
+              </button>
+              <button
+                type="button"
+                class="count-product-block__btn">24
+              </button>
+            </div>
+            <div class="product-list-view__type type-product-block">
+              <a href="category--list.html"
+                 type="button"
+                 class="type-product-block__item btn--clear">
+                <svg
+                  width="16"
+                  height="12">
+                  <use xlink:href="img/spritemap.svg#sprite-type-product-block--list"></use>
+                </svg>
+              </a>
+              <a href="category.html"
+                 type="button"
+                 class="type-product-block__item type-product-block__item--active btn--clear">
+                <svg
+                  width="17"
+                  height="12">
+                  <use xlink:href="img/spritemap.svg#sprite-type-product-block--tile"></use>
+                </svg>
+              </a>
+            </div>
 
           </div>
         </div>
 
 
-        <div class="category__view product-list-view">
-          <div class="product-list-view__count count-product-block">
-            Показать по
-            <button
-              type="button"
-              class="count-product-block__btn">12
-            </button>
-            <button
-              type="button"
-              class="count-product-block__btn">24
-            </button>
-          </div>
-          <div class="product-list-view__type type-product-block">
-            <a href="category--list.html"
-               type="button"
-               class="type-product-block__item btn--clear">
-              <svg
-                width="16"
-                height="12">
-                <use xlink:href="img/spritemap.svg#sprite-type-product-block--list"></use>
-              </svg>
-            </a>
-            <a href="category.html"
-               type="button"
-               class="type-product-block__item type-product-block__item--active btn--clear">
-              <svg
-                width="17"
-                height="12">
-                <use xlink:href="img/spritemap.svg#sprite-type-product-block--tile"></use>
-              </svg>
-            </a>
-          </div>
-
-        </div>
         <div class="category__list product-list">
           <div class="product-list__item item-product">
             <a href="product.html"

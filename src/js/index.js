@@ -139,50 +139,69 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
 
-  //delivery map
-  ymaps.ready(function() {
-    const myMap = new ymaps.Map('delivery-page__map', {
-        center: [55.0640345696626, 60.10216149999999],
-        zoom: 17,
-      }, {
-        searchControlProvider: 'yandex#search',
-      }),
-      MyIconContentLayout = ymaps.templateLayoutFactory.createClass(
-        '<div style="color: #fff; font-weight: bold;">$[properties.iconContent]</div>',
-      ),
-      myPlacemarkWithContent = new ymaps.Placemark([55.0640345696626, 60.10216149999999], {}, {
+  if (typeof ymaps !== 'undefined') {
+    //delivery map
+    ymaps.ready(function() {
+      const myMap = new ymaps.Map('delivery-page__map', {
+          center: [55.0640345696626, 60.10216149999999],
+          zoom: 17,
+        }, {
+          searchControlProvider: 'yandex#search',
+        }),
+        MyIconContentLayout = ymaps.templateLayoutFactory.createClass(
+          '<div style="color: #fff; font-weight: bold;">$[properties.iconContent]</div>',
+        ),
+        myPlacemarkWithContent = new ymaps.Placemark([55.0640345696626, 60.10216149999999], {}, {
 
-        iconLayout: 'default#imageWithContent',
-        iconImageHref: 'img/svg/map.svg',
-        iconImageSize: [60, 68],
-        iconImageOffset: [-30, -66],
-        iconContentLayout: MyIconContentLayout,
-      });
-    myMap.geoObjects
-      .add(myPlacemarkWithContent);
-  });
+          iconLayout: 'default#imageWithContent',
+          iconImageHref: 'img/svg/map.svg',
+          iconImageSize: [60, 68],
+          iconImageOffset: [-30, -66],
+          iconContentLayout: MyIconContentLayout,
+        });
+      myMap.geoObjects
+        .add(myPlacemarkWithContent);
+    });
 
-  //about map
-  ymaps.ready(function() {
-    const myMap = new ymaps.Map('about-map', {
-        center: [55.0640345696626, 60.10216149999999],
-        zoom: 17,
-      }, {
-        searchControlProvider: 'yandex#search',
-      }),
-      MyIconContentLayout = ymaps.templateLayoutFactory.createClass(
-        '<div style="color: #fff; font-weight: bold;">$[properties.iconContent]</div>',
-      ),
-      myPlacemarkWithContent = new ymaps.Placemark([55.0640345696626, 60.10216149999999], {}, {
+    //about map
+    ymaps.ready(function() {
+      const myMap = new ymaps.Map('about-map', {
+          center: [55.0640345696626, 60.10216149999999],
+          zoom: 17,
+        }, {
+          searchControlProvider: 'yandex#search',
+        }),
+        MyIconContentLayout = ymaps.templateLayoutFactory.createClass(
+          '<div style="color: #fff; font-weight: bold;">$[properties.iconContent]</div>',
+        ),
+        myPlacemarkWithContent = new ymaps.Placemark([55.0640345696626, 60.10216149999999], {}, {
 
-        iconLayout: 'default#imageWithContent',
-        iconImageHref: 'img/svg/map.svg',
-        iconImageSize: [60, 68],
-        iconImageOffset: [-30, -66],
-        iconContentLayout: MyIconContentLayout,
-      });
-    myMap.geoObjects
-      .add(myPlacemarkWithContent);
+          iconLayout: 'default#imageWithContent',
+          iconImageHref: 'img/svg/map.svg',
+          iconImageSize: [60, 68],
+          iconImageOffset: [-30, -66],
+          iconContentLayout: MyIconContentLayout,
+        });
+      myMap.geoObjects
+        .add(myPlacemarkWithContent);
+    });
+  }
+
+
+  //product-list-filters-btn
+  document.querySelectorAll('.product-list-filters-btn').forEach((el, i) => {
+
+    el.addEventListener('click', function(event) {
+      event.preventDefault();
+      el.classList.toggle('product-list-filters-btn--open');
+
+
+      const productListFilters = document.querySelector('.form-list-filters');
+      if (productListFilters) {
+        productListFilters.classList.toggle('form-list-filters--open');
+      }
+
+    });
   });
 
 });

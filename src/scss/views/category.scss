@@ -120,22 +120,28 @@
 
   // .product-list__item
   &__item {
-    flex   : 0 0 calc(100% / 4 - 14px);
-    margin : 0 7px 14px;
+    $width    : calc(100% / 4 - 14px);
+    flex      : 0 0 $width;
+    max-width : $width;
+    margin    : 0 7px 14px;
 
     @media screen and (max-width : 1023px) {
-      flex : 0 0 calc(100% / 3 - 14px);
+      $width    : calc(100% / 3 - 14px);
+      flex      : 0 0 $width;
+      max-width : $width;
     }
 
     @media screen and (max-width : 767px) {
-      flex      : 1 1 calc(100% / 2 - 14px);
-      min-width : 290px;
+      $width    : calc(100% / 2 - 14px);
+      flex      : 1 1 $width;
+      max-width : $width;
     }
   }
 
   // .product-list__item--list
   &__item--list {
-    flex : 0 0 100%;
+    flex : 1 1 auto;
+    max-width : 100%;
   }
 }
 
@@ -181,14 +187,14 @@
 
   // .item-product__prices
   &__prices {
-    margin-top : 13px;
+    margin-top : 20px;
   }
 
   // .item-product__footer
   &__footer {
     display         : flex;
     justify-content : space-between;
-    margin-top      : 5px;
+    margin-top      : 15px;
   }
 
   // .item-product__add-to-cart
@@ -249,12 +255,6 @@
 }
 
 
-.product-list {
-  // .product-list__item
-  &__item {
-  }
-}
-
 .item-product-list {
   display          : flex;
   align-items      : center;
@@ -281,11 +281,14 @@
   &__name {
     font-size   : 15px;
     font-weight : bold;
+    color: #000;
+    text-decoration: none;
 
   }
 
   // .item-product-list__props
   &__props {
+    margin-top: 5px;
   }
 
   // .item-product-list__prices
@@ -321,6 +324,7 @@
   font-size   : 13px;
   line-height : 16px;
   color       : #54585d;
+
 
 
   // .props-item-product-list__item
@@ -360,9 +364,9 @@
     align-items : center;
 
     @media screen and (max-width : 767px) {
-      flex-wrap : wrap;
-      font-size: 12px;
-      line-height: 15px;
+      font-size   : 12px;
+      line-height : 15px;
+      flex-wrap   : wrap;
     }
   }
 
@@ -399,7 +403,7 @@
     }
 
     // .product-list-sorting-block__item--desc
-    &desc {
+    &--desc {
       > svg {
         transform : rotate(180deg);
       }
@@ -411,13 +415,13 @@
   font-size      : 11px;
   line-height    : 13px;
   display        : none;
+  align-items    : center;
   max-width      : 140px;
   margin         : 20px auto;
   text-align     : center;
+  white-space    : nowrap;
   text-transform : uppercase;
   color          : #54585d;
-  white-space: nowrap;
-  align-items : center;
 
   // .product-list-filters-btn--open
   &--open {
@@ -434,9 +438,6 @@
   svg {
     margin-left : 5px;
   }
-
-
-
 
 
 }

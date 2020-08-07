@@ -1,3 +1,10 @@
+input:-internal-autofill-selected,
+input:-webkit-autofill {
+  background:  none!important;
+}
+
+
+
 .form {
 
 
@@ -39,6 +46,15 @@
 
   // .form__actions
   &__actions {
+    display: flex;
+    justify-content: space-between;
+    margin-left: -10px;
+    margin-right: -10px;
+
+    > * {
+      margin-left: 10px;
+      margin-right: 10px;
+    }
   }
 
   // .form__btn
@@ -53,6 +69,11 @@
 
   // .form--register
   &--register {
+    max-width : 520px;
+  }
+
+  // .form--auth
+  &--auth {
     max-width : 520px;
   }
 
@@ -251,8 +272,7 @@
 
     // .item-form__name--checkbox
     &--checkbox {
-      line-height    : 1;
-      vertical-align : top;
+
     }
   }
 

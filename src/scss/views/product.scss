@@ -42,7 +42,7 @@
 
   // .product__images
   &__images {
-    flex         : 0 1 600px;
+    flex         : 0 0 600px;
     margin-right : 40px;
 
     @media screen and (max-width : 1340px) {
@@ -127,8 +127,10 @@
     cursor          : pointer;
     border          : 1px solid #c4c4c4;
 
+
+
     & > img {
-      max-height : 100%;
+
     }
 
     @media screen and (max-width : 1340px) {

@@ -11,15 +11,29 @@ const fancybox = require('@fancyapps/fancybox');
 
 import Swiper from 'swiper';
 
+
+window.toCustomUrl = (url = window.location.search, addParams = {}, removeParams = []) => {
+    const searchParams = new URLSearchParams(url);
+    for (const p in addParams) {
+
+      searchParams.set(p, addParams[p]);
+    }
+    for (const p of removeParams) {
+      searchParams.delete(p);
+    }
+    const searchString = searchParams.toString();
+    window.location.search = searchString;
+  }
+
 document.addEventListener('DOMContentLoaded', () => {
   // Vue init
   // const app = new Vue({
   //   //el: '#app',
   // });
 
-  new Swiper('.main-slider__container', {
-    loop: true,
-  });
+  // new Swiper('.main-slider__container', {
+  //   loop: true,
+  // });
 
   Array.from(document.querySelectorAll('.item-form__field--text')).forEach((el, i) => {
     el.addEventListener('focus', function(event) {
@@ -205,5 +219,7 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
 });
+
+
 
 
